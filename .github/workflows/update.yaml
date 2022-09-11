@@ -36,6 +36,6 @@ jobs:
           npm run generate
           "" > .output/public/.nojekyll
           git add .output/public -f
-          git subtree split --prefix .output/public -b gh-pages
           git commit -m "Update"
+          git subtree split --prefix .output/public -b gh-pages
           git push -f origin gh-pages:gh-pages
