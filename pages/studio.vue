@@ -25,6 +25,9 @@ const summonData = ref(jsonData.summon_list);
 const route = useRoute();
 
 function parseList(string, index) {
+  if (!string.length) {
+    return [];
+  }
   const prefix = `${index === 2 ? "2" : "3"}040`;
   return string
     .match(/.{1,3}/g)
@@ -38,10 +41,10 @@ function parseList(string, index) {
 }
 
 function parseSpark() {
-  const decompressedSpark = decompressFromEncodedURIComponent(
-    route.query.spark
-  ).split(",");
-
+  const decompressedSpark = decompressFromEncodedURIComponent(route.query.spark)
+    .replaceAll(",", " , ")
+    .split(",")
+    .map((e) => e.replaceAll(" ", ""));
   const keys = ["newCharaList", "dupeCharaList", "summonList"];
   const res = {};
   decompressedSpark.forEach((e, i) => (res[keys[i]] = parseList(e, i)));

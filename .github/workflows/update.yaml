@@ -35,6 +35,7 @@ jobs:
           npm install
           npm run generate
           rm .gitignore
+          "" > .output/public/.nojekyll
           git add .output/public
           git commit -m "Update"
           git subtree push --prefix .output/public origin gh-pages
