@@ -59,7 +59,7 @@
 </template>
 
 <script setup>
-import jsonData from "~/public/data.json";
+import jsonData from "@/assets/data.json";
 import { useSparkStore } from "@/stores/SparkStore";
 import { compressToEncodedURIComponent } from "lz-string";
 

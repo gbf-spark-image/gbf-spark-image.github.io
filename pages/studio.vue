@@ -14,7 +14,7 @@
 </template>
 
 <script setup>
-import jsonData from "~/public/data.json";
+import jsonData from "@/assets/data.json";
 import { decompressFromEncodedURIComponent } from "lz-string";
 import html2canvas from "html2canvas";
 

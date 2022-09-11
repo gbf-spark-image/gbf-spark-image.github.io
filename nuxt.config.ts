@@ -4,6 +4,11 @@ import { defineNuxtConfig } from 'nuxt'
 export default defineNuxtConfig({
   ssr:false,
   target: 'static',
+  nitro: {
+    prerender: {
+      routes: ['/studio']
+    }
+  },
   modules: ['@nuxtjs/tailwindcss'],
   app:{
     head: {

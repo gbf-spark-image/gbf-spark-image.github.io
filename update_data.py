@@ -9,6 +9,7 @@ from requests_futures.sessions import FuturesSession
 from PIL import Image
 
 ASSET_PATH = "public"
+DATA_PATH = "assets"
 os.makedirs(ASSET_PATH, exist_ok=True)
 
 s = FuturesSession()
@@ -28,9 +29,9 @@ HEADERS = {"X-VERSION": X_VERSION, "X-Requested-With": "XMLHttpRequest"}
 r = s.get("http://game.granbluefantasy.jp/gacha/list", headers=HEADERS).result()
 GACHA_ID = r.json()["appearance_gacha_id"]
 
-DATA_PATH = os.path.join(ASSET_PATH, "data.json")
-if os.path.exists(DATA_PATH):
-    with open(DATA_PATH, "r") as f:
+DATA_FILE_PATH = os.path.join(DATA_PATH, "data.json")
+if os.path.exists(DATA_FILE_PATH):
+    with open(DATA_FILE_PATH, "r") as f:
         data = json.load(f)
 else:
     data = {}
@@ -114,7 +115,7 @@ data = {
     "chara_list": chara_list,
     "summon_list": summon_list,
 }
-with open(DATA_PATH, "w") as f:
+with open(DATA_FILE_PATH, "w") as f:
     f.write(json.dumps(data, indent=4))
 
 
