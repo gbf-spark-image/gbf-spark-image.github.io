@@ -1,0 +1,2519 @@
+{
+    "x-version": "1662611071",
+    "gacha_id": "205461",
+    "latest_chara": 580,
+    "chara_list": [
+        {
+            "gacha_id": 580,
+            "id": "3040422000",
+            "name": "Anderson",
+            "weapon": "Blade of Loyalty"
+        },
+        {
+            "gacha_id": 579,
+            "id": "3040421000",
+            "name": "Erika",
+            "weapon": "Highland Cougar"
+        },
+        {
+            "gacha_id": 578,
+            "id": "3040420000",
+            "name": "Jeanne d'Arc",
+            "weapon": "Mystique"
+        },
+        {
+            "gacha_id": 577,
+            "id": "3040419000",
+            "name": "Wamdus",
+            "weapon": "Calamitous Aquashade"
+        },
+        {
+            "gacha_id": 576,
+            "id": "3040415000",
+            "name": "Sturm",
+            "weapon": "Indutiae"
+        },
+        {
+            "gacha_id": 575,
+            "id": "3040414000",
+            "name": "Tikoh",
+            "weapon": "Summer Healing"
+        },
+        {
+            "gacha_id": 574,
+            "id": "3040411000",
+            "name": "Eustace",
+            "weapon": "Bubbleizer"
+        },
+        {
+            "gacha_id": 573,
+            "id": "3040412000",
+            "name": "Magisa",
+            "weapon": "Plumeria Scepter"
+        },
+        {
+            "gacha_id": 572,
+            "id": "3040413000",
+            "name": "Clarisse",
+            "weapon": "Ocean's Klein"
+        },
+        {
+            "gacha_id": 571,
+            "id": "3040410000",
+            "name": "Shion",
+            "weapon": "Evening Floral Shower"
+        },
+        {
+            "gacha_id": 570,
+            "id": "3040409000",
+            "name": "Mirin",
+            "weapon": "Vivid Verdure"
+        },
+        {
+            "gacha_id": 569,
+            "id": "3040408000",
+            "name": "Vikala",
+            "weapon": "First Tail of the Mischief"
+        },
+        {
+            "gacha_id": 568,
+            "id": "3040407000",
+            "name": "Vajra",
+            "weapon": "Eleventh Fang of the Pack"
+        },
+        {
+            "gacha_id": 567,
+            "id": "3040406000",
+            "name": "Gwynne",
+            "weapon": "Blue Lightning"
+        },
+        {
+            "gacha_id": 566,
+            "id": "3040405000",
+            "name": "Galleon",
+            "weapon": "Landslide Scepter"
+        },
+        {
+            "gacha_id": 565,
+            "id": "3040404000",
+            "name": "Jamil",
+            "weapon": "Arijwani"
+        },
+        {
+            "gacha_id": 564,
+            "id": "3040403000",
+            "name": "Elea",
+            "weapon": "Vergelmir"
+        },
+        {
+            "gacha_id": 563,
+            "id": "3040402000",
+            "name": "Anna",
+            "weapon": "Cloudblazer's Broom"
+        },
+        {
+            "gacha_id": 562,
+            "id": "3040401000",
+            "name": "Manamel",
+            "weapon": "Delightful Dolce"
+        },
+        {
+            "gacha_id": 561,
+            "id": "3040397000",
+            "name": "Sophia",
+            "weapon": "Vertrauen"
+        },
+        {
+            "gacha_id": 560,
+            "id": "3040396000",
+            "name": "Skull and Balurga",
+            "weapon": "Jackknife"
+        },
+        {
+            "gacha_id": 559,
+            "id": "3040394000",
+            "name": "Laguna",
+            "weapon": "Dreadlance"
+        },
+        {
+            "gacha_id": 558,
+            "id": "3040393000",
+            "name": "You",
+            "weapon": "Indigo Flame Stinger"
+        },
+        {
+            "gacha_id": 557,
+            "id": "3040391000",
+            "name": "Silva",
+            "weapon": "Partly Powerful Popgun"
+        },
+        {
+            "gacha_id": 556,
+            "id": "3040392000",
+            "name": "Narmaya",
+            "weapon": "Onikiri Yasutsuna"
+        },
+        {
+            "gacha_id": 555,
+            "id": "3040389000",
+            "name": "Medusa",
+            "weapon": "Medusiana Floatie"
+        },
+        {
+            "gacha_id": 554,
+            "id": "3040390000",
+            "name": "Yuni",
+            "weapon": "Harmonia"
+        },
+        {
+            "gacha_id": 553,
+            "id": "3040388000",
+            "name": "Sylph",
+            "weapon": "La Sylphide"
+        },
+        {
+            "gacha_id": 552,
+            "id": "3040387000",
+            "name": "Freyr",
+            "weapon": "Gullinbursti"
+        },
+        {
+            "gacha_id": 551,
+            "id": "3040386000",
+            "name": "Ladiva",
+            "weapon": "Heartbeat Mitten"
+        },
+        {
+            "gacha_id": 550,
+            "id": "3040384000",
+            "name": "Cassius",
+            "weapon": "Maritozzo"
+        },
+        {
+            "gacha_id": 549,
+            "id": "3040385000",
+            "name": "Vira",
+            "weapon": "Arcane Rouge"
+        },
+        {
+            "gacha_id": 548,
+            "id": "3040382000",
+            "name": "Ippatsu",
+            "weapon": "Unparalleled Chopsticks "
+        },
+        {
+            "gacha_id": 547,
+            "id": "3040383000",
+            "name": "Lilele",
+            "weapon": "Sparkle Beat Vol. 29"
+        },
+        {
+            "gacha_id": 546,
+            "id": "3040381000",
+            "name": "Wilnas",
+            "weapon": "Firestorm Scythe"
+        },
+        {
+            "gacha_id": 545,
+            "id": "3040380000",
+            "name": "Yggdrasil",
+            "weapon": "Petit Bouquet de Fleurs"
+        },
+        {
+            "gacha_id": 544,
+            "id": "3040379000",
+            "name": "Cupitan",
+            "weapon": "Rainbow Lyre"
+        },
+        {
+            "gacha_id": 543,
+            "id": "3040378000",
+            "name": "Ewiyar",
+            "weapon": "Evyg Em Noytnetta"
+        },
+        {
+            "gacha_id": 542,
+            "id": "3040376000",
+            "name": "Fediel",
+            "weapon": "Skeletal Eclipse"
+        },
+        {
+            "gacha_id": 541,
+            "id": "3040377000",
+            "name": "Cidala",
+            "weapon": "Tigrisius"
+        },
+        {
+            "gacha_id": 540,
+            "id": "3040375000",
+            "name": "Satyr",
+            "weapon": "Seilenos"
+        },
+        {
+            "gacha_id": 539,
+            "id": "3040374000",
+            "name": "Lancelot",
+            "weapon": "Knight of Ice"
+        },
+        {
+            "gacha_id": 538,
+            "id": "3040373000",
+            "name": "Altair",
+            "weapon": "War Fan of Secret Teachings"
+        },
+        {
+            "gacha_id": 537,
+            "id": "3040372000",
+            "name": "Mahira",
+            "weapon": "Tenth Crest of the Clutch"
+        },
+        {
+            "gacha_id": 536,
+            "id": "3040368000",
+            "name": "Randall",
+            "weapon": "Bon Joie"
+        },
+        {
+            "gacha_id": 535,
+            "id": "3040369000",
+            "name": "Anthuria",
+            "weapon": "Forbidden Silence"
+        },
+        {
+            "gacha_id": 534,
+            "id": "3040367000",
+            "name": "Arulumaya",
+            "weapon": "Pantagruel"
+        },
+        {
+            "gacha_id": 533,
+            "id": "3040366000",
+            "name": "Benjamin",
+            "weapon": "Atrocious Blood"
+        },
+        {
+            "gacha_id": 532,
+            "id": "3040365000",
+            "name": "Enyo",
+            "weapon": "Galvanic Lance"
+        },
+        {
+            "gacha_id": 531,
+            "id": "3040364000",
+            "name": "Lunalu",
+            "weapon": "Into the Sunset"
+        },
+        {
+            "gacha_id": 530,
+            "id": "3040361000",
+            "name": "Cucouroux",
+            "weapon": "Naughty Witch"
+        },
+        {
+            "gacha_id": 529,
+            "id": "3040360000",
+            "name": "Vane",
+            "weapon": "Creepy Claws"
+        },
+        {
+            "gacha_id": 528,
+            "id": "3040359000",
+            "name": "Azusa",
+            "weapon": "Dojigiri Yasutsuna"
+        },
+        {
+            "gacha_id": 527,
+            "id": "3040358000",
+            "name": "Arthur",
+            "weapon": "Collbrande"
+        },
+        {
+            "gacha_id": 526,
+            "id": "3040357000",
+            "name": "Lich",
+            "weapon": "Pain and Suffering"
+        },
+        {
+            "gacha_id": 525,
+            "id": "3040356000",
+            "name": "Elmott",
+            "weapon": "Arson Blaze"
+        },
+        {
+            "gacha_id": 524,
+            "id": "3040355000",
+            "name": "Grea",
+            "weapon": "Maiden's Dragonblade"
+        },
+        {
+            "gacha_id": 523,
+            "id": "3040354000",
+            "name": "Naoise",
+            "weapon": "Belfast"
+        },
+        {
+            "gacha_id": 522,
+            "id": "3040352000",
+            "name": "Shiva",
+            "weapon": "Impossible Diagram"
+        },
+        {
+            "gacha_id": 521,
+            "id": "3040351000",
+            "name": "Helel ben Shalem",
+            "weapon": "Zodiaco Vitae"
+        },
+        {
+            "gacha_id": 520,
+            "id": "3040350000",
+            "name": "Tabina",
+            "weapon": "Tahar Masala"
+        },
+        {
+            "gacha_id": 519,
+            "id": "3040349000",
+            "name": "Zahlhamelina",
+            "weapon": "Bitternote Sun"
+        },
+        {
+            "gacha_id": 518,
+            "id": "3040347000",
+            "name": "Metera",
+            "weapon": "Aetherial Marine"
+        },
+        {
+            "gacha_id": 517,
+            "id": "3040346000",
+            "name": "Meg",
+            "weapon": "Ursula Glove"
+        },
+        {
+            "gacha_id": 516,
+            "id": "3040348000",
+            "name": "Poseidon",
+            "weapon": "Atlantis"
+        },
+        {
+            "gacha_id": 515,
+            "id": "3040345000",
+            "name": "Illnott",
+            "weapon": "Bubble Sketcher"
+        },
+        {
+            "gacha_id": 514,
+            "id": "3040344000",
+            "name": "Siegfried",
+            "weapon": "Ravening Harpoon"
+        },
+        {
+            "gacha_id": 513,
+            "id": "3040343000",
+            "name": "Izmir",
+            "weapon": "Auriculata Bow"
+        },
+        {
+            "gacha_id": 512,
+            "id": "3040342000",
+            "name": "Yngwie",
+            "weapon": "C'est la Vie"
+        },
+        {
+            "gacha_id": 511,
+            "id": "3040340000",
+            "name": "Lennah",
+            "weapon": "Merveilleux"
+        },
+        {
+            "gacha_id": 510,
+            "id": "3040341000",
+            "name": "Nehan",
+            "weapon": "Radiant Rinne"
+        },
+        {
+            "gacha_id": 509,
+            "id": "3040339000",
+            "name": "Ms. Miranda",
+            "weapon": "Charming Broom"
+        },
+        {
+            "gacha_id": 508,
+            "id": "3040338000",
+            "name": "Sho",
+            "weapon": "Destiny Knuckles"
+        },
+        {
+            "gacha_id": 507,
+            "id": "3040337000",
+            "name": "Tikoh",
+            "weapon": "Lancet"
+        },
+        {
+            "gacha_id": 506,
+            "id": "3040336000",
+            "name": "Troue",
+            "weapon": "Reveiller"
+        },
+        {
+            "gacha_id": 505,
+            "id": "3040334000",
+            "name": "Albert",
+            "weapon": "Schwarz Lightning"
+        },
+        {
+            "gacha_id": 504,
+            "id": "3040335000",
+            "name": "Narmaya",
+            "weapon": "Evanescence"
+        },
+        {
+            "gacha_id": 503,
+            "id": "3040333000",
+            "name": "Shion",
+            "weapon": "Bonsai Blade"
+        },
+        {
+            "gacha_id": 502,
+            "id": "3040332000",
+            "name": "Nezha",
+            "weapon": "Flamelance: Accendo"
+        },
+        {
+            "gacha_id": 501,
+            "id": "3040329000",
+            "name": "Kumbhira",
+            "weapon": "Twelfth Vertex of the Passel"
+        },
+        {
+            "gacha_id": 500,
+            "id": "3040330000",
+            "name": "Andira",
+            "weapon": "Ninth Head of the Cartload"
+        },
+        {
+            "gacha_id": 499,
+            "id": "3040328000",
+            "name": "Beatrix",
+            "weapon": "Embrasque Demiclone"
+        },
+        {
+            "gacha_id": 498,
+            "id": "3040327000",
+            "name": "Isaac",
+            "weapon": "Plasma Slicer"
+        },
+        {
+            "gacha_id": 497,
+            "id": "3040325000",
+            "name": "Farrah and Juri",
+            "weapon": "Bravery"
+        },
+        {
+            "gacha_id": 496,
+            "id": "3040324000",
+            "name": "Vaseraga",
+            "weapon": "Grynoth Demiclone"
+        },
+        {
+            "gacha_id": 495,
+            "id": "3040323000",
+            "name": "Zeta",
+            "weapon": "Arvess Demiclone"
+        },
+        {
+            "gacha_id": 494,
+            "id": "3040322000",
+            "name": "Aglovale",
+            "weapon": "Wales' Finest"
+        },
+        {
+            "gacha_id": 493,
+            "id": "3040321000",
+            "name": "Monika",
+            "weapon": "Lovely Ace"
+        },
+        {
+            "gacha_id": 492,
+            "id": "3040319000",
+            "name": "Lamretta",
+            "weapon": "Heart of a Songbird"
+        },
+        {
+            "gacha_id": 491,
+            "id": "3040318000",
+            "name": "Nectar",
+            "weapon": "Raijodo"
+        },
+        {
+            "gacha_id": 490,
+            "id": "3040320000",
+            "name": "Cagliostro",
+            "weapon": "Ouroboros Prime"
+        },
+        {
+            "gacha_id": 489,
+            "id": "3040317000",
+            "name": "Mishra",
+            "weapon": "Woodland Prayer"
+        },
+        {
+            "gacha_id": 488,
+            "id": "3040316000",
+            "name": "Zehek",
+            "weapon": "Miming's Baselard"
+        },
+        {
+            "gacha_id": 487,
+            "id": "3040313000",
+            "name": "Catura",
+            "weapon": "Bovinius"
+        },
+        {
+            "gacha_id": 486,
+            "id": "3040315000",
+            "name": "Nicholas",
+            "weapon": "Gigante Bisector"
+        },
+        {
+            "gacha_id": 485,
+            "id": "3040314000",
+            "name": "Filene",
+            "weapon": "Whitefrost Glacier"
+        },
+        {
+            "gacha_id": 484,
+            "id": "3040312000",
+            "name": "Sandalphon",
+            "weapon": "World Ender"
+        },
+        {
+            "gacha_id": 482,
+            "id": "3040311000",
+            "name": "Lily",
+            "weapon": "Saintly Crystal"
+        },
+        {
+            "gacha_id": 481,
+            "id": "3040307000",
+            "name": "Mirin",
+            "weapon": "Snowbane"
+        },
+        {
+            "gacha_id": 480,
+            "id": "3040306000",
+            "name": "Nemone",
+            "weapon": "Tropical Winter"
+        },
+        {
+            "gacha_id": 479,
+            "id": "3040305000",
+            "name": "Fiorito",
+            "weapon": "Barbell"
+        },
+        {
+            "gacha_id": 478,
+            "id": "3040304000",
+            "name": "Feather",
+            "weapon": "Hope-Filled Knuckles"
+        },
+        {
+            "gacha_id": 477,
+            "id": "3040303000",
+            "name": "Sutera",
+            "weapon": "Aurora Bow"
+        },
+        {
+            "gacha_id": 476,
+            "id": "3040302000",
+            "name": "Mireille and Risette",
+            "weapon": "Innocent Doll"
+        },
+        {
+            "gacha_id": 474,
+            "id": "3040300000",
+            "name": "Azazel",
+            "weapon": "Trick Serpent"
+        },
+        {
+            "gacha_id": 473,
+            "id": "3040301000",
+            "name": "Rosetta",
+            "weapon": "Midnight Rose"
+        },
+        {
+            "gacha_id": 472,
+            "id": "3040299000",
+            "name": "Florence",
+            "weapon": "Disturbance Signum"
+        },
+        {
+            "gacha_id": 471,
+            "id": "3040298000",
+            "name": "Gawain",
+            "weapon": "Tabarzin"
+        },
+        {
+            "gacha_id": 470,
+            "id": "3040296000",
+            "name": "Diantha",
+            "weapon": "Brand New Melody"
+        },
+        {
+            "gacha_id": 469,
+            "id": "3040297000",
+            "name": "Golden Knight",
+            "weapon": "Cerastes"
+        },
+        {
+            "gacha_id": 467,
+            "id": "3040293000",
+            "name": "Juliet",
+            "weapon": "Ophelia"
+        },
+        {
+            "gacha_id": 466,
+            "id": "3040292000",
+            "name": "Mimlemel",
+            "weapon": "My Little Mim"
+        },
+        {
+            "gacha_id": 465,
+            "id": "3040291000",
+            "name": "Silva",
+            "weapon": "Beach-Camouflage Vlisragna "
+        },
+        {
+            "gacha_id": 463,
+            "id": "3040290000",
+            "name": "Albert",
+            "weapon": "Surviving Lightning"
+        },
+        {
+            "gacha_id": 461,
+            "id": "3040289000",
+            "name": "Rosamia",
+            "weapon": "Official's Jitte"
+        },
+        {
+            "gacha_id": 460,
+            "id": "3040288000",
+            "name": "Anila",
+            "weapon": "Eighth Point of the Flock"
+        },
+        {
+            "gacha_id": 459,
+            "id": "3040287000",
+            "name": "Amira",
+            "weapon": "Summer Genesis"
+        },
+        {
+            "gacha_id": 458,
+            "id": "3040286000",
+            "name": "Lucio",
+            "weapon": "Dayspring"
+        },
+        {
+            "gacha_id": 457,
+            "id": "3040284000",
+            "name": "Abby",
+            "weapon": "Tiny Logger's Axe"
+        },
+        {
+            "gacha_id": 456,
+            "id": "3040283000",
+            "name": "Kolulu",
+            "weapon": "Much Ado"
+        },
+        {
+            "gacha_id": 455,
+            "id": "3040285000",
+            "name": "Leona",
+            "weapon": "Yahata's Naginata"
+        },
+        {
+            "gacha_id": 454,
+            "id": "3040282000",
+            "name": "Pengy",
+            "weapon": "Hard Knuckle"
+        },
+        {
+            "gacha_id": 453,
+            "id": "3040281000",
+            "name": "Naoise",
+            "weapon": "Heavenly Fawn Bow"
+        },
+        {
+            "gacha_id": 452,
+            "id": "3040280000",
+            "name": "Satyr",
+            "weapon": "Sikinnis"
+        },
+        {
+            "gacha_id": 451,
+            "id": "3040279000",
+            "name": "Percival",
+            "weapon": "Walthari"
+        },
+        {
+            "gacha_id": 450,
+            "id": "3040278000",
+            "name": "Predator",
+            "weapon": "Predator Claw"
+        },
+        {
+            "gacha_id": 449,
+            "id": "3040277000",
+            "name": "Illnott",
+            "weapon": "Mystic Spray Gun"
+        },
+        {
+            "gacha_id": 448,
+            "id": "3040273000",
+            "name": "Shura",
+            "weapon": "Teiwaz"
+        },
+        {
+            "gacha_id": 447,
+            "id": "3040274000",
+            "name": "Reinhardtzar",
+            "weapon": "Fist of Destruction"
+        },
+        {
+            "gacha_id": 446,
+            "id": "3040272000",
+            "name": "Milleore and Sahli Lao",
+            "weapon": "Acid Bolt Shooter"
+        },
+        {
+            "gacha_id": 445,
+            "id": "3040271000",
+            "name": "Herja",
+            "weapon": "Great Spear"
+        },
+        {
+            "gacha_id": 444,
+            "id": "3040269000",
+            "name": "Drang",
+            "weapon": "Red Sphere"
+        },
+        {
+            "gacha_id": 443,
+            "id": "3040268000",
+            "name": "Sturm",
+            "weapon": "Proelium"
+        },
+        {
+            "gacha_id": 442,
+            "id": "3040266000",
+            "name": "Teena",
+            "weapon": "Tropical Fairy"
+        },
+        {
+            "gacha_id": 441,
+            "id": "3040267000",
+            "name": "Mugen",
+            "weapon": "Kerak"
+        },
+        {
+            "gacha_id": 440,
+            "id": "3040264000",
+            "name": "Vania and Malinda",
+            "weapon": "Plushie Pal"
+        },
+        {
+            "gacha_id": 439,
+            "id": "3040263000",
+            "name": "Lecia",
+            "weapon": "Commander's Sidearm"
+        },
+        {
+            "gacha_id": 438,
+            "id": "3040265000",
+            "name": "Rei",
+            "weapon": "Sunya"
+        },
+        {
+            "gacha_id": 437,
+            "id": "3040261000",
+            "name": "Grimnir",
+            "weapon": "Lupercalia"
+        },
+        {
+            "gacha_id": 436,
+            "id": "3040260000",
+            "name": "Scathacha",
+            "weapon": "Deirdre's Heart"
+        },
+        {
+            "gacha_id": 435,
+            "id": "3040259000",
+            "name": "Yodarha",
+            "weapon": "True Tiger's Bane"
+        },
+        {
+            "gacha_id": 434,
+            "id": "3040258000",
+            "name": "Ilsa",
+            "weapon": "Takeminakata"
+        },
+        {
+            "gacha_id": 433,
+            "id": "3040257000",
+            "name": "Jin",
+            "weapon": "Soshu Masamune"
+        },
+        {
+            "gacha_id": 432,
+            "id": "3040256000",
+            "name": "Danua",
+            "weapon": "Spectral Cleaver"
+        },
+        {
+            "gacha_id": 431,
+            "id": "3040254000",
+            "name": "Lucius",
+            "weapon": "Alabaster Zenith"
+        },
+        {
+            "gacha_id": 430,
+            "id": "3040253000",
+            "name": "Yuisis",
+            "weapon": "Gangsta Knife"
+        },
+        {
+            "gacha_id": 429,
+            "id": "3040255000",
+            "name": "Noa",
+            "weapon": "Ivory Ark"
+        },
+        {
+            "gacha_id": 428,
+            "id": "3040252000",
+            "name": "Vikala",
+            "weapon": "Rodentius"
+        },
+        {
+            "gacha_id": 427,
+            "id": "3040251000",
+            "name": "Helel ben Shalem",
+            "weapon": "Bab-el-Mandeb"
+        },
+        {
+            "gacha_id": 426,
+            "id": "3040250000",
+            "name": "Seruel",
+            "weapon": "Brand of Binding Oath"
+        },
+        {
+            "gacha_id": 425,
+            "id": "3040249000",
+            "name": "Narmaya",
+            "weapon": "Blade of Purification"
+        },
+        {
+            "gacha_id": 424,
+            "id": "3040247000",
+            "name": "Magisa",
+            "weapon": "Holy Night Scepter"
+        },
+        {
+            "gacha_id": 423,
+            "id": "3040246000",
+            "name": "Meteon",
+            "weapon": "Ray Gun"
+        },
+        {
+            "gacha_id": 421,
+            "id": "3040244000",
+            "name": "Shitori",
+            "weapon": "Iridescent Bow"
+        },
+        {
+            "gacha_id": 420,
+            "id": "3040245000",
+            "name": "Jeanne d'Arc",
+            "weapon": "Sacred Standard"
+        },
+        {
+            "gacha_id": 419,
+            "id": "3040241000",
+            "name": "Societte",
+            "weapon": "Cardinal Spear"
+        },
+        {
+            "gacha_id": 418,
+            "id": "3040242000",
+            "name": "Kou",
+            "weapon": "Juzumaru"
+        },
+        {
+            "gacha_id": 416,
+            "id": "3040240000",
+            "name": "Hallessena",
+            "weapon": "Spirit Seeker"
+        },
+        {
+            "gacha_id": 415,
+            "id": "3040239000",
+            "name": "Zeta and Vaseraga",
+            "weapon": "Enchanted Broomstick"
+        },
+        {
+            "gacha_id": 413,
+            "id": "3040237000",
+            "name": "Siegfried",
+            "weapon": "Black Dragon's Maw"
+        },
+        {
+            "gacha_id": 412,
+            "id": "3040238000",
+            "name": "Monika",
+            "weapon": "Sky Ace"
+        },
+        {
+            "gacha_id": 411,
+            "id": "3040236000",
+            "name": "Sara",
+            "weapon": "Eon"
+        },
+        {
+            "gacha_id": 410,
+            "id": "3040235000",
+            "name": "Colossus",
+            "weapon": "Metal Destroyer"
+        },
+        {
+            "gacha_id": 409,
+            "id": "3040234000",
+            "name": "Tabina",
+            "weapon": "Hand Axe"
+        },
+        {
+            "gacha_id": 408,
+            "id": "3040233000",
+            "name": "Stan and Aliza",
+            "weapon": "Golden Dragon"
+        },
+        {
+            "gacha_id": 406,
+            "id": "3040232000",
+            "name": "Alexiel",
+            "weapon": "Nibelung Glas"
+        },
+        {
+            "gacha_id": 404,
+            "id": "3040228000",
+            "name": "Anthuria",
+            "weapon": "Forbidden Memories"
+        },
+        {
+            "gacha_id": 402,
+            "id": "3040226000",
+            "name": "Europa",
+            "weapon": "Crystal Bellflowers"
+        },
+        {
+            "gacha_id": 401,
+            "id": "3040227000",
+            "name": "Jessica",
+            "weapon": "Midnight Radiance"
+        },
+        {
+            "gacha_id": 399,
+            "id": "3040225000",
+            "name": "Cagliostro",
+            "weapon": "Only for a Cutie"
+        },
+        {
+            "gacha_id": 398,
+            "id": "3040223000",
+            "name": "Halluel and Malluel",
+            "weapon": "Sharp Letter"
+        },
+        {
+            "gacha_id": 397,
+            "id": "3040224000",
+            "name": "Sandalphon",
+            "weapon": "Ain Soph"
+        },
+        {
+            "gacha_id": 395,
+            "id": "3040222000",
+            "name": "Kolulu",
+            "weapon": "Vagabond"
+        },
+        {
+            "gacha_id": 393,
+            "id": "3040218000",
+            "name": "Morrigna",
+            "weapon": "Tr\u00ed Bandia"
+        },
+        {
+            "gacha_id": 392,
+            "id": "3040217000",
+            "name": "Ladiva",
+            "weapon": "Rainbow Hand"
+        },
+        {
+            "gacha_id": 390,
+            "id": "3040215000",
+            "name": "Baal",
+            "weapon": "Spymur's Clause"
+        },
+        {
+            "gacha_id": 388,
+            "id": "3040214000",
+            "name": "Medusa",
+            "weapon": "Euripides"
+        },
+        {
+            "gacha_id": 387,
+            "id": "3040213000",
+            "name": "Macula Marius",
+            "weapon": "Froststar Staff"
+        },
+        {
+            "gacha_id": 386,
+            "id": "3040212000",
+            "name": "Grimnir",
+            "weapon": "Vortex of the Void"
+        },
+        {
+            "gacha_id": 384,
+            "id": "3040211000",
+            "name": "Vira",
+            "weapon": "Another Sky"
+        },
+        {
+            "gacha_id": 383,
+            "id": "3040210000",
+            "name": "Yuel",
+            "weapon": "Crimson Sapphire"
+        },
+        {
+            "gacha_id": 381,
+            "id": "3040208000",
+            "name": "Heles",
+            "weapon": "Deirdre's Symbol"
+        },
+        {
+            "gacha_id": 380,
+            "id": "3040209000",
+            "name": "Ferry",
+            "weapon": "Unheil"
+        },
+        {
+            "gacha_id": 379,
+            "id": "3040207000",
+            "name": "Melissabelle",
+            "weapon": "Sword on the Cob"
+        },
+        {
+            "gacha_id": 378,
+            "id": "3040206000",
+            "name": "Clarisse",
+            "weapon": "Silphium"
+        },
+        {
+            "gacha_id": 376,
+            "id": "3040205000",
+            "name": "Dante and Freiheit",
+            "weapon": "Neko Punch Pro"
+        },
+        {
+            "gacha_id": 375,
+            "id": "3040204000",
+            "name": "Sen",
+            "weapon": "Galactic Impact"
+        },
+        {
+            "gacha_id": 373,
+            "id": "3040203000",
+            "name": "Tanya",
+            "weapon": "Gandring"
+        },
+        {
+            "gacha_id": 371,
+            "id": "3040198000",
+            "name": "Eustace",
+            "weapon": "Ishtar"
+        },
+        {
+            "gacha_id": 370,
+            "id": "3040202000",
+            "name": "Athena",
+            "weapon": "Sacred Lance"
+        },
+        {
+            "gacha_id": 369,
+            "id": "3040197000",
+            "name": "Kumbhira",
+            "weapon": "Porculius"
+        },
+        {
+            "gacha_id": 368,
+            "id": "3040196000",
+            "name": "Shiva",
+            "weapon": "Purifying Thunderbolt"
+        },
+        {
+            "gacha_id": 366,
+            "id": "3040195000",
+            "name": "Metera",
+            "weapon": "Pinkie Needle"
+        },
+        {
+            "gacha_id": 364,
+            "id": "3040194000",
+            "name": "Charlotta",
+            "weapon": "Claidheamh Soluis"
+        },
+        {
+            "gacha_id": 362,
+            "id": "3040199000",
+            "name": "Yurius",
+            "weapon": "Returner Staff"
+        },
+        {
+            "gacha_id": 361,
+            "id": "3040193000",
+            "name": "Levin Sisters",
+            "weapon": "Levin Shooter"
+        },
+        {
+            "gacha_id": 359,
+            "id": "3040192000",
+            "name": "Aglovale",
+            "weapon": "Gottfried"
+        },
+        {
+            "gacha_id": 358,
+            "id": "3040191000",
+            "name": "Lancelot and Vane",
+            "weapon": "Feendrache Pennant"
+        },
+        {
+            "gacha_id": 356,
+            "id": "3040189000",
+            "name": "Lady Grey",
+            "weapon": "Distant Requiem"
+        },
+        {
+            "gacha_id": 355,
+            "id": "3040190000",
+            "name": "Europa",
+            "weapon": "Galilei's Insight"
+        },
+        {
+            "gacha_id": 353,
+            "id": "3040187000",
+            "name": "Silva",
+            "weapon": "Full Metal Recoil"
+        },
+        {
+            "gacha_id": 351,
+            "id": "3040182000",
+            "name": "Freezie",
+            "weapon": "Arachne"
+        },
+        {
+            "gacha_id": 349,
+            "id": "3040181000",
+            "name": "Pholia",
+            "weapon": "Taisai Spirit Bow"
+        },
+        {
+            "gacha_id": 348,
+            "id": "3040180000",
+            "name": "Tsubasa",
+            "weapon": "Two-by-Four"
+        },
+        {
+            "gacha_id": 346,
+            "id": "3040179000",
+            "name": "Grea",
+            "weapon": "Draco Horn"
+        },
+        {
+            "gacha_id": 342,
+            "id": "3040177000",
+            "name": "Ilsa",
+            "weapon": "Arjunan Bow"
+        },
+        {
+            "gacha_id": 341,
+            "id": "3040178000",
+            "name": "Naoise",
+            "weapon": "Conifer"
+        },
+        {
+            "gacha_id": 339,
+            "id": "3040176000",
+            "name": "Rosetta",
+            "weapon": "Thorny Rose"
+        },
+        {
+            "gacha_id": 337,
+            "id": "3040175000",
+            "name": "Selfira",
+            "weapon": "Cythara Anglica"
+        },
+        {
+            "gacha_id": 335,
+            "id": "3040174000",
+            "name": "Wulf and Renie",
+            "weapon": "Master Key"
+        },
+        {
+            "gacha_id": 333,
+            "id": "3040171000",
+            "name": "Cain",
+            "weapon": "Ichigo Hitofuri"
+        },
+        {
+            "gacha_id": 332,
+            "id": "3040172000",
+            "name": "Lunalu",
+            "weapon": "Ruling Pen"
+        },
+        {
+            "gacha_id": 330,
+            "id": "3040170000",
+            "name": "Soriz",
+            "weapon": "Wyrmtiger Claw"
+        },
+        {
+            "gacha_id": 328,
+            "id": "3040159000",
+            "name": "Cucouroux",
+            "weapon": "White Hawk"
+        },
+        {
+            "gacha_id": 326,
+            "id": "3040158000",
+            "name": "Alexiel",
+            "weapon": "Mirror-Blade Shard"
+        },
+        {
+            "gacha_id": 325,
+            "id": "3040156000",
+            "name": "Nicholas",
+            "weapon": "Gigante Slicer"
+        },
+        {
+            "gacha_id": 324,
+            "id": "3040155000",
+            "name": "Robomi",
+            "weapon": "Railgun"
+        },
+        {
+            "gacha_id": 323,
+            "id": "3040154000",
+            "name": "Jeanne d'Arc",
+            "weapon": "Orleans Standard"
+        },
+        {
+            "gacha_id": 321,
+            "id": "3040152000",
+            "name": "Tiamat",
+            "weapon": "Tiamat Bolt Prime"
+        },
+        {
+            "gacha_id": 316,
+            "id": "3040151000",
+            "name": "Medusa",
+            "weapon": "Medusiana Staff"
+        },
+        {
+            "gacha_id": 314,
+            "id": "3040150000",
+            "name": "Zooey",
+            "weapon": "Ruler of Fate"
+        },
+        {
+            "gacha_id": 312,
+            "id": "3040149000",
+            "name": "Therese",
+            "weapon": "Tanzanite Blade"
+        },
+        {
+            "gacha_id": 310,
+            "id": "3040148000",
+            "name": "Ilsa",
+            "weapon": "Gandiva"
+        },
+        {
+            "gacha_id": 309,
+            "id": "3040146000",
+            "name": "Vaseraga",
+            "weapon": "Wurtzite Scythe"
+        },
+        {
+            "gacha_id": 308,
+            "id": "3040147000",
+            "name": "Vajra",
+            "weapon": "Canisius"
+        },
+        {
+            "gacha_id": 307,
+            "id": "3040145000",
+            "name": "Olivia",
+            "weapon": "Fallen Sword"
+        },
+        {
+            "gacha_id": 305,
+            "id": "3040143000",
+            "name": "Mary",
+            "weapon": "Jolly Starcracker"
+        },
+        {
+            "gacha_id": 303,
+            "id": "3040140000",
+            "name": "Lancelot",
+            "weapon": "Heiliges Schwert"
+        },
+        {
+            "gacha_id": 301,
+            "id": "3040141000",
+            "name": "Vira",
+            "weapon": "Certificus"
+        },
+        {
+            "gacha_id": 299,
+            "id": "3040138000",
+            "name": "Yuel",
+            "weapon": "Izayoi"
+        },
+        {
+            "gacha_id": 297,
+            "id": "3040135000",
+            "name": "Danua",
+            "weapon": "Snack Pole"
+        },
+        {
+            "gacha_id": 295,
+            "id": "3040137000",
+            "name": "Azazel",
+            "weapon": "Shadow Viperlance"
+        },
+        {
+            "gacha_id": 293,
+            "id": "3040134000",
+            "name": "Dorothy and Claudia",
+            "weapon": "Gothic Cutlery"
+        },
+        {
+            "gacha_id": 291,
+            "id": "3040132000",
+            "name": "Anne",
+            "weapon": "Daemon's Spine"
+        },
+        {
+            "gacha_id": 289,
+            "id": "3040130000",
+            "name": "Grea",
+            "weapon": "Draco Claw"
+        },
+        {
+            "gacha_id": 286,
+            "id": "3040129000",
+            "name": "Diantha",
+            "weapon": "Tlepilli"
+        },
+        {
+            "gacha_id": 285,
+            "id": "3040128000",
+            "name": "Siegfried",
+            "weapon": "Sinensis"
+        },
+        {
+            "gacha_id": 282,
+            "id": "3040126000",
+            "name": "Izmir",
+            "weapon": "Frostbite"
+        },
+        {
+            "gacha_id": 281,
+            "id": "3040127000",
+            "name": "Korwa",
+            "weapon": "Bell of Happy Endings"
+        },
+        {
+            "gacha_id": 279,
+            "id": "3040125000",
+            "name": "Yggdrasil",
+            "weapon": "Bella Aeterna"
+        },
+        {
+            "gacha_id": 277,
+            "id": "3040124000",
+            "name": "Baotorda",
+            "weapon": "Symbol of Justice"
+        },
+        {
+            "gacha_id": 275,
+            "id": "3040122000",
+            "name": "Scathacha",
+            "weapon": "Deirdre's Claws"
+        },
+        {
+            "gacha_id": 273,
+            "id": "3040121000",
+            "name": "Clarisse",
+            "weapon": "Fusion Mobius"
+        },
+        {
+            "gacha_id": 271,
+            "id": "3040120000",
+            "name": "Cagliostro",
+            "weapon": "Black Ouroboros"
+        },
+        {
+            "gacha_id": 270,
+            "id": "3040119000",
+            "name": "Drang",
+            "weapon": "Blue Sphere"
+        },
+        {
+            "gacha_id": 268,
+            "id": "3040117000",
+            "name": "Vane",
+            "weapon": "Blossom Axe"
+        },
+        {
+            "gacha_id": 266,
+            "id": "3040116000",
+            "name": "Lady Katapillar and Vira",
+            "weapon": "Metal Hand"
+        },
+        {
+            "gacha_id": 265,
+            "id": "3040115000",
+            "name": "Sturm",
+            "weapon": "Ixaba"
+        },
+        {
+            "gacha_id": 263,
+            "id": "3040113000",
+            "name": "De La Fille",
+            "weapon": "Thyrsus"
+        },
+        {
+            "gacha_id": 261,
+            "id": "3040112000",
+            "name": "Zeta",
+            "weapon": "Sunspot Spear"
+        },
+        {
+            "gacha_id": 260,
+            "id": "3040111000",
+            "name": "Orchid",
+            "weapon": "Parazonium"
+        },
+        {
+            "gacha_id": 258,
+            "id": "3040110000",
+            "name": "Beatrix",
+            "weapon": "Delta Quartz"
+        },
+        {
+            "gacha_id": 256,
+            "id": "3040109000",
+            "name": "Razia",
+            "weapon": "Gae Derg"
+        },
+        {
+            "gacha_id": 254,
+            "id": "3040108000",
+            "name": "Marquiares",
+            "weapon": "Gridarvor"
+        },
+        {
+            "gacha_id": 252,
+            "id": "3040107000",
+            "name": "Mahira",
+            "weapon": "Gallinarius"
+        },
+        {
+            "gacha_id": 251,
+            "id": "3040105000",
+            "name": "Yuisis",
+            "weapon": "Yyrkoon"
+        },
+        {
+            "gacha_id": 250,
+            "id": "3040106000",
+            "name": "Lucio",
+            "weapon": "Eden"
+        },
+        {
+            "gacha_id": 248,
+            "id": "3040104000",
+            "name": "Arulumaya",
+            "weapon": "Stardust Holly Rod"
+        },
+        {
+            "gacha_id": 245,
+            "id": "3040103000",
+            "name": "Anthuria",
+            "weapon": "Forbidden Inferno"
+        },
+        {
+            "gacha_id": 243,
+            "id": "3040102000",
+            "name": "Melissabelle",
+            "weapon": "Split End"
+        },
+        {
+            "gacha_id": 241,
+            "id": "3040101000",
+            "name": "Lecia",
+            "weapon": "Reunion"
+        },
+        {
+            "gacha_id": 240,
+            "id": "3040100000",
+            "name": "Izmir",
+            "weapon": "Nagelring"
+        },
+        {
+            "gacha_id": 238,
+            "id": "3040099000",
+            "name": "Eustace",
+            "weapon": "Nightmare Mobilizer"
+        },
+        {
+            "gacha_id": 235,
+            "id": "3040098000",
+            "name": "Romeo",
+            "weapon": "Montague's Oath"
+        },
+        {
+            "gacha_id": 232,
+            "id": "3040096000",
+            "name": "Juliet",
+            "weapon": "Capulet's Oath"
+        },
+        {
+            "gacha_id": 229,
+            "id": "3040095000",
+            "name": "Societte",
+            "weapon": "Blushing Blossom Pin"
+        },
+        {
+            "gacha_id": 228,
+            "id": "3040094000",
+            "name": "Veight",
+            "weapon": "Bloody Scar"
+        },
+        {
+            "gacha_id": 225,
+            "id": "3040093000",
+            "name": "Chat Noir",
+            "weapon": "Phantom Thief Blade"
+        },
+        {
+            "gacha_id": 224,
+            "id": "3040092000",
+            "name": "Zooey",
+            "weapon": "Cute Ribbon"
+        },
+        {
+            "gacha_id": 223,
+            "id": "3040091000",
+            "name": "Heles",
+            "weapon": "Crystal Luin"
+        },
+        {
+            "gacha_id": 221,
+            "id": "3040090000",
+            "name": "Percival",
+            "weapon": "Antwerp"
+        },
+        {
+            "gacha_id": 218,
+            "id": "3040089000",
+            "name": "Narmaya",
+            "weapon": "Raikiri"
+        },
+        {
+            "gacha_id": 214,
+            "id": "3040088000",
+            "name": "Yngwie",
+            "weapon": "Meteora"
+        },
+        {
+            "gacha_id": 211,
+            "id": "3040087000",
+            "name": "Rosamia",
+            "weapon": "Twin Helix"
+        },
+        {
+            "gacha_id": 208,
+            "id": "3040086000",
+            "name": "Forte",
+            "weapon": "Skyrend Spear"
+        },
+        {
+            "gacha_id": 205,
+            "id": "3040085000",
+            "name": "Nemone",
+            "weapon": "Mettle"
+        },
+        {
+            "gacha_id": 202,
+            "id": "3040084000",
+            "name": "Ayer",
+            "weapon": "Ancient Bandages"
+        },
+        {
+            "gacha_id": 199,
+            "id": "3040083000",
+            "name": "Aliza",
+            "weapon": "Magma Gauntlet"
+        },
+        {
+            "gacha_id": 198,
+            "id": "3040082000",
+            "name": "Black Knight",
+            "weapon": "Blutgang"
+        },
+        {
+            "gacha_id": 195,
+            "id": "3040081000",
+            "name": "Korwa",
+            "weapon": "Wing of the Pure"
+        },
+        {
+            "gacha_id": 192,
+            "id": "3040080000",
+            "name": "Jeanne d'Arc",
+            "weapon": "Disparia"
+        },
+        {
+            "gacha_id": 190,
+            "id": "3040079000",
+            "name": "Hallessena",
+            "weapon": "Soul Eater"
+        },
+        {
+            "gacha_id": 187,
+            "id": "3040076000",
+            "name": "Aoidos",
+            "weapon": "Way Flyer"
+        },
+        {
+            "gacha_id": 186,
+            "id": "3040075000",
+            "name": "Zahlhamelina",
+            "weapon": "Starblaze Rings"
+        },
+        {
+            "gacha_id": 185,
+            "id": "3040077000",
+            "name": "Eugen",
+            "weapon": "AK-4A"
+        },
+        {
+            "gacha_id": 182,
+            "id": "3040074000",
+            "name": "Catherine",
+            "weapon": "Arsene"
+        },
+        {
+            "gacha_id": 179,
+            "id": "3040073000",
+            "name": "Ferry",
+            "weapon": "Ethereal Lasher"
+        },
+        {
+            "gacha_id": 176,
+            "id": "3040072000",
+            "name": "Metera",
+            "weapon": "Roseate Aetherial Bow"
+        },
+        {
+            "gacha_id": 174,
+            "id": "3040070000",
+            "name": "Beatrix",
+            "weapon": "Gram"
+        },
+        {
+            "gacha_id": 173,
+            "id": "3040069000",
+            "name": "Eustace",
+            "weapon": "Stratomizer"
+        },
+        {
+            "gacha_id": 172,
+            "id": "3040071000",
+            "name": "Andira",
+            "weapon": "Dormius"
+        },
+        {
+            "gacha_id": 171,
+            "id": "3040068000",
+            "name": "Rosetta",
+            "weapon": "Love Eternal"
+        },
+        {
+            "gacha_id": 169,
+            "id": "3040067000",
+            "name": "Clarisse",
+            "weapon": "Snowy Mobius Strip"
+        },
+        {
+            "gacha_id": 166,
+            "id": "3040066000",
+            "name": "Lilele",
+            "weapon": "Melodic Sphere"
+        },
+        {
+            "gacha_id": 165,
+            "id": "3040065000",
+            "name": "Io",
+            "weapon": "Gambanteinn"
+        },
+        {
+            "gacha_id": 162,
+            "id": "3040064000",
+            "name": "Yodarha",
+            "weapon": "Fudo-Kuniyuki"
+        },
+        {
+            "gacha_id": 159,
+            "id": "3040063000",
+            "name": "Narmaya",
+            "weapon": "Venustas"
+        },
+        {
+            "gacha_id": 157,
+            "id": "3040062000",
+            "name": "Cagliostro",
+            "weapon": "Ouroboros Treat"
+        },
+        {
+            "gacha_id": 155,
+            "id": "3040061000",
+            "name": "Feena",
+            "weapon": "Heroic Bow"
+        },
+        {
+            "gacha_id": 152,
+            "id": "3040060000",
+            "name": "Heles",
+            "weapon": "Luin"
+        },
+        {
+            "gacha_id": 151,
+            "id": "3040059000",
+            "name": "Rackam",
+            "weapon": "Benedia"
+        },
+        {
+            "gacha_id": 148,
+            "id": "3040058000",
+            "name": "Arriet",
+            "weapon": "Cords of Heaven Lyre"
+        },
+        {
+            "gacha_id": 147,
+            "id": "3040057000",
+            "name": "Vania",
+            "weapon": "Azoth"
+        },
+        {
+            "gacha_id": 143,
+            "id": "3040056000",
+            "name": "Zeta",
+            "weapon": "Cletine"
+        },
+        {
+            "gacha_id": 142,
+            "id": "3040055000",
+            "name": "Danua",
+            "weapon": "Mikazuki"
+        },
+        {
+            "gacha_id": 140,
+            "id": "3040053000",
+            "name": "Vira",
+            "weapon": "Deep Desire"
+        },
+        {
+            "gacha_id": 137,
+            "id": "3040054000",
+            "name": "Katalina",
+            "weapon": "Murgleis"
+        },
+        {
+            "gacha_id": 134,
+            "id": "3040052000",
+            "name": "Ghandagoza",
+            "weapon": "Brahma Gauntlet"
+        },
+        {
+            "gacha_id": 133,
+            "id": "3040051000",
+            "name": "Amira",
+            "weapon": "Dragon Slayer"
+        },
+        {
+            "gacha_id": 130,
+            "id": "3040050000",
+            "name": "Percival",
+            "weapon": "Lohengrin"
+        },
+        {
+            "gacha_id": 127,
+            "id": "3040049000",
+            "name": "Silva",
+            "weapon": "Vlisragna"
+        },
+        {
+            "gacha_id": 122,
+            "id": "3040048000",
+            "name": "Sarunan",
+            "weapon": "Kalaurops"
+        },
+        {
+            "gacha_id": 121,
+            "id": "3040047000",
+            "name": "Petra",
+            "weapon": "Heaven's Cloud"
+        },
+        {
+            "gacha_id": 118,
+            "id": "3040046000",
+            "name": "Clarisse",
+            "weapon": "Mobius Strip"
+        },
+        {
+            "gacha_id": 113,
+            "id": "3040045000",
+            "name": "Albert",
+            "weapon": "Hauteclaire"
+        },
+        {
+            "gacha_id": 110,
+            "id": "3040044000",
+            "name": "Societte",
+            "weapon": "Scarlet Vane"
+        },
+        {
+            "gacha_id": 109,
+            "id": "3040043000",
+            "name": "Vira",
+            "weapon": "Lyst Sin"
+        },
+        {
+            "gacha_id": 106,
+            "id": "3040042000",
+            "name": "Carmelina",
+            "weapon": "Turpin Spear"
+        },
+        {
+            "gacha_id": 101,
+            "id": "3040041000",
+            "name": "Sara",
+            "weapon": "Sandcastle Song-Lume"
+        },
+        {
+            "gacha_id": 100,
+            "id": "3040025000",
+            "name": "Siegfried",
+            "weapon": "Ascalon"
+        },
+        {
+            "gacha_id": 97,
+            "id": "3040040000",
+            "name": "Jeanne d'Arc",
+            "weapon": "Caladbolg"
+        },
+        {
+            "gacha_id": 94,
+            "id": "3040029000",
+            "name": "Vaseraga",
+            "weapon": "Mistilteinn"
+        },
+        {
+            "gacha_id": 93,
+            "id": "3040028000",
+            "name": "Zeta",
+            "weapon": "Brionac"
+        },
+        {
+            "gacha_id": 92,
+            "id": "3040027000",
+            "name": "Anila",
+            "weapon": "Ramulus"
+        },
+        {
+            "gacha_id": 89,
+            "id": "3040026000",
+            "name": "Rosetta",
+            "weapon": "Rosen Maiden"
+        },
+        {
+            "gacha_id": 86,
+            "id": "3040024000",
+            "name": "Sophia",
+            "weapon": "Ocean Harp"
+        },
+        {
+            "gacha_id": 85,
+            "id": "3040023000",
+            "name": "Lancelot",
+            "weapon": "Hoarfrost Blade Persius"
+        },
+        {
+            "gacha_id": 83,
+            "id": "3040022000",
+            "name": "Melleau",
+            "weapon": "Vassago"
+        },
+        {
+            "gacha_id": 78,
+            "id": "3040021000",
+            "name": "Lennah",
+            "weapon": "Far Away"
+        },
+        {
+            "gacha_id": 76,
+            "id": "3040020000",
+            "name": "Charlotta",
+            "weapon": "Jack-O'-Brand"
+        },
+        {
+            "gacha_id": 73,
+            "id": "3040019000",
+            "name": "Arulumaya",
+            "weapon": "Gargantua"
+        },
+        {
+            "gacha_id": 70,
+            "id": "3040017000",
+            "name": "Agielba",
+            "weapon": "Thunder Dirk Jove"
+        },
+        {
+            "gacha_id": 66,
+            "id": "3040016000",
+            "name": "Cerberus",
+            "weapon": "Coco & Mimi"
+        },
+        {
+            "gacha_id": 60,
+            "id": "3040015000",
+            "name": "Io",
+            "weapon": "Sunflower Wand"
+        },
+        {
+            "gacha_id": 55,
+            "id": "3040014000",
+            "name": "De La Fille",
+            "weapon": "Diamond Edge"
+        },
+        {
+            "gacha_id": 52,
+            "id": "3040013000",
+            "name": "Seruel",
+            "weapon": "Hrotti"
+        },
+        {
+            "gacha_id": 47,
+            "id": "3040012000",
+            "name": "Metera",
+            "weapon": "Aetherial Bow"
+        },
+        {
+            "gacha_id": 44,
+            "id": "3040011000",
+            "name": "Magisa",
+            "weapon": "Illusion Scepter"
+        },
+        {
+            "gacha_id": 41,
+            "id": "3040010000",
+            "name": "Charlotta",
+            "weapon": "Cla\u00edomh Solais"
+        },
+        {
+            "gacha_id": 36,
+            "id": "3040009000",
+            "name": "Cagliostro",
+            "weapon": "Ouroboros"
+        },
+        {
+            "gacha_id": 33,
+            "id": "3040008000",
+            "name": "Sarunan",
+            "weapon": "Sealed Claustrum"
+        },
+        {
+            "gacha_id": 29,
+            "id": "3040001000",
+            "name": "Altair",
+            "weapon": "Dainsleif"
+        },
+        {
+            "gacha_id": 25,
+            "id": "3040006000",
+            "name": "Yuel",
+            "weapon": "Scarlet Crest Axe"
+        },
+        {
+            "gacha_id": 22,
+            "id": "3040000000",
+            "name": "Gawain",
+            "weapon": "Windflash"
+        },
+        {
+            "gacha_id": 19,
+            "id": "3040002000",
+            "name": "Aletheia",
+            "weapon": "Greatsword Andalius"
+        },
+        {
+            "gacha_id": 16,
+            "id": "3040007000",
+            "name": "Lily",
+            "weapon": "Ice Crystal Staff"
+        },
+        {
+            "gacha_id": 6,
+            "id": "3040005000",
+            "name": "Lady Grey",
+            "weapon": "Ukonvasara"
+        },
+        {
+            "gacha_id": 2,
+            "id": "3040003000",
+            "name": "Nezahualpilli",
+            "weapon": "Pilum"
+        },
+        {
+            "gacha_id": 1,
+            "id": "3040004000",
+            "name": "De La Fille",
+            "weapon": "Kerykeion"
+        }
+    ],
+    "summon_list": [
+        {
+            "id": "2040413000",
+            "name": "Wamdus"
+        },
+        {
+            "id": "2040412000",
+            "name": "Sleepyhead"
+        },
+        {
+            "id": "2040411000",
+            "name": "Belial"
+        },
+        {
+            "id": "2040409000",
+            "name": "Lu Woh"
+        },
+        {
+            "id": "2040408000",
+            "name": "Beelzebub"
+        },
+        {
+            "id": "2040406000",
+            "name": "Ewiyar"
+        },
+        {
+            "id": "2040403000",
+            "name": "Mandrake"
+        },
+        {
+            "id": "2040402000",
+            "name": "Tiamat"
+        },
+        {
+            "id": "2040401000",
+            "name": "Galleon"
+        },
+        {
+            "id": "2040398000",
+            "name": "Wilnas"
+        },
+        {
+            "id": "2040392000",
+            "name": "Tsuchinoko"
+        },
+        {
+            "id": "2040388000",
+            "name": "Sariel"
+        },
+        {
+            "id": "2040385000",
+            "name": "Zirnitra"
+        },
+        {
+            "id": "2040381000",
+            "name": "Artemis"
+        },
+        {
+            "id": "2040375000",
+            "name": "Kaguya"
+        },
+        {
+            "id": "2040374000",
+            "name": "Freyr"
+        },
+        {
+            "id": "2040369000",
+            "name": "Athena"
+        },
+        {
+            "id": "2040368000",
+            "name": "Mammoth"
+        },
+        {
+            "id": "2040366000",
+            "name": "Owlcat"
+        },
+        {
+            "id": "2040363000",
+            "name": "Charybdis"
+        },
+        {
+            "id": "2040361000",
+            "name": "Red Hare"
+        },
+        {
+            "id": "2040352000",
+            "name": "Nyarlathotep"
+        },
+        {
+            "id": "2040350000",
+            "name": "Heimdallr"
+        },
+        {
+            "id": "2040347000",
+            "name": "Belial"
+        },
+        {
+            "id": "2040344000",
+            "name": "Elil"
+        },
+        {
+            "id": "2040342000",
+            "name": "Dogu"
+        },
+        {
+            "id": "2040340000",
+            "name": "Princess Long Ji"
+        },
+        {
+            "id": "2040338000",
+            "name": "Surtr"
+        },
+        {
+            "id": "2040336000",
+            "name": "Rose Queen"
+        },
+        {
+            "id": "2040335000",
+            "name": "Satyr"
+        },
+        {
+            "id": "2040333000",
+            "name": "Yggdrasil"
+        },
+        {
+            "id": "2040330000",
+            "name": "Metatron"
+        },
+        {
+            "id": "2040327000",
+            "name": "Sariel"
+        },
+        {
+            "id": "2040326000",
+            "name": "Demonbream"
+        },
+        {
+            "id": "2040323000",
+            "name": "Marduk, Battlefield Reaper"
+        },
+        {
+            "id": "2040311000",
+            "name": "Gabriel"
+        },
+        {
+            "id": "2040310000",
+            "name": "Magus, Triad of Wisdom"
+        },
+        {
+            "id": "2040306000",
+            "name": "Michael"
+        },
+        {
+            "id": "2040305000",
+            "name": "Cerberus, Hellhound Trifecta"
+        },
+        {
+            "id": "2040304000",
+            "name": "Sylph, Flutterspirit of Purity"
+        },
+        {
+            "id": "2040302000",
+            "name": "Poseidon, the Tide Father"
+        },
+        {
+            "id": "2040297000",
+            "name": "Anat, for Love and War"
+        },
+        {
+            "id": "2040296000",
+            "name": "Hamsa"
+        },
+        {
+            "id": "2040293000",
+            "name": "Macula Marius"
+        },
+        {
+            "id": "2040285000",
+            "name": "Gorilla"
+        },
+        {
+            "id": "2040281000",
+            "name": "Freyr"
+        },
+        {
+            "id": "2040275000",
+            "name": "Halluel and Malluel"
+        },
+        {
+            "id": "2040263000",
+            "name": "Tsukuyomi"
+        },
+        {
+            "id": "2040261000",
+            "name": "Grimnir"
+        },
+        {
+            "id": "2040253000",
+            "name": "Adramelech"
+        },
+        {
+            "id": "2040249000",
+            "name": "Snow White"
+        },
+        {
+            "id": "2040233000",
+            "name": "Ankusha"
+        },
+        {
+            "id": "2040229000",
+            "name": "Zaoshen"
+        },
+        {
+            "id": "2040225000",
+            "name": "Europa"
+        },
+        {
+            "id": "2040221000",
+            "name": "Garula, Shining Hawk"
+        },
+        {
+            "id": "2040216000",
+            "name": "Aphrodite"
+        },
+        {
+            "id": "2040212000",
+            "name": "Nacht"
+        },
+        {
+            "id": "2040205000",
+            "name": "Godsworn Alexiel"
+        },
+        {
+            "id": "2040203000",
+            "name": "Uriel"
+        },
+        {
+            "id": "2040202000",
+            "name": "Raphael"
+        },
+        {
+            "id": "2040188000",
+            "name": "Thor"
+        },
+        {
+            "id": "2040185000",
+            "name": "Shiva"
+        },
+        {
+            "id": "2040180000",
+            "name": "Typhon"
+        },
+        {
+            "id": "2040177000",
+            "name": "Setekh"
+        },
+        {
+            "id": "2040173000",
+            "name": "Tezcatlipoca"
+        },
+        {
+            "id": "2040171000",
+            "name": "Sethlans"
+        },
+        {
+            "id": "2040167000",
+            "name": "Bonito"
+        },
+        {
+            "id": "2040160000",
+            "name": "Ca Ong"
+        },
+        {
+            "id": "2040144000",
+            "name": "Hector"
+        },
+        {
+            "id": "2040134000",
+            "name": "Anubis"
+        },
+        {
+            "id": "2040130000",
+            "name": "Gilgamesh"
+        },
+        {
+            "id": "2040125000",
+            "name": "Prometheus"
+        },
+        {
+            "id": "2040122000",
+            "name": "Morrigna"
+        },
+        {
+            "id": "2040114000",
+            "name": "Kaguya"
+        },
+        {
+            "id": "2040105000",
+            "name": "Rose Queen"
+        },
+        {
+            "id": "2040100000",
+            "name": "Varuna"
+        },
+        {
+            "id": "2040098000",
+            "name": "Zephyrus"
+        },
+        {
+            "id": "2040094000",
+            "name": "Agni"
+        },
+        {
+            "id": "2040090000",
+            "name": "Hades"
+        },
+        {
+            "id": "2040084000",
+            "name": "Titan"
+        },
+        {
+            "id": "2040080000",
+            "name": "Zeus"
+        },
+        {
+            "id": "2040071000",
+            "name": "Garuda"
+        },
+        {
+            "id": "2040069000",
+            "name": "Neptune"
+        },
+        {
+            "id": "2040065000",
+            "name": "Grand Order"
+        },
+        {
+            "id": "2040063000",
+            "name": "Twin Elements"
+        },
+        {
+            "id": "2040059000",
+            "name": "Medusa"
+        },
+        {
+            "id": "2040056000",
+            "name": "Lucifer"
+        },
+        {
+            "id": "2040053000",
+            "name": "Satyr"
+        },
+        {
+            "id": "2040042000",
+            "name": "Nezha"
+        },
+        {
+            "id": "2040036000",
+            "name": "Cybele"
+        },
+        {
+            "id": "2040033000",
+            "name": "Oceanus"
+        },
+        {
+            "id": "2040029000",
+            "name": "Odin"
+        },
+        {
+            "id": "2040023000",
+            "name": "Apollo"
+        },
+        {
+            "id": "2040021000",
+            "name": "Athena"
+        },
+        {
+            "id": "2040017000",
+            "name": "Siren"
+        },
+        {
+            "id": "2040013000",
+            "name": "Baal"
+        },
+        {
+            "id": "2040012000",
+            "name": "Lich"
+        },
+        {
+            "id": "2040009000",
+            "name": "Quetzalcoatl"
+        },
+        {
+            "id": "2040007000",
+            "name": "Grani"
+        },
+        {
+            "id": "2040005000",
+            "name": "Dark Angel Olivia"
+        },
+        {
+            "id": "2040004000",
+            "name": "Vortex Dragon"
+        },
+        {
+            "id": "2040003000",
+            "name": "Bahamut"
+        },
+        {
+            "id": "2040002000",
+            "name": "Macula Marius"
+        },
+        {
+            "id": "2040001000",
+            "name": "Satan"
+        }
+    ]
+}
