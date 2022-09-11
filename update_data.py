@@ -80,7 +80,7 @@ def get_chara_data(data):
             latest_chara = max(latest_chara, chara_gacha_id)
             print(f"Found {chara_id} {chara_name} {chara_weapon}")
         except Exception as e:
-            print(e)
+            pass
     chara_list = sorted(chara_list, key=lambda d: d["gacha_id"], reverse=True)
     return (latest_chara, chara_list)
 
