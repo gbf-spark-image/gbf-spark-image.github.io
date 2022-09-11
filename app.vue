@@ -13,3 +13,23 @@ useHead({
   },
 });
 </script>
+
+<style>
+.page-enter-active {
+  opacity: 0;
+  transition: opacity 0.15s linear;
+}
+
+.page-enter-to {
+  opacity: 1;
+}
+
+.page-leave-active {
+  opacity: 1;
+  transition: opacity 0.15s linear;
+}
+
+.page-leave-to {
+  opacity: 0;
+}
+</style>

@@ -9,7 +9,7 @@
       height="160"
     />
     <div
-      class="text-center opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out absolute bg-amber-300 bg-opacity-70 w-full bottom-0 left-0 right-0 py-1 m-auto text-amber-900 font-semibold text-xs sm:text-sm md:text-base"
+      class="text-center opacity-0 group-hover:opacity-100 transition-all duration-200 ease-in-out absolute bg-amber-300 bg-opacity-70 w-full bottom-0 left-0 right-0 py-1 m-auto text-amber-900 font-semibold text-xs sm:text-sm md:text-base"
       style="pointer-events: none; max-width: 280px"
     >
       {{ name }}

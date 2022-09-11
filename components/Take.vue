@@ -1,7 +1,7 @@
 <template>
   <div
     ref="take"
-    class="border border-neutral-300 overflow-hidden flex flex-grow"
+    class="border border-neutral-300 pb-1 overflow-hidden flex flex-grow"
   >
     <div
       v-for="col in sparkColumns"
@@ -22,7 +22,7 @@
           :name="item.name"
           :type="col.type"
           loading="eager"
-          @click="$emit('removeFromSpark', i, col.list)"
+          @click="$emit('takeCardClick', i, col.list)"
         />
       </div>
     </div>
@@ -98,7 +98,7 @@ function updateItemSize() {
   });
 }
 
-const emits = defineEmits(["removeFromSpark"]);
+const emits = defineEmits(["takeCardClick"]);
 
 watch(props.spark, () => {
   updateItemSize();
