@@ -34,5 +34,6 @@ jobs:
         run: |
           npm install
           npm run generate
-          git add .output/public -f
+          rm .gitignore
+          git add .output/public
           git subtree push --prefix .output/public origin gh-pages
