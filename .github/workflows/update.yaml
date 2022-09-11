@@ -32,6 +32,7 @@ jobs:
 
       - name: Build
         run: |
+          npm install
           npm run generate
           git add .output/public
           git subtree push --prefix .output/public origin gh-pages
