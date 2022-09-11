@@ -36,4 +36,5 @@ jobs:
           npm run generate
           rm .gitignore
           git add .output/public
+          git commit -m "Update"
           git subtree push --prefix .output/public origin gh-pages
