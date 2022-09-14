@@ -42,7 +42,7 @@
           v-show="summonFilter(summon)"
           :name="summon.name"
           :id="summon.id"
-          type="summ"
+          card-type="summ"
           @click="$emit('pickCardClick', 'summon', summon)"
           :class="filter.length > 2 ? 'pick-item' : ''"
         />
@@ -51,35 +51,37 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import jsonData from "@/assets/data.json";
+import { CharaInfo, SummonInfo } from "@/stores/SparkStore";
 
 const filter = ref("");
 const scrollFilter = ref(30);
 const charaData = ref(jsonData.chara_list);
 const summonData = ref(jsonData.summon_list);
 
-function charaFilter(chara) {
+function charaFilter(chara: CharaInfo) {
   return (
     chara.name.toLowerCase().includes(filter.value) ||
     chara.weapon.toLowerCase().includes(filter.value)
   );
 }
 
-function summonFilter(summon) {
+function summonFilter(summon: SummonInfo) {
   return summon.name.toLowerCase().includes(filter.value);
 }
 
-function handleScroll(e) {
+function handleScroll(e: Event) {
+  const target = e.target as HTMLElement;
   const scrollBottom =
-    e.target.scrollHeight - e.target.scrollTop - e.target.offsetHeight;
+    target.scrollHeight - target.scrollTop - target.offsetHeight;
   if (scrollBottom > 3000) {
     scrollFilter.value -= 30;
   }
   if (scrollBottom < 300) {
     scrollFilter.value += 30;
   }
-  if (e.target.scrollTop == 0) {
+  if (target.scrollTop == 0) {
     scrollFilter.value = 30;
   }
 }

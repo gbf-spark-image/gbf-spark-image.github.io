@@ -51,7 +51,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { useSparkStore } from "@/stores/SparkStore";
 import { compressToEncodedURIComponent } from "lz-string";
 
@@ -59,10 +59,10 @@ const sparkStore = useSparkStore();
 sparkStore.initializeState();
 const spark = sparkStore.spark;
 
-function uuid(a) {
+function uuid(a?: any) {
   return a
     ? (a ^ ((Math.random() * 16) >> (a / 4))).toString(16)
-    : ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, uuid);
+    : ("" + 1e7 + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, uuid);
 }
 function addToSpark(ref, item) {
   item = Object.assign({}, item);
@@ -77,7 +77,7 @@ function addToSpark(ref, item) {
   sparkStore.saveState();
 }
 
-function removeFromSpark(index, array) {
+function removeFromSpark(index: number, array: []) {
   array.splice(index, 1);
   sparkStore.saveState();
 }

@@ -17,22 +17,16 @@
   </div>
 </template>
 
-<script>
-export default {
-  props: {
-    name: String,
-    id: String,
-    type: { type: String["char" | "summ"], default: "char" },
-    quality: { type: String, default: "" },
-    loading: { type: String, default: "lazy" },
-  },
-  data() {
-    const imageUrl = `/${this.type}_thumb${this.quality.length ? "_low" : ""}/${
-      this.id
-    }${this.type == "char" ? "_01" : ""}.webp`;
-    return {
-      imageUrl,
-    };
-  },
-};
+<script setup lang="ts">
+const _props = defineProps({
+  name: String,
+  id: String,
+  cardType: { type: String, default: "char" },
+  quality: { type: String, default: "" },
+  loading: { type: String, default: "lazy" },
+});
+
+const imageUrl = `/${_props.cardType}_thumb${
+  _props.quality.length ? "_low" : ""
+}/${_props.id}${_props.cardType == "char" ? "_01" : ""}.webp`;
 </script>

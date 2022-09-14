@@ -3,10 +3,10 @@ export const useSparkStore = defineStore({
     state: () => {
         return {
             currentSpark: {
-                newCharaList: [] as CharaInfo[],
-                dupeCharaList: [] as CharaInfo[],
-                summonList: [] as SummonInfo[],
-            }
+                newCharaList: [] ,
+                dupeCharaList: [] ,
+                summonList: [] ,
+            } as Spark
         }
     },
     actions: {
@@ -26,16 +26,22 @@ export const useSparkStore = defineStore({
     }
 })
 
-interface CharaInfo {
-    uuid: string,
+export type Spark = {
+    newCharaList: CharaInfo[],
+    dupeCharaList: CharaInfo[],
+    summonList: SummonInfo[],
+}
+
+export type CharaInfo = {
+    uuid?: string,
     gacha_id: number,
     id: string,
     name: string,
     weapon: string,
 }
 
-interface SummonInfo {
-    uuid: string,
+export type SummonInfo = {
+    uuid?: string,
     id: string,
     name: string,
 }

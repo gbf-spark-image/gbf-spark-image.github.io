@@ -3,7 +3,7 @@
     <div
       tabindex="-1"
       class="absolute h-full overflow-hidden inset-0 z-50 flex justify-center align-middle bg-opacity-20 bg-slate-500"
-      v-if="props.active"
+      v-if="active"
       @click="$emit('deactivate')"
     >
       <div class="m-auto" @click.stop>
@@ -71,8 +71,8 @@
   </transition>
 </template>
 
-<script setup>
-const props = defineProps({
+<script setup lang="ts">
+defineProps({
   active: {},
 });
 </script>

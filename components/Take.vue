@@ -26,7 +26,7 @@
             :key="item.uuid || item.id + i"
             :id="item.id"
             :name="item.name"
-            :type="col.type"
+            :card-type="col.type"
             loading="eager"
             @click="$emit('takeCardClick', i, col.list)"
           />
@@ -36,7 +36,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const take = ref(null);
 const newCharsCol = ref(null);
 const dupeCharsCol = ref(null);
