@@ -100,7 +100,7 @@ function handleScroll(event: Event) {
   const target = event.target as HTMLElement;
   const scrollBottom =
     target.scrollHeight - target.scrollTop - target.offsetHeight;
-  if (scrollBottom > 900) {
+  if (scrollBottom > 1200) {
     scrollFilter.value -= 10;
   }
   if (scrollBottom < 300) {
@@ -109,6 +109,7 @@ function handleScroll(event: Event) {
   if (target.scrollTop == 0) {
     scrollFilter.value = 30;
   }
+  scrollFilter.value = Math.max(30, scrollFilter.value);
 }
 </script>
 
