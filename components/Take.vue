@@ -12,18 +12,25 @@
       <div class="flex align-middle justify-center">
         <img :src="col.iconUrl" alt="icon" class="p-3 h-24" />
       </div>
-      <div class="flex flex-row mx-2 flex-wrap justify-center" :id="col.ref">
-        <SelectCard
-          v-for="(item, i) in col.list"
-          class="m-1"
-          :style="`width: ${col.itemWidth}%;`"
-          :key="item.id + i"
-          :id="item.id"
-          :name="item.name"
-          :type="col.type"
-          loading="eager"
-          @click="$emit('takeCardClick', i, col.list)"
-        />
+      <div
+        class="flex flex-row mx-2 flex-wrap justify-center relative"
+        :id="col.ref"
+      >
+        <transition-group name="take" mode="">
+          <SelectCard
+            v-for="(item, i) in col.list"
+            class="m-1 take-item"
+            :style="`width: ${col.itemWidth}%;--offset: ${
+              Math.max(0, i - 1) * 1.6 * col.itemWidth
+            }px`"
+            :key="item.uuid || item.id + i"
+            :id="item.id"
+            :name="item.name"
+            :type="col.type"
+            loading="eager"
+            @click="$emit('takeCardClick', i, col.list)"
+          />
+        </transition-group>
       </div>
     </div>
   </div>
@@ -109,13 +116,39 @@ onMounted(() => {
     updateItemSize();
   });
   updateItemSize();
-  setInterval(() => {
+  const interval = setInterval(() => {
     if (
       take.value?.scrollHeight > take.value?.clientHeight ||
       take.value?.scrollWidth > take.value?.clientWidth
     ) {
       updateItemSize();
+      clearInterval(interval);
     }
-  }, 50);
+  }, 5);
 });
 </script>
+
+<style scoped>
+.take-item,
+.take-move {
+  transition: all 0.2s ease;
+}
+
+.take-enter-from {
+  opacity: 0;
+  transform: scale(0.01);
+}
+.take-leave-to {
+  opacity: 0;
+  transform: scale(0.01);
+}
+
+.take-enter-to {
+  opacity: 1;
+}
+
+.take-leave-active {
+  position: absolute;
+  transform: translateY(var(--offset));
+}
+</style>

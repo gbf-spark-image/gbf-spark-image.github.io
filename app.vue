@@ -32,4 +32,18 @@ useHead({
 .page-leave-to {
   opacity: 0;
 }
+
+.fade-enter-active,
+.fade-leave-active {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.fade-enter-to {
+  opacity: 1;
+}
+
+.fade-leave-to {
+  opacity: 0;
+}
 </style>

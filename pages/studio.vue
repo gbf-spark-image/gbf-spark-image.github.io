@@ -1,6 +1,6 @@
 <template>
   <div
-    class="p-3 pb-0 w-screen flex flex-col"
+    class="px-3 w-screen flex flex-col"
     style="max-height: calc(100vh - 56px - 36px)"
     ref="studio"
   >

@@ -27,13 +27,15 @@ export const useSparkStore = defineStore({
 })
 
 interface CharaInfo {
+    uuid: string,
     gacha_id: number,
     id: string,
     name: string,
-    weapon: string
+    weapon: string,
 }
 
 interface SummonInfo {
+    uuid: string,
     id: string,
     name: string,
 }
