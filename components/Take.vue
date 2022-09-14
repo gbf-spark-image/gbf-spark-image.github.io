@@ -1,7 +1,7 @@
 <template>
   <div
     ref="take"
-    class="border border-neutral-300 pb-1 overflow-hidden flex flex-grow"
+    class="border border-neutral-300 overflow-hidden flex flex-grow"
   >
     <div
       v-for="col in sparkColumns"
@@ -10,7 +10,7 @@
       :class="`flex flex-grow w-1/3 h-full flex-col`"
     >
       <div class="flex align-middle justify-center">
-        <img :src="col.iconUrl" alt="icon" class="p-3 h-24" />
+        <img :src="col.iconUrl" alt="icon" class="p-3 h-24 w-24" />
       </div>
       <div
         class="flex flex-row mx-2 flex-wrap justify-center relative"
@@ -20,9 +20,7 @@
           <SelectCard
             v-for="(item, i) in col.list"
             class="m-1 take-item"
-            :style="`width: ${col.itemWidth}%;--offset: ${
-              Math.max(0, i - 1) * 1.6 * col.itemWidth
-            }px`"
+            :style="`width: ${col.itemWidth}%;`"
             :key="item.uuid || item.id + i"
             :id="item.id"
             :name="item.name"
@@ -131,24 +129,24 @@ onMounted(() => {
 <style scoped>
 .take-item,
 .take-move {
-  transition: all 0.2s ease;
+  transition: transform 0.2s, opacity 0.2s, width 0.2s, height 0.2s;
 }
 
 .take-enter-from {
   opacity: 0;
   transform: scale(0.01);
 }
+
+.take-leave-active {
+  transition: transform 0.2s, opacity 0.2s;
+  position: absolute;
+  top: var(--offsetTop);
+  left: var(--offsetLeft);
+  width: var(--offsetWidth);
+}
+
 .take-leave-to {
   opacity: 0;
   transform: scale(0.01);
-}
-
-.take-enter-to {
-  opacity: 1;
-}
-
-.take-leave-active {
-  position: absolute;
-  transform: translateY(var(--offset));
 }
 </style>

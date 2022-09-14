@@ -1,5 +1,9 @@
 <template>
-  <div class="relative group" style="cursor: pointer">
+  <div
+    ref="card"
+    class="relative group"
+    :style="`cursor: pointer; --offsetTop:${offsetTop}px;--offsetLeft:${offsetLeft}px;--offsetWidth:${offsetWidth}px`"
+  >
     <img
       :src="imageUrl"
       alt="thumbnail"
@@ -24,6 +28,24 @@ const _props = defineProps({
   cardType: { type: String, default: "char" },
   quality: { type: String, default: "" },
   loading: { type: String, default: "lazy" },
+});
+
+const card = ref(null);
+const offsetTop = ref("");
+const offsetLeft = ref("");
+const offsetWidth = ref("");
+
+let interval = null;
+onMounted(() => {
+  interval = setInterval(() => {
+    offsetTop.value = card.value.offsetTop;
+    offsetLeft.value = card.value.offsetLeft;
+    offsetWidth.value = card.value.offsetWidth;
+  }, 200);
+});
+
+onUnmounted(() => {
+  clearInterval(interval);
 });
 
 const imageUrl = `/${_props.cardType}_thumb${

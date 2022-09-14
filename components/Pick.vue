@@ -7,7 +7,11 @@
           <div
             class="flex absolute inset-y-0 left-0 items-center pointer-events-none"
           >
-            <img src="/icon.png" alt="icon" class="w-14 object-contain p-1" />
+            <img
+              src="/icon.png"
+              alt="icon"
+              class="h-14 w-14 object-contain p-1"
+            />
           </div>
           <input
             type="search"
@@ -16,35 +20,39 @@
             placeholder="Search for names or weapons..."
             autocomplete="off"
             v-model="filter"
+            @beforeinput="handleInput($refs.scroll)"
           />
         </div>
       </div>
     </div>
     <div
-      class="w-full grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 xl:grid-cols-3 gap-2 overflow-y-auto"
+      ref="scroll"
+      class="relative w-full grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 xl:grid-cols-3 gap-2 overflow-y-auto"
       @scroll="handleScroll"
     >
-      <transition-group :name="filter.length > 2 ? 'pick' : ''" mode="">
+      <transition-group
+        :name="scrollFilter < animateMaxScroll ? 'pick' : ''"
+        mode=""
+      >
         <SelectCard
-          v-for="chara in charaData"
+          v-for="chara in charaList"
           :key="chara.id"
-          v-show="charaFilter(chara)"
           :name="chara.name"
           :id="chara.id"
           @click.left="$emit('pickCardClick', 'new', chara)"
           @click.right="$emit('pickCardClick', 'dupe', chara)"
           oncontextmenu="return false;"
-          :class="filter.length > 2 ? 'pick-item' : ''"
+          :class="scrollFilter < animateMaxScroll ? 'pick-item' : ''"
         />
         <SelectCard
-          v-for="(summon, i) in summonData"
-          :key="summon.id + i"
+          v-for="(summon, i) in summonList"
           v-show="summonFilter(summon)"
+          :key="summon.id + i"
           :name="summon.name"
           :id="summon.id"
           card-type="summ"
           @click="$emit('pickCardClick', 'summon', summon)"
-          :class="filter.length > 2 ? 'pick-item' : ''"
+          :class="scrollFilter < animateMaxScroll ? 'pick-item' : ''"
         />
       </transition-group>
     </div>
@@ -57,8 +65,19 @@ import { CharaInfo, SummonInfo } from "@/stores/SparkStore";
 
 const filter = ref("");
 const scrollFilter = ref(30);
-const charaData = ref(jsonData.chara_list);
-const summonData = ref(jsonData.summon_list);
+const charaData = jsonData.chara_list;
+const summonData = jsonData.summon_list;
+const animateMaxScroll = 60;
+
+const charaList = computed(() => {
+  return charaData.filter(charaFilter).slice(0, scrollFilter.value);
+});
+
+const summonList = computed(() => {
+  return summonData
+    .filter(summonFilter)
+    .slice(0, Math.max(0, scrollFilter.value - charaList.value.length));
+});
 
 function charaFilter(chara: CharaInfo) {
   return (
@@ -71,15 +90,21 @@ function summonFilter(summon: SummonInfo) {
   return summon.name.toLowerCase().includes(filter.value);
 }
 
-function handleScroll(e: Event) {
-  const target = e.target as HTMLElement;
+function handleInput(el: any) {
+  el = el as HTMLElement;
+  el.scrollTo(0, scrollFilter.value < animateMaxScroll ? 0 : 1);
+  scrollFilter.value = Math.min(scrollFilter.value, animateMaxScroll);
+}
+
+function handleScroll(event: Event) {
+  const target = event.target as HTMLElement;
   const scrollBottom =
     target.scrollHeight - target.scrollTop - target.offsetHeight;
-  if (scrollBottom > 3000) {
-    scrollFilter.value -= 30;
+  if (scrollBottom > 900) {
+    scrollFilter.value -= 10;
   }
   if (scrollBottom < 300) {
-    scrollFilter.value += 30;
+    scrollFilter.value += 10;
   }
   if (target.scrollTop == 0) {
     scrollFilter.value = 30;
@@ -88,26 +113,25 @@ function handleScroll(e: Event) {
 </script>
 
 <style scoped>
-/* .pick-move {
-  transition: transform 0.2s ease;
-} */
+.pick-item,
+.pick-move {
+  transition: transform 0.2s, opacity 0.2s;
+}
 
 .pick-enter-from {
   opacity: 0;
-}
-
-.pick-enter-active {
-  transition: opacity 0.2s ease, transform 0s;
   transform: scale(0.01);
 }
 
-.pick-enter-to {
-  transform: scale(1);
-  opacity: 1;
+.pick-leave-active {
+  position: absolute;
+  top: var(--offsetTop);
+  left: var(--offsetLeft);
+  width: var(--offsetWidth);
 }
 
-.pick-leave-active {
-  display: none;
-  transition: all 0s ease;
+.pick-leave-to {
+  opacity: 0;
+  transform: scale(0.01);
 }
 </style>
