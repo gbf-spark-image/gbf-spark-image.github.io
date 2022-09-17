@@ -41,7 +41,6 @@
           :id="chara.id"
           @click.left="$emit('pickCardClick', 'new', chara)"
           @click.right="$emit('pickCardClick', 'dupe', chara)"
-          oncontextmenu="return false;"
           :class="scrollFilter < animateMaxScroll ? 'pick-item' : ''"
         />
         <SelectCard
@@ -50,8 +49,8 @@
           :key="summon.id + i"
           :name="summon.name"
           :id="summon.id"
-          card-type="summ"
-          @click="$emit('pickCardClick', 'summon', summon)"
+          @click.left="$emit('pickCardClick', 'summon', summon)"
+          @click.right="$emit('pickCardClick', 'summon', summon)"
           :class="scrollFilter < animateMaxScroll ? 'pick-item' : ''"
         />
       </transition-group>

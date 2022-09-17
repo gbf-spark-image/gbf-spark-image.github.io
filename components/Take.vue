@@ -74,6 +74,7 @@ const sparkColumns = ref([
   },
 ]);
 
+const selectCardMaxWidth = useMobileCheck().value ? 140 : 280;
 function updateItemSize() {
   if (!take.value) {
     return;
@@ -92,7 +93,7 @@ function updateItemSize() {
           colWidth * widthScale,
           colWidth - itemMargin
         );
-        const thumbnailWidth = Math.min(280, itemWidth);
+        const thumbnailWidth = Math.min(selectCardMaxWidth, itemWidth);
         const thumbnailHeight = thumbnailWidth * (4 / 7);
         const subColNumber = Math.floor(colWidth / (itemWidth + itemMargin));
         const rowNumber = Math.ceil(col.list.length / subColNumber);
