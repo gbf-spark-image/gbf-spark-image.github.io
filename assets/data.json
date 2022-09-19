@@ -1,8 +1,20 @@
 {
     "x-version": "1663300173",
-    "gacha_id": "205491",
-    "latest_chara": 580,
+    "gacha_id": "205501",
+    "latest_chara": 582,
     "chara_list": [
+        {
+            "gacha_id": 582,
+            "id": "3040424000",
+            "name": "Bowman",
+            "weapon": "Imaginary Knuckles"
+        },
+        {
+            "gacha_id": 581,
+            "id": "3040423000",
+            "name": "Jessica",
+            "weapon": "Raffiniert Arquebus"
+        },
         {
             "gacha_id": 580,
             "id": "3040422000",
