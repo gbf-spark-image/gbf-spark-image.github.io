@@ -23,6 +23,10 @@
 </template>
 
 <script setup lang="ts">
+import { useSettingsStore } from "@/stores/SettingsStore";
+
+const settings = useSettingsStore().appSettings;
+
 const _props = defineProps({
   name: String,
   id: String,
@@ -48,10 +52,24 @@ onUnmounted(() => {
 });
 
 const cardType = _props.id.startsWith("3") ? "char" : "summ";
-const lowQuality = useMobileCheck();
-const maxWidth = lowQuality.value ? 140 : 280;
-const maxHeight = lowQuality.value ? 80 : 160;
-const imageUrl = `/${cardType}_thumb${lowQuality.value ? "_low" : ""}/${
-  _props.id
-}${cardType == "char" ? "_01" : ""}.webp`;
+let lowQuality: boolean = true;
+switch (settings.assetQuality) {
+  case "Auto": {
+    lowQuality = useMobileCheck().value;
+    break;
+  }
+  case "High": {
+    lowQuality = false;
+    break;
+  }
+  case "Low": {
+    lowQuality = true;
+    break;
+  }
+}
+const maxWidth = lowQuality ? 140 : 280;
+const maxHeight = lowQuality ? 80 : 160;
+const imageUrl = `/${cardType}_thumb${lowQuality ? "_low" : ""}/${_props.id}${
+  cardType == "char" ? "_01" : ""
+}.webp`;
 </script>

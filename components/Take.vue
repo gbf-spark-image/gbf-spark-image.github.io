@@ -1,8 +1,5 @@
 <template>
-  <div
-    ref="take"
-    class="border border-neutral-300 overflow-hidden flex flex-grow"
-  >
+  <div ref="take" class="border border-neutral-300 flex overflow-hidden">
     <div
       v-for="col in sparkColumns"
       :ref="col.ref"

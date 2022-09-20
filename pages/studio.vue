@@ -1,15 +1,30 @@
 <template>
-  <div
-    class="px-3 w-screen flex flex-col"
-    style="max-height: calc(100vh - 56px - 36px)"
-    ref="studio"
-  >
-    <Take :spark="spark" class="bg-black" />
-    <a ref="link" class="hidden"></a>
-    <div class="flex justify-center p-3 absolute">
-      <Button text="Download" @click="downloadSparkImage" />
-      <Button text="Copy image to clipboard" @click="generateSparkImage" />
+  <div class="p-3 w-screen h-screen flex flex-col flex-grow gap-3">
+    <UiLinkButton
+      class="absolute left-0 top-0 m-5 opacity-80 hover:opacity-100"
+    >
+      <IconBackArrow class="w-6 h-6 m-auto" />
+    </UiLinkButton>
+    <FullscreenButton
+      class="absolute right-0 top-0 opacity-80 hover:opacity-100 m-5"
+    />
+    <Take id="take" :spark="spark" class="bg-black h-full" />
+    <div class="flex absolute bottom-0 left-0 w-full p-5">
+      <UiButton
+        class="flex-grow basis-0 opacity-80 hover:opacity-100"
+        @click="downloadSparkImage"
+      >
+        <IconDownload class="w-6 h-6 m-auto" />
+      </UiButton>
+      <UiButton
+        class="flex-grow basis-0 opacity-80 hover:opacity-100"
+        @click="generateSparkImage"
+      >
+        <IconClipboardPaste class="w-6 h-6 m-auto" />
+      </UiButton>
     </div>
+
+    <a id="link" class="hidden"></a>
   </div>
 </template>
 
@@ -19,8 +34,10 @@ import { Spark } from "@/stores/SparkStore";
 import { decompressFromEncodedURIComponent } from "lz-string";
 import html2canvas from "html2canvas";
 
-const studio = ref(null);
-const link = ref(null);
+definePageMeta({
+  layout: "studio",
+});
+
 const charaData = ref(jsonData.chara_list);
 const summonData = ref(jsonData.summon_list);
 const route = useRoute();
@@ -66,8 +83,9 @@ try {
 }
 
 function downloadSparkImage() {
-  const link = studio.value.children[1];
-  html2canvas(studio.value.children[0]).then(function (canvas) {
+  const link = document.getElementById("link");
+  const take = document.getElementById("take");
+  html2canvas(take).then(function (canvas) {
     link.setAttribute("download", "spark.png");
     link.setAttribute(
       "href",
@@ -78,8 +96,9 @@ function downloadSparkImage() {
 }
 
 async function generateSparkImage() {
-  const canvas = await html2canvas(studio.value.children[0]);
+  const take = document.getElementById("take");
 
+  const canvas = await html2canvas(take);
   try {
     canvas.toBlob((blob: any) => {
       const item = new ClipboardItem({ "image/png": blob });

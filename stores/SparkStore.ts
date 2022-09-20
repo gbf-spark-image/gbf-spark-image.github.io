@@ -1,38 +1,52 @@
+import { compressToEncodedURIComponent } from "lz-string";
+
 export const useSparkStore = defineStore({
     id: 'SparkStore',
     state: () => {
+        let spark = {
+            newCharaList: [] ,
+            dupeCharaList: [] ,
+            summonList: [] ,
+        } as Spark
+        if (localStorage.getItem('spark.currentSpark')) {
+            spark = JSON.parse(
+                    localStorage.getItem('spark.currentSpark')
+                )
+        }
         return {
-            currentSpark: {
-                newCharaList: [] ,
-                dupeCharaList: [] ,
-                summonList: [] ,
-            } as Spark
+            spark
         }
     },
     actions: {
-        initializeState() {
-            if (localStorage.getItem('spark.currentSpark')) {
-                this.currentSpark = JSON.parse(
-                        localStorage.getItem('spark.currentSpark')
-                    )
-            }
-        },
-        saveState() {
-            localStorage.setItem('spark.currentSpark', JSON.stringify(this.currentSpark))
+        clearSpark() {
+            this.spark.newCharaList.splice(0, this.spark.newCharaList.length);
+            this.spark.dupeCharaList.splice(0, this.spark.dupeCharaList.length);
+            this.spark.summonList.splice(0, this.spark.summonList.length);
         },
     },
-    getters: {
-        spark: state => state.currentSpark,
+    getters:{
+        sparkCode: (state) =>{
+            const miniSpark = [
+                state.spark.newCharaList.map((e) => e.id.slice(4, -3)).join(""),
+                state.spark.dupeCharaList.map((e) => e.id.slice(4, -3)).join(""),
+                state.spark.summonList.map((e) => e.id.slice(4, -3)).join(""),
+              ];
+              const sparkString = JSON.stringify(miniSpark)
+                .replaceAll('"', "")
+                .replaceAll("[", "")
+                .replaceAll("]", "");
+            return compressToEncodedURIComponent(sparkString)
+        }
     }
 })
 
-export type Spark = {
+export interface Spark {
     newCharaList: CharaInfo[],
     dupeCharaList: CharaInfo[],
     summonList: SummonInfo[],
 }
 
-export type CharaInfo = {
+interface CharaInfo {
     uuid?: string,
     gacha_id: number,
     id: string,
@@ -40,7 +54,7 @@ export type CharaInfo = {
     weapon: string,
 }
 
-export type SummonInfo = {
+interface SummonInfo {
     uuid?: string,
     id: string,
     name: string,

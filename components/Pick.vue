@@ -1,29 +1,24 @@
 <template>
-  <div class="flex flex-col">
-    <div class="flex w-full">
-      <!-- <input type="text" class="bg-black text-2xl focus:outline-none w-full" /> -->
-      <div class="w-full mb-2">
-        <div class="relative">
-          <div
-            class="flex absolute inset-y-0 left-0 items-center pointer-events-none"
-          >
-            <img
-              src="/icon.png"
-              alt="icon"
-              class="h-14 w-14 object-contain p-1"
-            />
-          </div>
-          <input
-            type="search"
-            id="default-search"
-            class="focus:outline-none p-4 pl-16 w-full text-2xl rounded border bg-black border-gray-600 placeholder-gray-400 text-white focus:ring-white focus:border-white"
-            placeholder="Search for names or weapons..."
-            autocomplete="off"
-            v-model="filter"
-            @beforeinput="handleInput($refs.scroll)"
-          />
-        </div>
+  <div class="flex flex-col gap-2">
+    <div class="relative flex w-full h-[20%] max-h-14">
+      <div
+        class="flex absolute inset-y-0 left-0 top-0 min-h-[2rem] items-center pointer-events-none"
+      >
+        <img
+          src="/icon.png"
+          alt="icon"
+          class="h-full w-full object-contain p-1"
+        />
       </div>
+      <input
+        type="search"
+        id="default-search"
+        class="focus:outline-none p-4 pl-[6vh] xl:pl-14 w-full text-[120%] rounded border bg-black border-gray-600 placeholder-gray-400 text-white focus:ring-white focus:border-white"
+        placeholder="Search for names or weapons..."
+        autocomplete="off"
+        v-model="filter"
+        @beforeinput="handleInput($refs.scroll)"
+      />
     </div>
     <div
       ref="scroll"
@@ -60,7 +55,6 @@
 
 <script setup lang="ts">
 import jsonData from "@/assets/data.json";
-import { CharaInfo, SummonInfo } from "@/stores/SparkStore";
 
 const filter = ref("");
 const scrollFilter = ref(30);
@@ -78,14 +72,14 @@ const summonList = computed(() => {
     .slice(0, Math.max(0, scrollFilter.value - charaList.value.length));
 });
 
-function charaFilter(chara: CharaInfo) {
+function charaFilter(chara: typeof charaData[number]) {
   return (
     chara.name.toLowerCase().includes(filter.value) ||
     chara.weapon.toLowerCase().includes(filter.value)
   );
 }
 
-function summonFilter(summon: SummonInfo) {
+function summonFilter(summon: typeof summonData[number]) {
   return summon.name.toLowerCase().includes(filter.value);
 }
 
