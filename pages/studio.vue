@@ -33,58 +33,16 @@
 </template>
 
 <script setup lang="ts">
-import jsonData from "@/assets/data.json";
-import { Spark } from "@/stores/SparkStore";
-import { decompressFromEncodedURIComponent } from "lz-string";
+import { deserializeSpark } from "@/stores/SparkStore";
 import html2canvas from "html2canvas";
 
 definePageMeta({
   layout: "studio",
 });
 
-const charaData = ref(jsonData.chara_list);
-const summonData = ref(jsonData.summon_list);
 const route = useRoute();
 
-function parseList(string: string, index: number) {
-  if (!string.length) {
-    return [];
-  }
-  const prefix = `${index === 2 ? "2" : "3"}040`;
-  return string
-    .match(/.{1,3}/g)
-    .map((e) => `${prefix}${e}000`)
-    .map(
-      (e) =>
-        charaData.value.find((chara) => chara.id == e) ||
-        summonData.value.find((summon) => summon.id == e)
-    )
-    .filter((e) => e !== undefined);
-}
-
-function parseSpark() {
-  const decompressedSpark = decompressFromEncodedURIComponent(route.query.spark)
-    .replaceAll(",", " , ")
-    .split(",")
-    .map((e: string) => e.replaceAll(" ", ""));
-  const keys = ["newCharaList", "dupeCharaList", "summonList"];
-  const res = {};
-  decompressedSpark.forEach(
-    (e: string, i: number) => (res[keys[i]] = parseList(e, i))
-  );
-  return res as Spark;
-}
-
-let spark = ref({
-  newCharaList: [],
-  dupeCharaList: [],
-  summonList: [],
-} as Spark);
-try {
-  spark.value = parseSpark();
-} catch (e) {
-  alert("Invalid spark code.");
-}
+let spark = ref(deserializeSpark(route.query.spark));
 
 function downloadSparkImage() {
   const link = document.getElementById("link");
