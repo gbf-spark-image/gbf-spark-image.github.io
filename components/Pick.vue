@@ -74,13 +74,13 @@ const summonList = computed(() => {
 
 function charaFilter(chara: typeof charaData[number]) {
   return (
-    chara.name.toLowerCase().includes(filter.value) ||
-    chara.weapon.toLowerCase().includes(filter.value)
+    chara.name.toLowerCase().includes(filter.value.toLowerCase()) ||
+    chara.weapon.toLowerCase().includes(filter.value.toLowerCase())
   );
 }
 
 function summonFilter(summon: typeof summonData[number]) {
-  return summon.name.toLowerCase().includes(filter.value);
+  return summon.name.toLowerCase().includes(filter.value.toLowerCase());
 }
 
 function handleInput(el: any) {
