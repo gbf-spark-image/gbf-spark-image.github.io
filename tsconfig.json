@@ -3,7 +3,8 @@
   "extends": "./.nuxt/tsconfig.json",
   "compilerOptions": {
     "types": [
-      "@pinia/nuxt"
+      "@pinia/nuxt",
+      "vitest/globals"
     ],
     "lib": [
       "ES2021.String",

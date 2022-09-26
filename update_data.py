@@ -14,10 +14,10 @@ os.makedirs(ASSET_PATH, exist_ok=True)
 
 s = FuturesSession()
 
-s.get("http://game.granbluefantasy.jp/tutorial/content/index/2/1").result()
+s.get("https://game.granbluefantasy.jp/tutorial/content/index/2/1").result()
 
 r = s.post(
-    "http://game.granbluefantasy.jp/setting/language_save",
+    "https://game.granbluefantasy.jp/setting/language_save",
     json={"language_type": "2", "special_token": "null"},
 ).result()
 
@@ -26,7 +26,7 @@ game_ver = re.search(r'Game.version = "[0-9]*";', r.text)
 X_VERSION = game_ver.group(0)[16:-2]
 HEADERS = {"X-VERSION": X_VERSION, "X-Requested-With": "XMLHttpRequest"}
 
-r = s.get("http://game.granbluefantasy.jp/gacha/list", headers=HEADERS).result()
+r = s.get("https://game.granbluefantasy.jp/gacha/list", headers=HEADERS).result()
 GACHA_ID = r.json()["appearance_gacha_id"]
 
 DATA_FILE_PATH = os.path.join(DATA_PATH, "data.json")
@@ -49,7 +49,7 @@ def get_chara_data(data):
             continue
         rs.append(
             s.get(
-                f"http://game.granbluefantasy.jp/gacha/content/chara/legend/{GACHA_ID}/{id_}",
+                f"https://game.granbluefantasy.jp/gacha/content/chara/legend/{GACHA_ID}/{id_}",
                 headers=HEADERS,
             )
         )
@@ -88,7 +88,7 @@ def get_chara_data(data):
 
 def get_summon_data(data):
     r = s.get(
-        f"http://game.granbluefantasy.jp/gacha/provision_ratio/legend/{GACHA_ID}/1",
+        f"https://game.granbluefantasy.jp/gacha/provision_ratio/legend/{GACHA_ID}/1",
         headers=HEADERS,
     ).result()
 
@@ -137,11 +137,11 @@ for chara in chara_list:
     save_path = os.path.join(chara_thumb_path, f"{id_}_01.webp")
     sd_save_path = os.path.join(chara_thumb_low_path, f"{id_}_01.webp")
     download_image(
-        f"http://game-a1.granbluefantasy.jp/assets/img/sp/assets/npc/m/{id_}_01.jpg",
+        f"https://game.granbluefantasy.jp/assets/img/sp/assets/npc/m/{id_}_01.jpg",
         save_path,
     )
     download_image(
-        f"http://game-a1.granbluefantasy.jp/assets/img_low/sp/assets/npc/m/{id_}_01.jpg",
+        f"https://game.granbluefantasy.jp/assets/img_low/sp/assets/npc/m/{id_}_01.jpg",
         sd_save_path,
     )
 
@@ -155,10 +155,10 @@ for summon in summon_list:
     save_path = os.path.join(summon_thumb_path, f"{id_}.webp")
     sd_save_path = os.path.join(summon_thumb_low_path, f"{id_}.webp")
     download_image(
-        f"http://game-a1.granbluefantasy.jp/assets/img/sp/assets/summon/m/{id_}.jpg",
+        f"https://game.granbluefantasy.jp/assets/img/sp/assets/summon/m/{id_}.jpg",
         save_path,
     )
     download_image(
-        f"http://game-a1.granbluefantasy.jp/assets/img_low/sp/assets/summon/m/{id_}.jpg",
+        f"https://game.granbluefantasy.jp/assets/img_low/sp/assets/summon/m/{id_}.jpg",
         sd_save_path,
     )
