@@ -24,26 +24,8 @@
 <script setup lang="ts">
 import { useSparkStore } from "@/stores/SparkStore";
 
-const spark = useSparkStore().spark;
+const spark = useSparkStore().currentSpark;
 
-function uuid(a?: any) {
-  return a
-    ? (a ^ ((Math.random() * 16) >> (a / 4))).toString(16)
-    : ("" + 1e7 + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, uuid);
-}
-function addToSpark(ref, item) {
-  item = Object.assign({}, item);
-  item.uuid = uuid();
-  if (ref === "new") {
-    spark.newCharaList.push(item);
-  } else if (ref === "dupe") {
-    spark.dupeCharaList.push(item);
-  } else if (ref === "summon") {
-    spark.summonList.push(item);
-  }
-}
-
-function removeFromSpark(index: number, array: []) {
-  array.splice(index, 1);
-}
+const addToSpark = spark.add.bind(spark);
+const removeFromSpark = spark.remove.bind(spark);
 </script>

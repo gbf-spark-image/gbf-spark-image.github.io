@@ -7,26 +7,10 @@
 </template>
 
 <script setup lang="ts">
-import { useSparkStore } from "./stores/SparkStore";
-import { useSettingsStore } from "@/stores/SettingsStore";
-
 useHead({
   bodyAttrs: {
     class: "dark bg-black text-neutral-300",
   },
-});
-
-const sparkStore = useSparkStore();
-sparkStore.$subscribe((_, state) => {
-  localStorage.setItem("spark.currentSpark", JSON.stringify(state.spark));
-});
-
-const SettingsStore = useSettingsStore();
-SettingsStore.$subscribe((_, state) => {
-  localStorage.setItem(
-    "settings.appSettings",
-    JSON.stringify(state.appSettings)
-  );
 });
 </script>
 

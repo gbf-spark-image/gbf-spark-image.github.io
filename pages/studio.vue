@@ -33,7 +33,7 @@
 </template>
 
 <script setup lang="ts">
-import { deserializeSpark } from "@/stores/SparkStore";
+import { Spark } from "@/stores/SparkStore";
 import html2canvas from "html2canvas";
 
 definePageMeta({
@@ -42,7 +42,7 @@ definePageMeta({
 
 const route = useRoute();
 
-let spark = ref(deserializeSpark(route.query.spark));
+let spark = ref(Spark.deserialize(route.query.spark as string));
 
 function downloadSparkImage() {
   const link = document.getElementById("link");

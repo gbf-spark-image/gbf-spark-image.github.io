@@ -23,7 +23,7 @@
     </UiButton>
 
     <UiLinkButton
-      :to="{ name: 'studio', query: { spark: sparkStore.sparkCode } }"
+      :to="{ name: 'studio', query: { spark: spark.getCode() } }"
       class="rounded-b xl:rounded-b-none xl:rounded-r"
       aria-label="next"
     >
@@ -38,5 +38,5 @@ import { useSparkStore } from "@/stores/SparkStore";
 const sparkAlert = ref(false);
 const settingsModal = ref(false);
 const helpModal = ref(false);
-const sparkStore = useSparkStore();
+const spark = useSparkStore().currentSpark;
 </script>

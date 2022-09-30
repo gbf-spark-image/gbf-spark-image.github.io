@@ -9,6 +9,7 @@ export default defineConfig({
     AutoImport({
       imports: [
         "vue",
+        "@vueuse/core",
         {
           "@pinia/nuxt/node_modules/pinia": [
             "acceptHMRUpdate",

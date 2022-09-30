@@ -1,21 +1,14 @@
 export const useSettingsStore = defineStore({
-    id: 'SettingsStore',
-    state: () => { 
-        let appSettings = {
-            assetQuality: "Auto",
-        } as appSettings
+  id: "SettingsStore",
+  state: () => {
+    return {
+      appSettings: reactive(
+        useLocalStorage("settings.appSettings", new appSettings())
+      ),
+    };
+  },
+});
 
-        if (localStorage.getItem('settings.appSettings')) {
-            appSettings = JSON.parse(
-                localStorage.getItem('settings.appSettings')
-            )
-        }
-
-        return { appSettings }
-    },
-})
-
-interface appSettings {
-    assetQuality: "Auto" | "High" | "Low",
+class appSettings {
+  assetQuality: "Auto" | "High" | "Low" = "Auto";
 }
-

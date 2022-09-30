@@ -4,6 +4,7 @@
   "compilerOptions": {
     "types": [
       "@pinia/nuxt",
+      "@vueuse/core",
       "vitest/globals"
     ],
     "lib": [

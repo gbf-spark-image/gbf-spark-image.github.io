@@ -10,89 +10,106 @@ const summonData = jsonData.summon_list;
 export const useSparkStore = defineStore({
   id: "SparkStore",
   state: () => {
-    let spark = {
-      newCharaList: [],
-      dupeCharaList: [],
-      summonList: [],
-    } as Spark;
-    if (localStorage.getItem("spark.currentSpark")) {
-      spark = JSON.parse(localStorage.getItem("spark.currentSpark"));
-    }
     return {
-      spark,
+      currentSpark: reactive(
+        useLocalStorage("spark.currentSpark", new Spark(), {
+          serializer: {
+            read: Spark.deserialize,
+            write: Spark.serialize,
+          },
+        })
+      ),
     };
-  },
-  actions: {
-    clearSpark() {
-      this.spark.newCharaList.splice(0, this.spark.newCharaList.length);
-      this.spark.dupeCharaList.splice(0, this.spark.dupeCharaList.length);
-      this.spark.summonList.splice(0, this.spark.summonList.length);
-    },
-  },
-  getters: {
-    sparkCode: (state) => {
-      return serializeSpark(state.spark);
-    },
   },
 });
 
-export function serializeSpark(spark: Spark): string {
-  const miniSpark = [
-    spark.newCharaList.map((e) => e.id.slice(4, -3)).join(""),
-    spark.dupeCharaList.map((e) => e.id.slice(4, -3)).join(""),
-    spark.summonList.map((e) => e.id.slice(4, -3)).join(""),
-  ];
-  const sparkString = JSON.stringify(miniSpark)
-    .replaceAll('"', "")
-    .replaceAll("[", "")
-    .replaceAll("]", "");
-  return compressToEncodedURIComponent(sparkString);
+function uuid(a?: any) {
+  return a
+    ? (a ^ ((Math.random() * 16) >> (a / 4))).toString(16)
+    : ("" + 1e7 + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, uuid);
 }
 
-export function deserializeSpark(
-  serializedSparkString: string | string[]
-): Spark {
-  function parseList(string: string, index: number) {
-    if (!string.length) {
-      return [];
+export class Spark {
+  newCharaList: CharaInfo[] = [];
+  dupeCharaList: CharaInfo[] = [];
+  summonList: SummonInfo[] = [];
+
+  static serialize(spark: Spark): string {
+    const miniSpark = [
+      spark.newCharaList.map((e) => e.id.slice(4, -3)).join(""),
+      spark.dupeCharaList.map((e) => e.id.slice(4, -3)).join(""),
+      spark.summonList.map((e) => e.id.slice(4, -3)).join(""),
+    ];
+    const sparkString = JSON.stringify(miniSpark)
+      .replaceAll('"', "")
+      .replaceAll("[", "")
+      .replaceAll("]", "");
+    return compressToEncodedURIComponent(sparkString);
+  }
+
+  static deserialize(serializedSparkString: string): Spark {
+    function parseList(
+      string: string,
+      index: number
+    ): CharaInfo[] | SummonInfo[] {
+      if (!string.length) {
+        return [];
+      }
+      const prefix = `${index === 2 ? "2" : "3"}040`;
+      return string
+        .match(/.{1,3}/g)
+        .map((e) => `${prefix}${e}000`)
+        .map(
+          (e) =>
+            charaData.find((chara) => chara.id == e) ||
+            summonData.find((summon) => summon.id == e)
+        )
+        .filter((e) => e !== undefined);
     }
-    const prefix = `${index === 2 ? "2" : "3"}040`;
-    return string
-      .match(/.{1,3}/g)
-      .map((e) => `${prefix}${e}000`)
-      .map(
-        (e) =>
-          charaData.find((chara) => chara.id == e) ||
-          summonData.find((summon) => summon.id == e)
+    try {
+      const decompressedSpark = decompressFromEncodedURIComponent(
+        serializedSparkString
       )
-      .filter((e) => e !== undefined);
+        .replaceAll(",", " , ")
+        .split(",")
+        .map((e: string) => e.replaceAll(" ", ""));
+      const keys: ("new" | "dupe" | "summon")[] = ["new", "dupe", "summon"];
+      const spark = new Spark();
+      decompressedSpark.forEach((e: string, i: number) =>
+        parseList(e, i).forEach((chara) => spark.add(keys[i], chara))
+      );
+      return spark;
+    } catch (err) {
+      return new Spark();
+    }
   }
-  try {
-    const decompressedSpark = decompressFromEncodedURIComponent(
-      serializedSparkString
-    )
-      .replaceAll(",", " , ")
-      .split(",")
-      .map((e: string) => e.replaceAll(" ", ""));
-    const keys = ["newCharaList", "dupeCharaList", "summonList"];
-    const res = {};
-    decompressedSpark.forEach(
-      (e: string, i: number) => (res[keys[i]] = parseList(e, i))
-    );
-    return res as Spark;
-  } catch (err) {
-    return {
-      newCharaList: [],
-      dupeCharaList: [],
-      summonList: [],
-    };
-  }
-}
 
-export interface Spark {
-  newCharaList: CharaInfo[];
-  dupeCharaList: CharaInfo[];
-  summonList: SummonInfo[];
+  add(key: "new" | "dupe" | "summon", item: CharaInfo | SummonInfo) {
+    item = Object.assign({}, item);
+    item.uuid = uuid();
+    if (key === "new") {
+      this.newCharaList.push(item as CharaInfo);
+      this.newCharaList.splice(0, 0);
+    } else if (key === "dupe") {
+      this.dupeCharaList.push(item as CharaInfo);
+    } else if (key === "summon") {
+      this.summonList.push(item as SummonInfo);
+    }
+  }
+
+  remove(index: number, array: CharaInfo[] | SummonInfo[]) {
+    array.splice(index, 1);
+  }
+
+  getCode() {
+    return Spark.serialize(this);
+  }
+
+  clear() {
+    this.newCharaList.splice(0, this.newCharaList.length);
+    this.dupeCharaList.splice(0, this.dupeCharaList.length);
+    this.summonList.splice(0, this.summonList.length);
+  }
 }
 
 interface CharaInfo {

@@ -1,11 +1,11 @@
 import { setActivePinia, createPinia } from "@pinia/nuxt/node_modules/pinia";
-import { serializeSpark, deserializeSpark, useSparkStore } from "./SparkStore";
+import { useSparkStore, Spark } from "./SparkStore";
 
-const spark = {
-  newCharaList: [],
-  dupeCharaList: [],
-  summonList: [],
-};
+declare module "vitest" {
+  export interface TestContext {
+    spark?: Spark;
+  }
+}
 
 describe("Spark Store", async () => {
   beforeEach(() => {
@@ -16,15 +16,29 @@ describe("Spark Store", async () => {
     const store = useSparkStore();
     expect(store).toBeDefined();
   });
+});
 
-  it("should serrialize a spark", () => {
-    const serializedSpark = serializeSpark(spark);
-    expect(serializedSpark.length).toBeLessThan(JSON.stringify(spark).length);
+describe("Spark Class", () => {
+  beforeEach(async (ctx) => {
+    ctx.spark = new Spark();
+    ctx.spark.newCharaList.push({
+      gacha_id: 578,
+      id: "3040420000",
+      name: "Jeanne d'Arc",
+      weapon: "Mystique",
+    });
   });
 
-  it("should deserialize a spark", () => {
-    const serializedSpark = serializeSpark(spark);
-    const deserializedSpark = deserializeSpark(serializedSpark);
-    expect(deserializedSpark).toMatchObject(spark);
+  it("should serialize a spark", (ctx) => {
+    const serializedSpark = ctx.spark.getCode();
+    expect(serializedSpark.length).toBeLessThan(
+      JSON.stringify(ctx.spark).length
+    );
+  });
+
+  it("should deserialize a spark", (ctx) => {
+    const serializedSpark = ctx.spark.getCode();
+    const deserializedSpark = Spark.deserialize(serializedSpark);
+    expect(deserializedSpark).toMatchObject(ctx.spark);
   });
 });
