@@ -10,5 +10,11 @@ export const useSettingsStore = defineStore({
 });
 
 class appSettings {
-  assetQuality: "Auto" | "High" | "Low" = "Auto";
+  assetQuality: AssetQuality = AssetQuality.Auto;
+}
+
+export enum AssetQuality {
+  Auto,
+  High,
+  Low,
 }

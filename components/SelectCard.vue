@@ -23,7 +23,7 @@
 </template>
 
 <script setup lang="ts">
-import { useSettingsStore } from "@/stores/SettingsStore";
+import { useSettingsStore, AssetQuality } from "@/stores/SettingsStore";
 
 const settings = useSettingsStore().appSettings;
 
@@ -52,24 +52,27 @@ onUnmounted(() => {
 });
 
 const cardType = _props.id.startsWith("3") ? "char" : "summ";
-let lowQuality: boolean = true;
-switch (settings.assetQuality) {
-  case "Auto": {
-    lowQuality = useMobileCheck().value;
-    break;
+const lowQuality = computed(() => {
+  switch (settings.assetQuality) {
+    case AssetQuality.Auto: {
+      return useMobileCheck().value;
+    }
+    case AssetQuality.High: {
+      return false;
+    }
+    case AssetQuality.Low: {
+      return true;
+    }
   }
-  case "High": {
-    lowQuality = false;
-    break;
-  }
-  case "Low": {
-    lowQuality = true;
-    break;
-  }
-}
-const maxWidth = lowQuality ? 140 : 280;
-const maxHeight = lowQuality ? 80 : 160;
-const imageUrl = `/${cardType}_thumb${lowQuality ? "_low" : ""}/${_props.id}${
-  cardType == "char" ? "_01" : ""
-}.webp`;
+});
+
+const maxWidth = 280;
+
+const maxHeight = 160;
+
+const imageUrl = computed(() => {
+  return `/${cardType}_thumb${lowQuality.value ? "_low" : ""}/${_props.id}${
+    cardType == "char" ? "_01" : ""
+  }.webp`;
+});
 </script>

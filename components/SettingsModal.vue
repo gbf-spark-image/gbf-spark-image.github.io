@@ -5,13 +5,28 @@
       <span class="text-lg font-bold">Settings</span>
     </div>
     <div>
-      <span>Image quality: {{ appSettings.assetQuality }}</span>
+      <span>Image quality</span>
     </div>
+
+    <UiRadioGroup
+      :list="
+        Object.values(AssetQuality).slice(
+          0,
+          Object.values(AssetQuality).length / 2
+        )
+      "
+      :activeIndex="appSettings.assetQuality"
+      @active-index="changeQuality"
+    />
   </UiModal>
 </template>
 
 <script setup lang="ts">
-import { useSettingsStore } from "@/stores/SettingsStore";
+import { useSettingsStore, AssetQuality } from "@/stores/SettingsStore";
 
 const appSettings = useSettingsStore().appSettings;
+
+function changeQuality(number: number) {
+  appSettings.assetQuality = number;
+}
 </script>

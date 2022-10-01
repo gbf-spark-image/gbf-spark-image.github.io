@@ -20,11 +20,17 @@
         <IconDownload class="w-6 h-6 m-auto" />
       </UiButton>
       <UiButton
-        class="flex-grow basis-0 opacity-80 hover:opacity-100"
+        ref="copyButton"
+        class="flex-grow basis-0 opacity-80 enabled:hover:opacity-100"
         @click="generateSparkImage"
         aria-label="copy to clipboard"
+        :disabled="!supported"
       >
-        <IconClipboardPaste class="w-6 h-6 m-auto" />
+        <div v-if="!supported" class="flex flex-row justify-center">
+          <IconClipboardPaste class="w-6 h-6" />
+          <span>Not supported</span>
+        </div>
+        <IconClipboardPaste v-else class="w-6 h-6 m-auto" />
       </UiButton>
     </div>
 
@@ -34,6 +40,7 @@
 
 <script setup lang="ts">
 import { Spark } from "@/stores/SparkStore";
+import { promiseTimeout } from "@vueuse/shared";
 import html2canvas from "html2canvas";
 
 definePageMeta({
@@ -42,6 +49,8 @@ definePageMeta({
 
 const route = useRoute();
 
+const supported = typeof ClipboardItem !== "undefined";
+const copyButton = ref(null);
 let spark = ref(Spark.deserialize(route.query.spark as string));
 
 function downloadSparkImage() {
@@ -58,23 +67,25 @@ function downloadSparkImage() {
 }
 
 async function generateSparkImage() {
+  if (!supported) {
+    return;
+  }
+  greenButton(copyButton.value.$el as HTMLElement);
+
   const take = document.getElementById("take");
 
   const canvas = await html2canvas(take);
-  try {
-    canvas.toBlob((blob: any) => {
-      const item = new ClipboardItem({ "image/png": blob });
-      navigator.clipboard.write([item]);
-    });
-    // txt.style.display = "none";
-    // txt.style.color = "lightgreen";
-    // txt.innerText = "Image has been copied";
-    // txt.style.display = "initial";
-  } catch (err) {
-    // txt.style.display = "none";
-    // txt.style.color = "tomato";
-    // txt.innerText = "Image copy failed";
-    // txt.style.display = "initial";
+  canvas.toBlob((blob: any) => {
+    const item = new ClipboardItem({ "image/png": blob });
+    navigator.clipboard.write([item]);
+  });
+
+  async function greenButton(el: HTMLElement) {
+    el.classList.remove("enabled:hover:bg-white", "duration-200");
+    el.classList.add("bg-green-400");
+    await promiseTimeout(200);
+    el.classList.add("enabled:hover:bg-white", "duration-200");
+    el.classList.remove("bg-green-400");
   }
 }
 </script>

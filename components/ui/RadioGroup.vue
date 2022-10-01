@@ -1,0 +1,37 @@
+<template>
+  <ul
+    class="items-center w-full text-sm font-medium rounded-lg border-2 sm:flex bg-gray-700 border-gray-600 text-white overflow-hidden"
+  >
+    <li
+      v-for="(item, i) in list"
+      :key="i"
+      class="w-full border-b sm:border-b-0 sm:border-r border-gray-600 hover:bg-gray-600"
+    >
+      <div class="flex items-center">
+        <input
+          :id="`${i}`"
+          type="radio"
+          v-model="activeIndex"
+          :value="i"
+          name="list-radio"
+          class="ml-3 absolute w-4 h-4"
+          @click="$emit('activeIndex', i)"
+        />
+        <label
+          :for="`${i}`"
+          class="py-3 pl-9 w-full text-sm font-medium text-gray-300"
+          >{{ item }}
+        </label>
+      </div>
+    </li>
+  </ul>
+</template>
+
+<script setup lang="ts">
+defineProps({
+  list: { type: Array, required: true },
+  activeIndex: { type: Number, required: true },
+});
+
+defineEmits(["activeIndex"]);
+</script>

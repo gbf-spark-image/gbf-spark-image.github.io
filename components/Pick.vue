@@ -4,11 +4,7 @@
       <div
         class="flex absolute inset-y-0 left-0 top-0 min-h-[2rem] items-center pointer-events-none"
       >
-        <img
-          src="/icon.png"
-          alt="icon"
-          class="h-full w-full object-contain p-1"
-        />
+        <img src="/icon.png" alt="icon" class="h-full object-contain p-1" />
       </div>
       <input
         type="search"
@@ -35,7 +31,7 @@
           :name="chara.name"
           :id="chara.id"
           @click.left="$emit('pickCardClick', 'new', chara)"
-          @click.right="$emit('pickCardClick', 'dupe', chara)"
+          @click.right.prevent="$emit('pickCardClick', 'dupe', chara)"
           :class="scrollFilter < animateMaxScroll ? 'pick-item' : ''"
         />
         <SelectCard
@@ -45,7 +41,7 @@
           :name="summon.name"
           :id="summon.id"
           @click.left="$emit('pickCardClick', 'summon', summon)"
-          @click.right="$emit('pickCardClick', 'summon', summon)"
+          @click.right.prevent="$emit('pickCardClick', 'summon', summon)"
           :class="scrollFilter < animateMaxScroll ? 'pick-item' : ''"
         />
       </transition-group>
