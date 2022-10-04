@@ -13,10 +13,10 @@
         class="flex flex-row mx-2 flex-wrap justify-center relative"
         :id="col.ref"
       >
-        <transition-group name="take" mode="">
+        <transition-group :name="animate ? 'take' : ''" mode="">
           <SelectCard
             v-for="(item, i) in col.list"
-            class="m-1 take-item"
+            :class="`m-1 ${animate ? 'take-item' : ''}`"
             :style="`width: ${col.itemWidth}%;`"
             :key="item.uuid || item.id + i"
             :id="item.id"
@@ -32,10 +32,14 @@
 </template>
 
 <script setup lang="ts">
+import Sortable from "sortablejs";
+
 const take = ref(null);
-const newCharsCol = ref(null);
-const dupeCharsCol = ref(null);
-const summonsCol = ref(null);
+const newCharsCol = ref(null as HTMLDivElement);
+const dupeCharsCol = ref(null as HTMLDivElement);
+const summonsCol = ref(null as HTMLDivElement);
+const animate = ref(false);
+const dragging = ref(false);
 
 const props = defineProps({
   spark: {
@@ -101,13 +105,31 @@ function updateItemSize() {
   });
 }
 
-const emits = defineEmits(["takeCardClick"]);
+const emits = defineEmits(["takeCardClick", "takeCardMove"]);
 
 watch(props.spark, () => {
   updateItemSize();
 });
 
 onMounted(() => {
+  sparkColumns.value.forEach((col) => {
+    Sortable.create(col.element[0].children[1], {
+      animation: 200,
+      onStart: (event) => {
+        animate.value = false;
+        nextTick(() => {
+          (event.item as HTMLDivElement).classList.add(
+            "sortable-ghost",
+            "sortable-choosen"
+          );
+        });
+      },
+      onEnd: (event) => {
+        animate.value = true;
+        emits("takeCardMove", col.list, event.oldIndex, event.newIndex);
+      },
+    });
+  });
   addEventListener("resize", (event) => {
     updateItemSize();
   });
@@ -121,22 +143,23 @@ onMounted(() => {
       clearInterval(interval);
     }
   }, 5);
+  nextTick(() => (animate.value = true));
 });
 </script>
 
 <style scoped>
 .take-item,
 .take-move {
-  transition: transform 0.2s, opacity 0.2s, width 0.2s, height 0.2s;
+  transition: transform 0.2s, scale 0.2s, opacity 0.2s, width 0.2s, height 0.2s;
 }
 
 .take-enter-from {
   opacity: 0;
-  transform: scale(0.01);
+  scale: 0;
 }
 
 .take-leave-active {
-  transition: transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, scale 0.2s, opacity 0.2s;
   position: absolute;
   top: var(--offsetTop);
   left: var(--offsetLeft);
@@ -145,6 +168,11 @@ onMounted(() => {
 
 .take-leave-to {
   opacity: 0;
-  transform: scale(0.01);
+  scale: 0;
+}
+
+.sortable-ghost {
+  transition: opacity 0s;
+  opacity: 0;
 }
 </style>

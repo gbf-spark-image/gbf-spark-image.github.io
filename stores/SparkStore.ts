@@ -67,34 +67,56 @@ export class Spark {
         .filter((e) => e !== undefined);
     }
     try {
-      const decompressedSpark = decompressFromEncodedURIComponent(
+      const decompressedSparkStrings = decompressFromEncodedURIComponent(
         serializedSparkString
-      )
-        .replaceAll(",", " , ")
-        .split(",")
-        .map((e: string) => e.replaceAll(" ", ""));
-      const keys: ("new" | "dupe" | "summon")[] = ["new", "dupe", "summon"];
+      ).split(",");
       const spark = new Spark();
-      decompressedSpark.forEach((e: string, i: number) =>
-        parseList(e, i).forEach((chara) => spark.add(keys[i], chara))
-      );
+      decompressedSparkStrings.forEach((s: string, i: number) => {
+        parseList(s, i).forEach((item) => {
+          switch (i) {
+            case 0:
+              spark.add("new", item as CharaInfo);
+              break;
+            case 1:
+              spark.add("dupe", item as CharaInfo);
+              break;
+            case 2:
+              spark.add("summon", item as SummonInfo);
+              break;
+          }
+        });
+      });
       return spark;
     } catch (err) {
       return new Spark();
     }
   }
 
-  add(key: "new" | "dupe" | "summon", item: CharaInfo | SummonInfo) {
+  add(key: "new" | "dupe", item: CharaInfo, index?: number): void;
+  add(key: "summon", item: SummonInfo, index?: number): void;
+  add(
+    key: "new" | "dupe" | "summon",
+    item: CharaInfo | SummonInfo,
+    index = Infinity
+  ) {
     item = Object.assign({}, item);
     item.uuid = uuid();
-    if (key === "new") {
-      this.newCharaList.push(item as CharaInfo);
-      this.newCharaList.splice(0, 0);
-    } else if (key === "dupe") {
-      this.dupeCharaList.push(item as CharaInfo);
-    } else if (key === "summon") {
-      this.summonList.push(item as SummonInfo);
+    switch (key) {
+      case "new":
+        this.newCharaList.splice(index, 0, item as CharaInfo);
+        break;
+      case "dupe":
+        this.dupeCharaList.splice(index, 0, item as CharaInfo);
+        break;
+      case "summon":
+        this.summonList.splice(index, 0, item as SummonInfo);
+        break;
     }
+  }
+
+  move(list: CharaInfo[] | SummonInfo[], from: number, to: number) {
+    const item = list.splice(from, 1);
+    list.splice(to, 0, ...item);
   }
 
   remove(index: number, array: CharaInfo[] | SummonInfo[]) {
@@ -106,9 +128,9 @@ export class Spark {
   }
 
   clear() {
-    this.newCharaList.splice(0, this.newCharaList.length);
-    this.dupeCharaList.splice(0, this.dupeCharaList.length);
-    this.summonList.splice(0, this.summonList.length);
+    this.newCharaList.length = 0;
+    this.dupeCharaList.length = 0;
+    this.summonList.length = 0;
   }
 }
 

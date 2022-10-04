@@ -6,6 +6,7 @@
       class="w-full xl:w-2/3 h-2/3 xl:h-full"
       :spark="spark"
       @take-card-click="removeFromSpark"
+      @take-card-move="moveSparkItem"
     />
     <div
       class="min-h-[33.333333%] h-1/3 w-full xl:w-1/3 xl:h-full flex flex-row xl:flex-col gap-2"
@@ -28,4 +29,5 @@ const spark = useSparkStore().currentSpark;
 
 const addToSpark = spark.add.bind(spark);
 const removeFromSpark = spark.remove.bind(spark);
+const moveSparkItem = spark.move.bind(spark);
 </script>
