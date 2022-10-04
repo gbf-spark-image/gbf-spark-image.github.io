@@ -35,9 +35,9 @@
 import Sortable from "sortablejs";
 
 const take = ref(null);
-const newCharsCol = ref(null as HTMLDivElement);
-const dupeCharsCol = ref(null as HTMLDivElement);
-const summonsCol = ref(null as HTMLDivElement);
+// const newCharsCol = ref(null as HTMLDivElement);
+// const dupeCharsCol = ref(null as HTMLDivElement);
+// const summonsCol = ref(null as HTMLDivElement);
 const animate = ref(false);
 const dragging = ref(false);
 
@@ -51,7 +51,7 @@ const props = defineProps({
 const sparkColumns = ref([
   {
     ref: "newCharsCol",
-    element: newCharsCol,
+    // element: newCharsCol,
     iconUrl: "/gem.jpg",
     list: props.spark.newCharaList,
     type: "char",
@@ -59,7 +59,7 @@ const sparkColumns = ref([
   },
   {
     ref: "dupeCharsCol",
-    element: dupeCharsCol,
+    // element: dupeCharsCol,
     iconUrl: "/gold-moon.jpg",
     list: props.spark.dupeCharaList,
     type: "char",
@@ -67,7 +67,7 @@ const sparkColumns = ref([
   },
   {
     ref: "summonsCol",
-    element: summonsCol,
+    // element: summonsCol,
     iconUrl: "/sunlight-stone.jpg",
     list: props.spark.summonList,
     type: "summ",
@@ -112,8 +112,8 @@ watch(props.spark, () => {
 });
 
 onMounted(() => {
-  sparkColumns.value.forEach((col) => {
-    Sortable.create(col.element[0].children[1], {
+  [...take.value.children].forEach((col, i) => {
+    Sortable.create(col.children[1], {
       animation: 200,
       onStart: (event) => {
         animate.value = false;
@@ -126,10 +126,16 @@ onMounted(() => {
       },
       onEnd: (event) => {
         animate.value = true;
-        emits("takeCardMove", col.list, event.oldIndex, event.newIndex);
+        emits(
+          "takeCardMove",
+          sparkColumns.value[i].list,
+          event.oldIndex,
+          event.newIndex
+        );
       },
     });
   });
+
   addEventListener("resize", (event) => {
     updateItemSize();
   });

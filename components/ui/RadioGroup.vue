@@ -11,7 +11,7 @@
         <input
           :id="`${i}`"
           type="radio"
-          v-model="activeIndex"
+          v-model="refActiveIndex"
           :value="i"
           name="list-radio"
           class="ml-3 absolute w-4 h-4"
@@ -28,10 +28,11 @@
 </template>
 
 <script setup lang="ts">
-defineProps({
+const props = defineProps({
   list: { type: Array, required: true },
   activeIndex: { type: Number, required: true },
 });
+const refActiveIndex = ref(props.activeIndex);
 
 defineEmits(["activeIndex"]);
 </script>
