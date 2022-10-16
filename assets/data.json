@@ -1,8 +1,26 @@
 {
     "x-version": "1665738107",
-    "gacha_id": "205621",
-    "latest_chara": 584,
+    "gacha_id": "205631",
+    "latest_chara": 587,
     "chara_list": [
+        {
+            "gacha_id": 587,
+            "id": "3040429000",
+            "name": "Florence",
+            "weapon": "Feast's Signum"
+        },
+        {
+            "gacha_id": 586,
+            "id": "3040428000",
+            "name": "Mugen",
+            "weapon": "Nioh"
+        },
+        {
+            "gacha_id": 585,
+            "id": "3040427000",
+            "name": "Lich",
+            "weapon": "Toothache and Suffering"
+        },
         {
             "gacha_id": 584,
             "id": "3040426000",
