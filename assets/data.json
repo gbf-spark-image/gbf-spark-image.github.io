@@ -1,8 +1,20 @@
 {
     "x-version": "1666961617",
-    "gacha_id": "205671",
-    "latest_chara": 587,
+    "gacha_id": "205681",
+    "latest_chara": 589,
     "chara_list": [
+        {
+            "gacha_id": 589,
+            "id": "3040431000",
+            "name": "Alliah",
+            "weapon": "Dowry Blade"
+        },
+        {
+            "gacha_id": 588,
+            "id": "3040430000",
+            "name": "Yuel and Societte",
+            "weapon": "Scarlet Sapphire"
+        },
         {
             "gacha_id": 587,
             "id": "3040429000",
