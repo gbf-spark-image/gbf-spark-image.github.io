@@ -1,8 +1,20 @@
 {
-    "x-version": "1668417120",
-    "gacha_id": "205731",
-    "latest_chara": 589,
+    "x-version": "1668657628",
+    "gacha_id": "205741",
+    "latest_chara": 591,
     "chara_list": [
+        {
+            "gacha_id": 591,
+            "id": "3040433000",
+            "name": "Therese",
+            "weapon": "Tanzanite Duellum"
+        },
+        {
+            "gacha_id": 590,
+            "id": "3040432000",
+            "name": "Adam",
+            "weapon": "Zroa Yeshana"
+        },
         {
             "gacha_id": 589,
             "id": "3040431000",
