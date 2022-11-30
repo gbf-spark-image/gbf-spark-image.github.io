@@ -1,8 +1,20 @@
 {
     "x-version": "1669693121",
-    "gacha_id": "205811",
-    "latest_chara": 591,
+    "gacha_id": "205821",
+    "latest_chara": 593,
     "chara_list": [
+        {
+            "gacha_id": 593,
+            "id": "3040435000",
+            "name": "Fiorito",
+            "weapon": "Training Wreath"
+        },
+        {
+            "gacha_id": 592,
+            "id": "3040434000",
+            "name": "Europa",
+            "weapon": "Saintly Fountain"
+        },
         {
             "gacha_id": 591,
             "id": "3040433000",
