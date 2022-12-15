@@ -1,8 +1,20 @@
 {
-    "x-version": "1670552393",
-    "gacha_id": "205861",
-    "latest_chara": 593,
+    "x-version": "1671026148",
+    "gacha_id": "205871",
+    "latest_chara": 595,
     "chara_list": [
+        {
+            "gacha_id": 595,
+            "id": "3040436000",
+            "name": "Cain",
+            "weapon": "Strawberry Slasher"
+        },
+        {
+            "gacha_id": 594,
+            "id": "3040437000",
+            "name": "Catura",
+            "weapon": "Second Boss of the Herd"
+        },
         {
             "gacha_id": 593,
             "id": "3040435000",
