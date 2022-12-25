@@ -1,14 +1,16 @@
 <template>
-  <button class="hover:bg-white hover:text-black rounded">
+  <button
+    @click="toggleFullscreen"
+    class="hover:bg-white hover:text-black rounded"
+  >
     <svg
       v-if="!isFullscreen"
-      @click="openFullscreen"
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
       stroke-width="1.5"
       stroke="currentColor"
-      class="w-8 h-8"
+      class="w-6 h-6"
     >
       <path
         stroke-linecap="round"
@@ -18,13 +20,12 @@
     </svg>
     <svg
       v-if="isFullscreen"
-      @click="closeFullscreen"
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
       stroke-width="1.5"
       stroke="currentColor"
-      class="w-8 h-8"
+      class="w-6 h-6"
     >
       <path
         stroke-linecap="round"
@@ -36,12 +37,21 @@
 </template>
 
 <script setup lang="ts">
-const el = (document as any).documentElement;
+const doc = document as any;
+const el = doc.documentElement;
 const isFullscreen = ref(
-  (document as any).fullscreenElement ||
-    (document as any).webkitFullscreenElement ||
-    (document as any).msFullscreenElement
+  (doc.fullscreenElement ||
+    doc.webkitFullscreenElement ||
+    doc.msFullscreenElement) != null
 );
+
+function toggleFullscreen() {
+  if (isFullscreen.value) {
+    closeFullscreen();
+  } else {
+    openFullscreen();
+  }
+}
 
 function openFullscreen() {
   if (el.requestFullscreen) {
@@ -54,26 +64,30 @@ function openFullscreen() {
 }
 
 function closeFullscreen() {
-  if ((document as any).exitFullscreen) {
-    (document as any).exitFullscreen();
-  } else if ((document as any).webkitExitFullscreen) {
-    (document as any).webkitExitFullscreen();
-  } else if ((document as any).msExitFullscreen) {
-    (document as any).msExitFullscreen();
+  if (!isFullscreen.value) {
+    return;
+  }
+  if (doc.exitFullscreen) {
+    doc.exitFullscreen();
+  } else if (doc.webkitExitFullscreen) {
+    doc.webkitExitFullscreen();
+  } else if (doc.msExitFullscreen) {
+    doc.msExitFullscreen();
   }
 }
 
 function setIsFullscreen() {
   isFullscreen.value =
-    (document as any).fullscreenElement ||
-    (document as any).webkitFullscreenElement ||
-    (document as any).msFullscreenElement;
+    doc.fullscreenElement ||
+    doc.webkitFullscreenElement ||
+    doc.msFullscreenElement;
 }
 
 onMounted(() => {
-  (document as any).addEventListener("fullscreenchange", setIsFullscreen);
+  doc.addEventListener("fullscreenchange", setIsFullscreen);
 });
 onUnmounted(() => {
-  (document as any).removeEventListener("fullscreenchange", setIsFullscreen);
+  doc.removeEventListener("fullscreenchange", setIsFullscreen);
+  closeFullscreen();
 });
 </script>

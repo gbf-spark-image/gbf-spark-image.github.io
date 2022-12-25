@@ -2,7 +2,7 @@
   <UiModal :active="active" @deactivate="$emit('deactivate')">
     <div class="text-center">
       <IconWarningRound class="mx-auto mb-4 w-14 h-14 text-gray-200" />
-      <h3 class="mb-5 text-lg font-normal text-gray-400">
+      <h3 class="mb-5 text-lg font-normal">
         Are you sure you want to clear the current spark ?<br />This action
         can't be undone.
       </h3>

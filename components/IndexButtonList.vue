@@ -27,7 +27,7 @@
       class="rounded-b xl:rounded-b-none xl:rounded-r"
       aria-label="next"
     >
-      <IconRightArrow class="w-6 h-6 m-auto" />
+      <IconCamera class="w-6 h-6 m-auto" />
     </UiLinkButton>
   </div>
 </template>

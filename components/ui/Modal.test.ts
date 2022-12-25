@@ -57,10 +57,12 @@ describe("UI Modal", () => {
     closeButton.trigger("click");
     expect(wrapper.emitted().deactivate).toHaveLength(1);
     const outside = wrapper.find("#outside");
-    outside.trigger("click");
+    outside.trigger("mousedown");
+    outside.trigger("mouseup");
     expect(wrapper.emitted().deactivate).toHaveLength(2);
     const inside = outside.find("#inside");
-    inside.trigger("click");
+    inside.trigger("mousedown");
+    inside.trigger("mouseup");
     expect(wrapper.emitted().deactivate).toHaveLength(2);
   });
 });

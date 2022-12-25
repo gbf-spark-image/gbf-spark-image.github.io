@@ -10,7 +10,9 @@
         <img :src="col.iconUrl" alt="icon" class="p-3 h-24 w-24" />
       </div>
       <div
-        class="flex flex-row mx-2 flex-wrap justify-center relative"
+        :class="`flex flex-row mx-2 flex-wrap justify-center relative ${
+          sparkMarker === col.ref ? 'spark-marker' : ''
+        }`"
         :id="col.ref"
       >
         <transition-group :name="animate ? 'take' : ''" mode="">
@@ -33,6 +35,9 @@
 
 <script setup lang="ts">
 import Sortable from "sortablejs";
+import { useSettingsStore } from "@/stores/SettingsStore";
+
+const settings = useSettingsStore().appSettings;
 
 const take = ref(null);
 // const newCharsCol = ref(null as HTMLDivElement);
@@ -74,6 +79,10 @@ const sparkColumns = ref([
     itemWidth: 100,
   },
 ]);
+
+const sparkMarker = computed(() =>
+  settings.sparkMarker > 2 ? "" : sparkColumns.value[settings.sparkMarker].ref
+);
 
 const selectCardMaxWidth = useMobileCheck().value ? 140 : 280;
 function updateItemSize() {
@@ -154,6 +163,25 @@ onMounted(() => {
 </script>
 
 <style scoped>
+.spark-marker > *::before {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 2%;
+  width: 20%;
+  height: 36%;
+  background-size: contain;
+  background-image: url("/cerulean-stone.jpg");
+  background-repeat: no-repeat;
+  content: "";
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+.spark-marker > *:last-child::before {
+  opacity: 1;
+}
+
 .take-item,
 .take-move {
   transition: transform 0.2s, scale 0.2s, opacity 0.2s, width 0.2s, height 0.2s;
@@ -178,7 +206,7 @@ onMounted(() => {
 }
 
 .sortable-ghost {
-  transition: opacity 0s;
+  transition: all 0s !important;
   opacity: 0;
 }
 </style>

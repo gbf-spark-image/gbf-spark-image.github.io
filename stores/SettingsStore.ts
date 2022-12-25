@@ -3,7 +3,9 @@ export const useSettingsStore = defineStore({
   state: () => {
     return {
       appSettings: reactive(
-        useLocalStorage("settings.appSettings", new appSettings())
+        useLocalStorage("settings.appSettings", new appSettings(), {
+          mergeDefaults: true,
+        })
       ),
     };
   },
@@ -11,10 +13,18 @@ export const useSettingsStore = defineStore({
 
 class appSettings {
   assetQuality: AssetQuality = AssetQuality.Auto;
+  sparkMarker: SparkMarker = SparkMarker.New;
 }
 
 export enum AssetQuality {
   Auto,
   High,
   Low,
+}
+
+export enum SparkMarker {
+  New,
+  Dupe,
+  Summon,
+  None,
 }

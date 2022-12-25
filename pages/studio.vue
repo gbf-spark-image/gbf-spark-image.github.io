@@ -1,19 +1,21 @@
 <template>
   <div class="p-3 w-screen h-screen flex flex-col flex-grow gap-3">
     <UiLinkButton
-      class="absolute left-0 top-0 m-5 opacity-80 hover:opacity-100"
+      class="absolute left-0 top-0 m-5 opacity-80 hover:opacity-100 rounded border-0"
       aria-label="back"
     >
       <IconBackArrow class="w-6 h-6 m-auto" />
     </UiLinkButton>
+
     <FullscreenButton
-      class="absolute right-0 top-0 opacity-80 hover:opacity-100 m-5"
+      class="absolute right-0 top-0 opacity-80 hover:opacity-100 m-5 py-2 px-4 duration-200"
       aria-label="fullscreen"
     />
+
     <Take id="take" :spark="spark" class="bg-black h-full" />
-    <div class="flex absolute bottom-0 left-0 w-full p-5">
+    <div class="flex absolute bottom-0 left-0 w-full p-5 vo">
       <UiButton
-        class="flex-grow basis-0 opacity-80 hover:opacity-100"
+        class="flex-grow basis-0 opacity-80 hover:opacity-100 rounded rounded-r-none"
         @click="downloadSparkImage"
         aria-label="download"
       >
@@ -21,7 +23,7 @@
       </UiButton>
       <UiButton
         ref="copyButton"
-        class="flex-grow basis-0 opacity-80 enabled:hover:opacity-100"
+        class="flex-grow basis-0 opacity-80 enabled:hover:opacity-100 rounded rounded-l-none white-icon"
         @click="generateSparkImage"
         aria-label="copy to clipboard"
         :disabled="!supported"
@@ -30,7 +32,8 @@
           <IconClipboardPaste class="w-6 h-6" />
           <span>Not supported</span>
         </div>
-        <IconClipboardPaste v-else class="w-6 h-6 m-auto" />
+        <IconClipboardPaste v-else class="w-6 h-6 m-auto white-icon" />
+        <IconCheck id="check-icon" class="w-6 h-6 m-auto green-icon" />
       </UiButton>
     </div>
 
@@ -81,11 +84,33 @@ async function generateSparkImage() {
   });
 
   async function greenButton(el: HTMLElement) {
-    el.classList.remove("enabled:hover:bg-white", "duration-200");
-    el.classList.add("bg-green-400");
-    await promiseTimeout(200);
-    el.classList.add("enabled:hover:bg-white", "duration-200");
-    el.classList.remove("bg-green-400");
+    el.classList.remove("enabled:hover:bg-white", "white-icon");
+    el.classList.add("bg-green-400", "green-icon", "opacity-100");
+    await promiseTimeout(1000);
+    el.classList.add("enabled:hover:bg-white", "white-icon");
+    el.classList.remove("bg-green-400", "green-icon", "opacity-100");
   }
 }
 </script>
+
+<style scoped>
+.white-icon .white-icon {
+  display: initial;
+  opacity: 1;
+}
+
+.white-icon .green-icon {
+  display: none;
+  opacity: 0;
+}
+
+.green-icon .white-icon {
+  display: none;
+  opacity: 0;
+}
+
+.green-icon .green-icon {
+  display: initial;
+  opacity: 1;
+}
+</style>

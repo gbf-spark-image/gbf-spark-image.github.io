@@ -9,17 +9,17 @@
     >
       <div class="flex items-center">
         <input
-          :id="`${i}`"
+          :id="name + i"
           type="radio"
           v-model="refActiveIndex"
           :value="i"
-          name="list-radio"
+          :name="name"
           class="ml-3 absolute w-4 h-4"
           @click="$emit('activeIndex', i)"
         />
         <label
-          :for="`${i}`"
-          class="py-3 pl-9 w-full text-sm font-medium text-gray-300"
+          :for="name + i"
+          class="py-3 pl-9 pr-3 w-full text-sm font-medium text-gray-300"
           >{{ item }}
         </label>
       </div>
@@ -29,6 +29,7 @@
 
 <script setup lang="ts">
 const props = defineProps({
+  name: { type: String, required: true },
   list: { type: Array, required: true },
   activeIndex: { type: Number, required: true },
 });

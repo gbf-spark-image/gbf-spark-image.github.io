@@ -21,7 +21,7 @@
         image
       </li>
       <li>
-        - When you are done click the arrow button to go to the studio page
+        - When you are done click the camera button to go to the studio page
       </li>
       <li>
         - Edit the settings until you are satisfied and download/copy the image
