@@ -13,10 +13,20 @@ export default defineNuxtConfig({
       title: "GBF Spark Image Maker",
       meta: [
         {
+          hid: "name",
+          name: "name",
+          content: "GBF Spark Image Maker",
+        },
+        {
           hid: "description",
           name: "description",
           content:
-            "Create images of your sparks and share them with your friends",
+            "Create images of your sparks and share them with your friends.",
+        },
+        {
+          hid: "og:image",
+          name: "og:image",
+          content: "https://gbf-spark-image.github.io/icon.png",
         },
       ],
       htmlAttrs: { lang: "en" },
