@@ -13,8 +13,8 @@ export default defineNuxtConfig({
       title: "GBF Spark Image Maker",
       meta: [
         {
-          hid: "name",
-          name: "name",
+          hid: "title",
+          name: "title",
           content: "GBF Spark Image Maker",
         },
         {
