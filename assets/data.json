@@ -1,8 +1,20 @@
 {
-    "x-version": "1671981994",
-    "gacha_id": "205911",
-    "latest_chara": 595,
+    "x-version": "1672198321",
+    "gacha_id": "205921",
+    "latest_chara": 597,
     "chara_list": [
+        {
+            "gacha_id": 597,
+            "id": "3040439000",
+            "name": "Erin",
+            "weapon": "Crystal Edge"
+        },
+        {
+            "gacha_id": 596,
+            "id": "3040438000",
+            "name": "Charlotta",
+            "weapon": "Cla\u00edomh Solais D\u00edon"
+        },
         {
             "gacha_id": 595,
             "id": "3040436000",
