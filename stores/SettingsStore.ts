@@ -1,3 +1,5 @@
+import { defineStore } from "@pinia/nuxt/node_modules/pinia";
+
 export const useSettingsStore = defineStore({
   id: "SettingsStore",
   state: () => {

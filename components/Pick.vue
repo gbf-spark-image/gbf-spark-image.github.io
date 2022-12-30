@@ -4,7 +4,11 @@
       <div
         class="flex absolute inset-y-0 left-0 top-0 min-h-[2rem] items-center pointer-events-none"
       >
-        <img src="/icon.png" alt="icon" class="h-full object-contain p-1" />
+        <img
+          src="/icon.png"
+          alt="icon"
+          class="h-full w-full object-contain p-1"
+        />
       </div>
       <input
         type="search"

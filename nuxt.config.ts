@@ -1,12 +1,11 @@
 export default defineNuxtConfig({
   ssr: false,
-  target: "static",
   nitro: {
     prerender: {
       routes: ["/studio"],
     },
   },
-  modules: ["@nuxtjs/tailwindcss", "@vueuse/nuxt"],
+  modules: ["@nuxtjs/tailwindcss", "@vueuse/nuxt", "@pinia/nuxt"],
   app: {
     head: {
       charset: "utf-8",
@@ -52,12 +51,4 @@ export default defineNuxtConfig({
       link: [{ rel: "icon", type: "image/png", href: "/icon.png" }],
     },
   },
-  buildModules: [
-    [
-      "@pinia/nuxt",
-      {
-        autoImports: ["defineStore", ["defineStore", "definePiniaStore"]],
-      },
-    ],
-  ],
 });

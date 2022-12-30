@@ -1,3 +1,5 @@
+import { defineStore } from "@pinia/nuxt/node_modules/pinia";
+
 import {
   compressToEncodedURIComponent,
   decompressFromEncodedURIComponent,
@@ -56,19 +58,22 @@ export class Spark {
         return [];
       }
       const prefix = `${index === 2 ? "2" : "3"}040`;
-      return string
-        .match(/.{1,3}/g)
-        .map((e) => `${prefix}${e}000`)
-        .map(
-          (e) =>
-            charaData.find((chara) => chara.id == e) ||
-            summonData.find((summon) => summon.id == e)
-        )
-        .filter((e) => e !== undefined);
+      return (
+        string
+          .match(/.{1,3}/g)
+          ?.map((e) => `${prefix}${e}000`)
+          .map(
+            (e) =>
+              charaData.find((chara) => chara.id == e) ||
+              summonData.find((summon) => summon.id == e)
+          )
+          .filter((e): e is { id: string; name: string } => e !== undefined) ??
+        []
+      );
     }
     try {
-      const decompressedSparkStrings = decompressFromEncodedURIComponent(
-        serializedSparkString
+      const decompressedSparkStrings = (
+        decompressFromEncodedURIComponent(serializedSparkString) ?? ""
       ).split(",");
       const spark = new Spark();
       decompressedSparkStrings.forEach((s: string, i: number) => {
