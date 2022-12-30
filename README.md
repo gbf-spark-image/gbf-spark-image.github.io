@@ -4,5 +4,5 @@
   - Find the character you want to add to the image with the search bar
   - Left click the character or summon to add it to the image
     - Use right click to add a character to the gold moon section of the image
-  - When you are done click the arrow button to go to the studio page
-  - Edit the settings until you are satisfied and download/copy the image
+  - When you are done click the camera button to go to the studio page
+  - Edit the settings until you are satisfied and download/copy the image 
