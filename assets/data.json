@@ -1,8 +1,26 @@
 {
     "x-version": "1672402318",
-    "gacha_id": "205921",
-    "latest_chara": 597,
+    "gacha_id": "205931",
+    "latest_chara": 600,
     "chara_list": [
+        {
+            "gacha_id": 600,
+            "id": "3040442000",
+            "name": "Ultimate Friday",
+            "weapon": "FRIED Spear"
+        },
+        {
+            "gacha_id": 599,
+            "id": "3040440000",
+            "name": "Michael",
+            "weapon": "Crimson Scale"
+        },
+        {
+            "gacha_id": 598,
+            "id": "3040441000",
+            "name": "Makura",
+            "weapon": "Leporidius"
+        },
         {
             "gacha_id": 597,
             "id": "3040439000",
@@ -2201,6 +2219,10 @@
         }
     ],
     "summon_list": [
+        {
+            "id": "2040417000",
+            "name": "Yatima"
+        },
         {
             "id": "2040416000",
             "name": "Hekate"
