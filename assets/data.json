@@ -1,8 +1,20 @@
 {
-    "x-version": "1673841927",
-    "gacha_id": "205991",
-    "latest_chara": 600,
+    "x-version": "1674046473",
+    "gacha_id": "206001",
+    "latest_chara": 602,
     "chara_list": [
+        {
+            "gacha_id": 602,
+            "id": "3040444000",
+            "name": "Amelia",
+            "weapon": "Shining Silver"
+        },
+        {
+            "gacha_id": 601,
+            "id": "3040443000",
+            "name": "Halluel and Malluel",
+            "weapon": "Eternal Signature"
+        },
         {
             "gacha_id": 600,
             "id": "3040442000",
