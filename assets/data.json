@@ -1,8 +1,20 @@
 {
-    "x-version": "1675088852",
-    "gacha_id": "206071",
-    "latest_chara": 602,
+    "x-version": "1675132033",
+    "gacha_id": "206081",
+    "latest_chara": 604,
     "chara_list": [
+        {
+            "gacha_id": 604,
+            "id": "3040446000",
+            "name": "Orchid",
+            "weapon": "In Full Whisker"
+        },
+        {
+            "gacha_id": 603,
+            "id": "3040445000",
+            "name": "Cendrillon",
+            "weapon": "Lame d'ourlet"
+        },
         {
             "gacha_id": 602,
             "id": "3040444000",
