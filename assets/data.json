@@ -1,8 +1,20 @@
 {
     "x-version": "1676283885",
-    "gacha_id": "206121",
-    "latest_chara": 604,
+    "gacha_id": "206131",
+    "latest_chara": 606,
     "chara_list": [
+        {
+            "gacha_id": 606,
+            "id": "3040448000",
+            "name": "Sen",
+            "weapon": "The Hand That Scritches"
+        },
+        {
+            "gacha_id": 605,
+            "id": "3040447000",
+            "name": "Sandalphon",
+            "weapon": "Nostalgic Coffee Jelly"
+        },
         {
             "gacha_id": 604,
             "id": "3040446000",
