@@ -1,8 +1,20 @@
 {
     "x-version": "1677463458",
-    "gacha_id": "206211",
-    "latest_chara": 606,
+    "gacha_id": "206221",
+    "latest_chara": 608,
     "chara_list": [
+        {
+            "gacha_id": 608,
+            "id": "3040450000",
+            "name": "Hekate",
+            "weapon": "Lulling Flambeau"
+        },
+        {
+            "gacha_id": 607,
+            "id": "3040449000",
+            "name": "Lu Woh",
+            "weapon": "Imperious Fury"
+        },
         {
             "gacha_id": 606,
             "id": "3040448000",
@@ -2255,6 +2267,10 @@
         }
     ],
     "summon_list": [
+        {
+            "id": "2040418000",
+            "name": "Fediel"
+        },
         {
             "id": "2040417000",
             "name": "Yatima"
