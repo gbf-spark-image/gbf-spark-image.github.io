@@ -1,5 +1,6 @@
 <template>
   <div class="p-3 w-screen h-screen flex flex-col flex-grow gap-3">
+    <Take id="take" :spark="spark" class="bg-black h-full" />
     <UiLinkButton
       class="absolute left-0 top-0 m-5 opacity-80 hover:opacity-100 rounded border-0"
       aria-label="back"
@@ -12,7 +13,6 @@
       aria-label="fullscreen"
     />
 
-    <Take id="take" :spark="spark" class="bg-black h-full" />
     <div class="flex absolute bottom-0 left-0 w-full p-5 vo">
       <UiButton
         class="flex-grow basis-0 opacity-80 hover:opacity-100 rounded rounded-r-none"
@@ -23,7 +23,7 @@
       </UiButton>
       <UiButton
         ref="copyButton"
-        class="flex-grow basis-0 opacity-80 enabled:hover:opacity-100 rounded rounded-l-none white-icon"
+        class="flex-grow basis-0 opacity-80 enabled:hover:opacity-100 border-x-0 white-icon"
         @click="generateSparkImage"
         aria-label="copy to clipboard"
         :disabled="!supported"
@@ -34,6 +34,17 @@
         </div>
         <IconClipboardPaste v-else class="w-6 h-6 m-auto white-icon" />
         <IconCheck id="check-icon" class="w-6 h-6 m-auto green-icon" />
+      </UiButton>
+      <UiButton
+        class="flex-grow basis-0 opacity-80 enabled:hover:opacity-100 rounded rounded-l-none white-icon"
+        aria-label="settings"
+        @click="settingsModal = true"
+      >
+        <IconSettings class="w-6 h-6 m-auto" />
+        <SettingsModal
+          :active="settingsModal"
+          @deactivate="settingsModal = false"
+        />
       </UiButton>
     </div>
 
@@ -54,6 +65,7 @@ const route = useRoute();
 
 const supported = typeof ClipboardItem !== "undefined";
 const copyButton = ref(null);
+const settingsModal = ref(false);
 let spark = ref(Spark.deserialize(route.query.spark as string));
 
 function downloadSparkImage() {

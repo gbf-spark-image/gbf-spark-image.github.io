@@ -27,6 +27,23 @@
         />
       </div>
 
+      <div>
+        <div>Stats</div>
+        <div class="flex">
+          <UiToggle toggle-id="ssr-rate" v-model="appSettings.showSSRRate">
+            <label for="ssr-rate" class="mx-2 flex gap-1">
+              <span class="my-auto"> SSR rate over </span>
+              <UiInput
+                type="number"
+                v-model="appSettings.pullNumberStr"
+                class="w-16"
+              />
+              <span class="my-auto">pulls.</span>
+            </label>
+          </UiToggle>
+        </div>
+      </div>
+
       <!-- <div>
         <span>Export code</span>
 
@@ -57,7 +74,7 @@ import { useSparkStore } from "@/stores/SparkStore";
 const appSettings = useSettingsStore().appSettings;
 const currentSpark = useSparkStore().currentSpark;
 
-function enumToList(enum_) {
+function enumToList(enum_: object) {
   return Object.values(enum_).slice(0, Object.values(enum_).length / 2);
 }
 
