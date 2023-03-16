@@ -1,8 +1,26 @@
 {
-    "x-version": "1678681868",
-    "gacha_id": "206261",
-    "latest_chara": 608,
+    "x-version": "1678933097",
+    "gacha_id": "206271",
+    "latest_chara": 611,
     "chara_list": [
+        {
+            "gacha_id": 611,
+            "id": "3040453000",
+            "name": "Azusa",
+            "weapon": "Shishisosho"
+        },
+        {
+            "gacha_id": 610,
+            "id": "3040454000",
+            "name": "Monika",
+            "weapon": "Marine Ace"
+        },
+        {
+            "gacha_id": 609,
+            "id": "3040452000",
+            "name": "Ewiyar",
+            "weapon": "Piercing Galewing"
+        },
         {
             "gacha_id": 608,
             "id": "3040450000",
