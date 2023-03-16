@@ -16,6 +16,8 @@ export const useSettingsStore = defineStore({
 class appSettings {
   assetQuality: AssetQuality = AssetQuality.Auto;
   sparkMarker: SparkMarker = SparkMarker.New;
+  showSSRRate: boolean = false;
+  pullNumberStr: string = "300";
 }
 
 export enum AssetQuality {

@@ -1,5 +1,8 @@
 <template>
-  <div ref="take" class="border border-neutral-300 flex overflow-hidden">
+  <div
+    ref="take"
+    class="relative border border-neutral-300 flex overflow-hidden"
+  >
     <div
       v-for="col in sparkColumns"
       :ref="col.ref"
@@ -30,12 +33,20 @@
         </transition-group>
       </div>
     </div>
+    <span
+      v-if="settings.showSSRRate"
+      class="absolute bottom-0 right-0 m-2 p-1 text-lg bg-black bg-opacity-60 rounded"
+    >
+      SSR Rate :
+      {{ ((ssrCount / parseInt(settings.pullNumberStr)) * 100).toFixed(2) }}%
+      <span class="text-sm">({{ ssrCount }}/{{ settings.pullNumberStr }})</span>
+    </span>
   </div>
 </template>
 
 <script setup lang="ts">
 import Sortable from "sortablejs";
-import { useSettingsStore } from "@/stores/SettingsStore";
+import { useSettingsStore, SparkMarker } from "@/stores/SettingsStore";
 
 const settings = useSettingsStore().appSettings;
 
@@ -84,6 +95,25 @@ const sparkMarker = computed(() =>
   settings.sparkMarker > 2 ? "" : sparkColumns.value[settings.sparkMarker].ref
 );
 
+const ssrCount = computed(
+  () =>
+    Math.max(
+      0,
+      props.spark.newCharaList.length -
+        (settings.sparkMarker == SparkMarker.New ? 1 : 0)
+    ) +
+    Math.max(
+      0,
+      props.spark.dupeCharaList.length -
+        (settings.sparkMarker == SparkMarker.Dupe ? 1 : 0)
+    ) +
+    Math.max(
+      0,
+      props.spark.summonList.length -
+        (settings.sparkMarker == SparkMarker.Summon ? 1 : 0)
+    )
+);
+
 const selectCardMaxWidth = useMobileCheck().value ? 140 : 280;
 function updateItemSize() {
   if (!take.value) {
@@ -121,7 +151,7 @@ watch(props.spark, () => {
 });
 
 onMounted(() => {
-  [...take.value.children].forEach((col, i) => {
+  [...take.value.children].splice(0, 3).forEach((col, i) => {
     Sortable.create(col.children[1], {
       animation: 200,
       onStart: (event) => {
