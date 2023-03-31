@@ -1,8 +1,20 @@
 {
     "x-version": "1680151803",
-    "gacha_id": "206321",
-    "latest_chara": 611,
+    "gacha_id": "206331",
+    "latest_chara": 613,
     "chara_list": [
+        {
+            "gacha_id": 613,
+            "id": "3040455000",
+            "name": "Nezha",
+            "weapon": "Embroidered Handballs"
+        },
+        {
+            "gacha_id": 612,
+            "id": "3040456000",
+            "name": "Ilsa",
+            "weapon": "White Peony Pouch"
+        },
         {
             "gacha_id": 611,
             "id": "3040453000",
