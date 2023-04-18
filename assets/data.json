@@ -1,8 +1,20 @@
 {
-    "x-version": "1681446050",
-    "gacha_id": "206381",
-    "latest_chara": 613,
+    "x-version": "1681793656",
+    "gacha_id": "206391",
+    "latest_chara": 615,
     "chara_list": [
+        {
+            "gacha_id": 615,
+            "id": "3040459000",
+            "name": "Jasmine",
+            "weapon": "Herb Basket"
+        },
+        {
+            "gacha_id": 614,
+            "id": "3040458000",
+            "name": "Yaia",
+            "weapon": "Special Fried Rice"
+        },
         {
             "gacha_id": 613,
             "id": "3040455000",
