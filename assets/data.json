@@ -1,8 +1,20 @@
 {
     "x-version": "1682700676",
-    "gacha_id": "206421",
-    "latest_chara": 615,
+    "gacha_id": "206431",
+    "latest_chara": 617,
     "chara_list": [
+        {
+            "gacha_id": 617,
+            "id": "3040460000",
+            "name": "Caro",
+            "weapon": "Teardrop Mandolin"
+        },
+        {
+            "gacha_id": 616,
+            "id": "3040461000",
+            "name": "Cantate",
+            "weapon": "Violino della Memoria"
+        },
         {
             "gacha_id": 615,
             "id": "3040459000",
