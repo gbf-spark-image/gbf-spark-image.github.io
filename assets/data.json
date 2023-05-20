@@ -1,8 +1,20 @@
 {
     "x-version": "1684378465",
-    "gacha_id": "206531",
-    "latest_chara": 617,
+    "gacha_id": "206541",
+    "latest_chara": 619,
     "chara_list": [
+        {
+            "gacha_id": 619,
+            "id": "3040463000",
+            "name": "Lily",
+            "weapon": "Frigorific Summer Parasol"
+        },
+        {
+            "gacha_id": 618,
+            "id": "3040462000",
+            "name": "Icarus",
+            "weapon": "Dreadful Flamesword"
+        },
         {
             "gacha_id": 617,
             "id": "3040460000",
