@@ -1,8 +1,20 @@
 {
     "x-version": "1685336462",
-    "gacha_id": "206571",
-    "latest_chara": 619,
+    "gacha_id": "206581",
+    "latest_chara": 621,
     "chara_list": [
+        {
+            "gacha_id": 621,
+            "id": "3040465000",
+            "name": "Korwa",
+            "weapon": "Exuberant Lance"
+        },
+        {
+            "gacha_id": 620,
+            "id": "3040464000",
+            "name": "Drusilla",
+            "weapon": "Little Vermilion"
+        },
         {
             "gacha_id": 619,
             "id": "3040463000",
