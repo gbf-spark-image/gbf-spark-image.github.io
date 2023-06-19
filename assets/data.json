@@ -1,8 +1,20 @@
 {
-    "x-version": "1686903788",
-    "gacha_id": "206631",
-    "latest_chara": 621,
+    "x-version": "1687142515",
+    "gacha_id": "206641",
+    "latest_chara": 623,
     "chara_list": [
+        {
+            "gacha_id": 623,
+            "id": "3040466000",
+            "name": "Baal",
+            "weapon": "Solomon's Accelerator"
+        },
+        {
+            "gacha_id": 622,
+            "id": "3040467000",
+            "name": "Cosmos",
+            "weapon": "Diaitesia"
+        },
         {
             "gacha_id": 621,
             "id": "3040465000",
