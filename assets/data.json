@@ -1,8 +1,20 @@
 {
     "x-version": "1689311091",
-    "gacha_id": "206761",
-    "latest_chara": 625,
+    "gacha_id": "206771",
+    "latest_chara": 627,
     "chara_list": [
+        {
+            "gacha_id": 627,
+            "id": "3040471000",
+            "name": "Vaseraga",
+            "weapon": "Beach Grynoth"
+        },
+        {
+            "gacha_id": 626,
+            "id": "3040470000",
+            "name": "Enyo",
+            "weapon": "Splash Howl"
+        },
         {
             "gacha_id": 625,
             "id": "3040469000",
