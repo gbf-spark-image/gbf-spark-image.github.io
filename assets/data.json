@@ -1,8 +1,32 @@
 {
     "x-version": "1690529306",
-    "gacha_id": "206811",
-    "latest_chara": 627,
+    "gacha_id": "206821",
+    "latest_chara": 631,
     "chara_list": [
+        {
+            "gacha_id": 631,
+            "id": "3040473000",
+            "name": "Yurius",
+            "weapon": "Tentacular Javelin"
+        },
+        {
+            "gacha_id": 630,
+            "id": "3040475000",
+            "name": "Dorothy and Claudia",
+            "weapon": "Shine and Silence"
+        },
+        {
+            "gacha_id": 629,
+            "id": "3040474000",
+            "name": "Aliza",
+            "weapon": "Sunset Blaze"
+        },
+        {
+            "gacha_id": 628,
+            "id": "3040472000",
+            "name": "Fediel",
+            "weapon": "Fediel Float"
+        },
         {
             "gacha_id": 627,
             "id": "3040471000",
@@ -2381,6 +2405,10 @@
         }
     ],
     "summon_list": [
+        {
+            "id": "2040420000",
+            "name": "Cerberus"
+        },
         {
             "id": "2040418000",
             "name": "Fediel"
