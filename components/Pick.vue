@@ -35,7 +35,7 @@
           :name="chara.name"
           :id="chara.id"
           @click.left="$emit('pickCardClick', 'new', chara)"
-          @click.right.prevent="$emit('pickCardClick', 'dupe', chara)"
+          @contextmenu="$emit('pickCardClick', 'dupe', chara)"
           :class="scrollFilter < animateMaxScroll ? 'pick-item' : ''"
         />
         <SelectCard
@@ -72,14 +72,14 @@ const summonList = computed(() => {
     .slice(0, Math.max(0, scrollFilter.value - charaList.value.length));
 });
 
-function charaFilter(chara: typeof charaData[number]) {
+function charaFilter(chara: (typeof charaData)[number]) {
   return (
     chara.name.toLowerCase().includes(filter.value.toLowerCase()) ||
     chara.weapon.toLowerCase().includes(filter.value.toLowerCase())
   );
 }
 
-function summonFilter(summon: typeof summonData[number]) {
+function summonFilter(summon: (typeof summonData)[number]) {
   return summon.name.toLowerCase().includes(filter.value.toLowerCase());
 }
 
