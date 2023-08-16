@@ -1,8 +1,26 @@
 {
     "x-version": "1692144914",
-    "gacha_id": "206871",
-    "latest_chara": 631,
+    "gacha_id": "206881",
+    "latest_chara": 634,
     "chara_list": [
+        {
+            "gacha_id": 634,
+            "id": "3040480000",
+            "name": "Seruel",
+            "weapon": "Midsummer's Repose"
+        },
+        {
+            "gacha_id": 633,
+            "id": "3040479000",
+            "name": "Anila",
+            "weapon": "Eighth Shear of the Flock"
+        },
+        {
+            "gacha_id": 632,
+            "id": "3040478000",
+            "name": "Vania",
+            "weapon": "Flowering Twilight"
+        },
         {
             "gacha_id": 631,
             "id": "3040473000",
@@ -2405,6 +2423,10 @@
         }
     ],
     "summon_list": [
+        {
+            "id": "2040423000",
+            "name": "Tyrannosaurus"
+        },
         {
             "id": "2040420000",
             "name": "Cerberus"
