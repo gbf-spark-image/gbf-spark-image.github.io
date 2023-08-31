@@ -1,8 +1,20 @@
 {
     "x-version": "1693313032",
-    "gacha_id": "206961",
-    "latest_chara": 634,
+    "gacha_id": "206971",
+    "latest_chara": 636,
     "chara_list": [
+        {
+            "gacha_id": 636,
+            "id": "3040482000",
+            "name": "Meg and Mari",
+            "weapon": "Marriage Ring"
+        },
+        {
+            "gacha_id": 635,
+            "id": "3040481000",
+            "name": "Ragazzo",
+            "weapon": "Crimson Stinger"
+        },
         {
             "gacha_id": 634,
             "id": "3040480000",
