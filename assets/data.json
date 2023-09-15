@@ -1,8 +1,20 @@
 {
-    "x-version": "1694425778",
-    "gacha_id": "207011",
-    "latest_chara": 636,
+    "x-version": "1694708887",
+    "gacha_id": "207021",
+    "latest_chara": 638,
     "chara_list": [
+        {
+            "gacha_id": 638,
+            "id": "3040483000",
+            "name": "Paris",
+            "weapon": "Dignita del Conte"
+        },
+        {
+            "gacha_id": 637,
+            "id": "3040486000",
+            "name": "Kaguya",
+            "weapon": "Kaguya's Folding Fan"
+        },
         {
             "gacha_id": 636,
             "id": "3040482000",
