@@ -1,8 +1,20 @@
 {
     "x-version": "1695959213",
-    "gacha_id": "207061",
-    "latest_chara": 638,
+    "gacha_id": "207071",
+    "latest_chara": 640,
     "chara_list": [
+        {
+            "gacha_id": 640,
+            "id": "3040484000",
+            "name": "Catherine",
+            "weapon": "Night Rider"
+        },
+        {
+            "gacha_id": 639,
+            "id": "3040485000",
+            "name": "Siegfried",
+            "weapon": "Black Dragonslayer Sword"
+        },
         {
             "gacha_id": 638,
             "id": "3040483000",
