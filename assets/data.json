@@ -1,8 +1,26 @@
 {
-    "x-version": "1697509056",
-    "gacha_id": "207121",
-    "latest_chara": 640,
+    "x-version": "1697597014",
+    "gacha_id": "207131",
+    "latest_chara": 643,
     "chara_list": [
+        {
+            "gacha_id": 643,
+            "id": "3040489000",
+            "name": "Dante",
+            "weapon": "Spooky Mew"
+        },
+        {
+            "gacha_id": 642,
+            "id": "3040487000",
+            "name": "Tikoh",
+            "weapon": "Syringe or Treat"
+        },
+        {
+            "gacha_id": 641,
+            "id": "3040488000",
+            "name": "Vikala",
+            "weapon": "First Fright of the Mischief"
+        },
         {
             "gacha_id": 640,
             "id": "3040484000",
