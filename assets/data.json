@@ -1,8 +1,20 @@
 {
     "x-version": "1698381604",
-    "gacha_id": "207201",
-    "latest_chara": 643,
+    "gacha_id": "207211",
+    "latest_chara": 645,
     "chara_list": [
+        {
+            "gacha_id": 645,
+            "id": "3040491000",
+            "name": "Utsusemi",
+            "weapon": "Ornate Paper Pinwheel"
+        },
+        {
+            "gacha_id": 644,
+            "id": "3040490000",
+            "name": "Sevilbarra",
+            "weapon": "Sou-ou Momijimaru"
+        },
         {
             "gacha_id": 643,
             "id": "3040489000",
@@ -2477,6 +2489,10 @@
         }
     ],
     "summon_list": [
+        {
+            "id": "2040424000",
+            "name": "Noire"
+        },
         {
             "id": "2040423000",
             "name": "Tyrannosaurus"
