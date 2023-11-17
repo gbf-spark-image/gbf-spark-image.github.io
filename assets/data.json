@@ -1,8 +1,26 @@
 {
-    "x-version": "1699861362",
-    "gacha_id": "207261",
-    "latest_chara": 645,
+    "x-version": "1700116395",
+    "gacha_id": "207271",
+    "latest_chara": 648,
     "chara_list": [
+        {
+            "gacha_id": 648,
+            "id": "3040494000",
+            "name": "Volenna",
+            "weapon": "Amyna Xiphos"
+        },
+        {
+            "gacha_id": 647,
+            "id": "3040493000",
+            "name": "Barawa and Sarya",
+            "weapon": "Logic Breaker"
+        },
+        {
+            "gacha_id": 646,
+            "id": "3040492000",
+            "name": "Gabriel",
+            "weapon": "Gospel of Water and Sky"
+        },
         {
             "gacha_id": 645,
             "id": "3040491000",
