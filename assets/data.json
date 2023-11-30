@@ -1,8 +1,20 @@
 {
     "x-version": "1701149059",
-    "gacha_id": "207301",
-    "latest_chara": 648,
+    "gacha_id": "207311",
+    "latest_chara": 650,
     "chara_list": [
+        {
+            "gacha_id": 650,
+            "id": "3040496000",
+            "name": "Illnott",
+            "weapon": "Blockbuster"
+        },
+        {
+            "gacha_id": 649,
+            "id": "3040495000",
+            "name": "Yuni",
+            "weapon": "Nox Meteorum"
+        },
         {
             "gacha_id": 648,
             "id": "3040494000",
