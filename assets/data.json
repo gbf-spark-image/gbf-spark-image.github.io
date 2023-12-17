@@ -1,8 +1,20 @@
 {
     "x-version": "1702626703",
-    "gacha_id": "207361",
-    "latest_chara": 650,
+    "gacha_id": "207371",
+    "latest_chara": 652,
     "chara_list": [
+        {
+            "gacha_id": 652,
+            "id": "3040498000",
+            "name": "Noa",
+            "weapon": "Ornamented Paddle"
+        },
+        {
+            "gacha_id": 651,
+            "id": "3040497000",
+            "name": "Helel ben Shalem",
+            "weapon": "Bab-Bell Rendezvous"
+        },
         {
             "gacha_id": 650,
             "id": "3040496000",
