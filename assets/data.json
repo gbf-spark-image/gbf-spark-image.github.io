@@ -1,8 +1,20 @@
 {
-    "x-version": "1703477946",
-    "gacha_id": "207401",
-    "latest_chara": 652,
+    "x-version": "1703760972",
+    "gacha_id": "207411",
+    "latest_chara": 654,
     "chara_list": [
+        {
+            "gacha_id": 654,
+            "id": "3040500000",
+            "name": "Lowain",
+            "weapon": "Dom Party-On"
+        },
+        {
+            "gacha_id": 653,
+            "id": "3040499000",
+            "name": "Zeta",
+            "weapon": "Overrider"
+        },
         {
             "gacha_id": 652,
             "id": "3040498000",
