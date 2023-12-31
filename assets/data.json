@@ -1,8 +1,26 @@
 {
     "x-version": "1703778497",
-    "gacha_id": "207411",
-    "latest_chara": 654,
+    "gacha_id": "207421",
+    "latest_chara": 657,
     "chara_list": [
+        {
+            "gacha_id": 657,
+            "id": "3040503000",
+            "name": "Tyra",
+            "weapon": "Buddysaurus Rex"
+        },
+        {
+            "gacha_id": 656,
+            "id": "3040501000",
+            "name": "Uriel",
+            "weapon": "Pillardriver"
+        },
+        {
+            "gacha_id": 655,
+            "id": "3040502000",
+            "name": "Payila",
+            "weapon": "Dracosius"
+        },
         {
             "gacha_id": 654,
             "id": "3040500000",
@@ -2543,6 +2561,10 @@
         }
     ],
     "summon_list": [
+        {
+            "id": "2040425000",
+            "name": "Triple Zero"
+        },
         {
             "id": "2040424000",
             "name": "Noire"
