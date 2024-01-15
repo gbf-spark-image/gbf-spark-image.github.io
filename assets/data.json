@@ -1,8 +1,20 @@
 {
-    "x-version": "1705068373",
-    "gacha_id": "207461",
-    "latest_chara": 657,
+    "x-version": "1705303190",
+    "gacha_id": "207471",
+    "latest_chara": 659,
     "chara_list": [
+        {
+            "gacha_id": 659,
+            "id": "3040507000",
+            "name": "Deliford",
+            "weapon": "Piercing Momentum"
+        },
+        {
+            "gacha_id": 658,
+            "id": "3040508000",
+            "name": "Olivia",
+            "weapon": "Duskwing Staff"
+        },
         {
             "gacha_id": 657,
             "id": "3040503000",
