@@ -1,8 +1,20 @@
 {
     "x-version": "1706589117",
-    "gacha_id": "207551",
-    "latest_chara": 659,
+    "gacha_id": "207561",
+    "latest_chara": 661,
     "chara_list": [
+        {
+            "gacha_id": 661,
+            "id": "3040510000",
+            "name": "Robertina",
+            "weapon": "Nastro Viola"
+        },
+        {
+            "gacha_id": 660,
+            "id": "3040509000",
+            "name": "Juri",
+            "weapon": "Young Champion's Kilij"
+        },
         {
             "gacha_id": 659,
             "id": "3040507000",
