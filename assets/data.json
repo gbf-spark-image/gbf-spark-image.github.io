@@ -1,8 +1,20 @@
 {
     "x-version": "1707794863",
-    "gacha_id": "207601",
-    "latest_chara": 661,
+    "gacha_id": "207611",
+    "latest_chara": 663,
     "chara_list": [
+        {
+            "gacha_id": 663,
+            "id": "3040511000",
+            "name": "Nehan",
+            "weapon": "Blazing Rakan"
+        },
+        {
+            "gacha_id": 662,
+            "id": "3040512000",
+            "name": "Cidala",
+            "weapon": "Third Stripe of the Streak"
+        },
         {
             "gacha_id": 661,
             "id": "3040510000",
