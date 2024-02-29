@@ -1,8 +1,26 @@
 {
     "x-version": "1709089058",
-    "gacha_id": "207691",
-    "latest_chara": 663,
+    "gacha_id": "207701",
+    "latest_chara": 666,
     "chara_list": [
+        {
+            "gacha_id": 666,
+            "id": "3040513000",
+            "name": "Richard",
+            "weapon": "Royal Straight Flush"
+        },
+        {
+            "gacha_id": 665,
+            "id": "3040514000",
+            "name": "Sabrina",
+            "weapon": "Guardian of Radlith"
+        },
+        {
+            "gacha_id": 664,
+            "id": "3040515000",
+            "name": "Sandalphon",
+            "weapon": "Efes"
+        },
         {
             "gacha_id": 663,
             "id": "3040511000",
