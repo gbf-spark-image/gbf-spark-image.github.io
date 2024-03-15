@@ -1,8 +1,26 @@
 {
-    "x-version": "1710362956",
-    "gacha_id": "207741",
-    "latest_chara": 666,
+    "x-version": "1710480035",
+    "gacha_id": "207751",
+    "latest_chara": 669,
     "chara_list": [
+        {
+            "gacha_id": 669,
+            "id": "3040517000",
+            "name": "Magus",
+            "weapon": "Beyond Demise"
+        },
+        {
+            "gacha_id": 668,
+            "id": "3040518000",
+            "name": "Horus",
+            "weapon": "Was-Scepter of Horus"
+        },
+        {
+            "gacha_id": 667,
+            "id": "3040519000",
+            "name": "Fenie",
+            "weapon": "Phoenix's Torch"
+        },
         {
             "gacha_id": 666,
             "id": "3040513000",
