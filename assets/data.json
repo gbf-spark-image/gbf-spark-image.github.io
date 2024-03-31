@@ -1,8 +1,20 @@
 {
     "x-version": "1711634883",
-    "gacha_id": "207801",
-    "latest_chara": 669,
+    "gacha_id": "207811",
+    "latest_chara": 671,
     "chara_list": [
+        {
+            "gacha_id": 671,
+            "id": "3040521000",
+            "name": "Elmott",
+            "weapon": "Summer Night Blaze"
+        },
+        {
+            "gacha_id": 670,
+            "id": "3040520000",
+            "name": "De La Fille",
+            "weapon": "Fleuret de Diamant"
+        },
         {
             "gacha_id": 669,
             "id": "3040517000",
