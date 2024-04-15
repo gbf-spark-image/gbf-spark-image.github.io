@@ -1,8 +1,20 @@
 {
-    "x-version": "1712615833",
-    "gacha_id": "207851",
-    "latest_chara": 671,
+    "x-version": "1713168582",
+    "gacha_id": "207861",
+    "latest_chara": 673,
     "chara_list": [
+        {
+            "gacha_id": 673,
+            "id": "3040523000",
+            "name": "Spinnah",
+            "weapon": "Spin Blade V2"
+        },
+        {
+            "gacha_id": 672,
+            "id": "3040524000",
+            "name": "Anne",
+            "weapon": "Codex of Mysteria"
+        },
         {
             "gacha_id": 671,
             "id": "3040521000",
