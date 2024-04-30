@@ -1,8 +1,20 @@
 {
     "x-version": "1714098255",
-    "gacha_id": "207941",
-    "latest_chara": 673,
+    "gacha_id": "207951",
+    "latest_chara": 675,
     "chara_list": [
+        {
+            "gacha_id": 675,
+            "id": "3040530000",
+            "name": "Chloe",
+            "weapon": "Glam Brush"
+        },
+        {
+            "gacha_id": 674,
+            "id": "3040529000",
+            "name": "Kolulu",
+            "weapon": "Offbeat"
+        },
         {
             "gacha_id": 673,
             "id": "3040523000",
