@@ -1,8 +1,20 @@
 {
     "x-version": "1715602778",
-    "gacha_id": "207991",
-    "latest_chara": 675,
+    "gacha_id": "208001",
+    "latest_chara": 677,
     "chara_list": [
+        {
+            "gacha_id": 677,
+            "id": "3040532000",
+            "name": "Veight",
+            "weapon": "Camazotz"
+        },
+        {
+            "gacha_id": 676,
+            "id": "3040531000",
+            "name": "Sui",
+            "weapon": "Firefly's Light"
+        },
         {
             "gacha_id": 675,
             "id": "3040530000",
