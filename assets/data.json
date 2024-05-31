@@ -1,8 +1,20 @@
 {
     "x-version": "1716960405",
-    "gacha_id": "208081",
-    "latest_chara": 677,
+    "gacha_id": "208091",
+    "latest_chara": 679,
     "chara_list": [
+        {
+            "gacha_id": 679,
+            "id": "3040534000",
+            "name": "Mirin",
+            "weapon": "Shunran Shin'uchi"
+        },
+        {
+            "gacha_id": 678,
+            "id": "3040533000",
+            "name": "Sato",
+            "weapon": "Subekuri Gauntlet"
+        },
         {
             "gacha_id": 677,
             "id": "3040532000",
