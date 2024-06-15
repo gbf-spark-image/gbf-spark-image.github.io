@@ -1,8 +1,20 @@
 {
     "x-version": "1718244770",
-    "gacha_id": "208131",
-    "latest_chara": 679,
+    "gacha_id": "208141",
+    "latest_chara": 681,
     "chara_list": [
+        {
+            "gacha_id": 681,
+            "id": "3040535000",
+            "name": "Nectar",
+            "weapon": "Honekui"
+        },
+        {
+            "gacha_id": 680,
+            "id": "3040536000",
+            "name": "Orologia",
+            "weapon": "Causality Driver"
+        },
         {
             "gacha_id": 679,
             "id": "3040534000",
