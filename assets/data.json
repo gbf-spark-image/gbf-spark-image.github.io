@@ -1,8 +1,20 @@
 {
     "x-version": "1719557551",
-    "gacha_id": "208221",
-    "latest_chara": 681,
+    "gacha_id": "208231",
+    "latest_chara": 683,
     "chara_list": [
+        {
+            "gacha_id": 683,
+            "id": "3040537000",
+            "name": "Tefnut",
+            "weapon": "Dardur"
+        },
+        {
+            "gacha_id": 682,
+            "id": "3040538000",
+            "name": "Raziel",
+            "weapon": "Aertire"
+        },
         {
             "gacha_id": 681,
             "id": "3040535000",
