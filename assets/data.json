@@ -1,8 +1,20 @@
 {
-    "x-version": "1720504743",
-    "gacha_id": "208271",
-    "latest_chara": 683,
+    "x-version": "1721115479",
+    "gacha_id": "208281",
+    "latest_chara": 685,
     "chara_list": [
+        {
+            "gacha_id": 685,
+            "id": "3040540000",
+            "name": "Hallessena",
+            "weapon": "Rindcleaver"
+        },
+        {
+            "gacha_id": 684,
+            "id": "3040539000",
+            "name": "Cucouroux",
+            "weapon": "Vacation Toolbox"
+        },
         {
             "gacha_id": 683,
             "id": "3040537000",
@@ -2717,6 +2729,10 @@
         }
     ],
     "summon_list": [
+        {
+            "id": "2040428000",
+            "name": "Mars"
+        },
         {
             "id": "2040425000",
             "name": "Triple Zero"
