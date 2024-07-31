@@ -1,8 +1,26 @@
 {
     "x-version": "1722310876",
-    "gacha_id": "208321",
-    "latest_chara": 685,
+    "gacha_id": "208331",
+    "latest_chara": 688,
     "chara_list": [
+        {
+            "gacha_id": 688,
+            "id": "3040543000",
+            "name": "Hekate",
+            "weapon": "Amaranthine"
+        },
+        {
+            "gacha_id": 687,
+            "id": "3040542000",
+            "name": "Ragazzo",
+            "weapon": "Sole Intenso"
+        },
+        {
+            "gacha_id": 686,
+            "id": "3040541000",
+            "name": "Tweyen",
+            "weapon": "Shimmering Bloom"
+        },
         {
             "gacha_id": 685,
             "id": "3040540000",
@@ -2729,6 +2747,10 @@
         }
     ],
     "summon_list": [
+        {
+            "id": "2040429000",
+            "name": "Beelzebub"
+        },
         {
             "id": "2040428000",
             "name": "Mars"
