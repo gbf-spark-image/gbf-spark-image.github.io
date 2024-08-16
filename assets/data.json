@@ -1,8 +1,26 @@
 {
     "x-version": "1723683803",
-    "gacha_id": "208371",
-    "latest_chara": 688,
+    "gacha_id": "208381",
+    "latest_chara": 691,
     "chara_list": [
+        {
+            "gacha_id": 691,
+            "id": "3040545000",
+            "name": "Aglovale",
+            "weapon": "Frostbloom Fan"
+        },
+        {
+            "gacha_id": 690,
+            "id": "3040546000",
+            "name": "Nier",
+            "weapon": "Passion Parasol"
+        },
+        {
+            "gacha_id": 689,
+            "id": "3040544000",
+            "name": "Galleon",
+            "weapon": "Galleon Float"
+        },
         {
             "gacha_id": 688,
             "id": "3040543000",
