@@ -1,8 +1,20 @@
 {
     "x-version": "1724984994",
-    "gacha_id": "208461",
-    "latest_chara": 691,
+    "gacha_id": "208471",
+    "latest_chara": 693,
     "chara_list": [
+        {
+            "gacha_id": 693,
+            "id": "3040548000",
+            "name": "Sevastien",
+            "weapon": "Epee d'Autrefois"
+        },
+        {
+            "gacha_id": 692,
+            "id": "3040547000",
+            "name": "Medusa",
+            "weapon": "Bloodwrought Coral"
+        },
         {
             "gacha_id": 691,
             "id": "3040545000",
