@@ -1,8 +1,20 @@
 {
-    "x-version": "1725537964",
-    "gacha_id": "208521",
-    "latest_chara": 693,
+    "x-version": "1726543178",
+    "gacha_id": "208531",
+    "latest_chara": 695,
     "chara_list": [
+        {
+            "gacha_id": 695,
+            "id": "3040550000",
+            "name": "Novei",
+            "weapon": "Corde Azzurre"
+        },
+        {
+            "gacha_id": 694,
+            "id": "3040549000",
+            "name": "Noire",
+            "weapon": "Incomplete Polarsector"
+        },
         {
             "gacha_id": 693,
             "id": "3040548000",
