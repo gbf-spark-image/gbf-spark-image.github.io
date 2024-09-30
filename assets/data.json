@@ -1,8 +1,20 @@
 {
     "x-version": "1727401544",
-    "gacha_id": "208601",
-    "latest_chara": 695,
+    "gacha_id": "208611",
+    "latest_chara": 697,
     "chara_list": [
+        {
+            "gacha_id": 697,
+            "id": "3040552000",
+            "name": "Florence",
+            "weapon": "Lunatum Psalterium"
+        },
+        {
+            "gacha_id": 696,
+            "id": "3040551000",
+            "name": "Vane",
+            "weapon": "Swan"
+        },
         {
             "gacha_id": 695,
             "id": "3040550000",
