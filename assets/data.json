@@ -1,8 +1,26 @@
 {
-    "x-version": "1728270589",
-    "gacha_id": "208651",
-    "latest_chara": 697,
+    "x-version": "1728969863",
+    "gacha_id": "208661",
+    "latest_chara": 700,
     "chara_list": [
+        {
+            "gacha_id": 700,
+            "id": "3040555000",
+            "name": "Manamel",
+            "weapon": "Sweet Surprise"
+        },
+        {
+            "gacha_id": 699,
+            "id": "3040553000",
+            "name": "Wilnas",
+            "weapon": "Wilnas-o'-Lantern"
+        },
+        {
+            "gacha_id": 698,
+            "id": "3040554000",
+            "name": "Satyr",
+            "weapon": "Daodao Fu"
+        },
         {
             "gacha_id": 697,
             "id": "3040552000",
