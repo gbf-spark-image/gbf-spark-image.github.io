@@ -22,7 +22,7 @@ r = s.post(
 ).result()
 
 
-game_ver = re.search(r'Game.version = "[0-9]*";', r.text)
+game_ver = re.search(r'"version": "[0-9]*",', r.text)
 X_VERSION = game_ver.group(0)[16:-2]
 HEADERS = {"X-VERSION": X_VERSION, "X-Requested-With": "XMLHttpRequest"}
 
