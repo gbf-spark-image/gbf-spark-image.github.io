@@ -1,8 +1,20 @@
 {
-    "x-version": "1729168555",
-    "gacha_id": "208701",
-    "latest_chara": 700,
+    "x-version": "1730272107",
+    "gacha_id": "208751",
+    "latest_chara": 702,
     "chara_list": [
+        {
+            "gacha_id": 702,
+            "id": "3040557000",
+            "name": "Will",
+            "weapon": "Blade of Duality"
+        },
+        {
+            "gacha_id": 701,
+            "id": "3040556000",
+            "name": "Lecia",
+            "weapon": "Sky Vacation"
+        },
         {
             "gacha_id": 700,
             "id": "3040555000",
