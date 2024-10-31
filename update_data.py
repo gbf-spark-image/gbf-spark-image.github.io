@@ -23,7 +23,7 @@ r = s.post(
 
 
 game_ver = re.search(r'"version": "[0-9]*",', r.text)
-X_VERSION = game_ver.group(0)[16:-2]
+X_VERSION = game_ver.group(0)[12:-2]
 HEADERS = {"X-VERSION": X_VERSION, "X-Requested-With": "XMLHttpRequest"}
 
 r = s.get("https://game.granbluefantasy.jp/gacha/list", headers=HEADERS).result()
