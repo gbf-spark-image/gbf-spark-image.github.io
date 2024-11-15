@@ -1,8 +1,20 @@
 {
-    "x-version": "1730873234",
-    "gacha_id": "208791",
-    "latest_chara": 702,
+    "x-version": "1731669455",
+    "gacha_id": "208801",
+    "latest_chara": 704,
     "chara_list": [
+        {
+            "gacha_id": 704,
+            "id": "3040561000",
+            "name": "Diablo",
+            "weapon": "Black Claws"
+        },
+        {
+            "gacha_id": 703,
+            "id": "3040560000",
+            "name": "Shion",
+            "weapon": "Goriki-maru Revised"
+        },
         {
             "gacha_id": 702,
             "id": "3040557000",
