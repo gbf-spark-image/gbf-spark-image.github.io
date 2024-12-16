@@ -1,8 +1,20 @@
 {
-    "x-version": "1734075292",
-    "gacha_id": "208971",
-    "latest_chara": 706,
+    "x-version": "1734337497",
+    "gacha_id": "208981",
+    "latest_chara": 708,
     "chara_list": [
+        {
+            "gacha_id": 708,
+            "id": "3040565000",
+            "name": "Feower",
+            "weapon": "Decorus Sicarius"
+        },
+        {
+            "gacha_id": 707,
+            "id": "3040564000",
+            "name": "Zooey",
+            "weapon": "Equilibrium Tannenwand"
+        },
         {
             "gacha_id": 706,
             "id": "3040563000",
