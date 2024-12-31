@@ -1,8 +1,26 @@
 {
     "x-version": "1735467934",
-    "gacha_id": "209021",
-    "latest_chara": 710,
+    "gacha_id": "209031",
+    "latest_chara": 713,
     "chara_list": [
+        {
+            "gacha_id": 713,
+            "id": "3040570000",
+            "name": "Goblin Mage",
+            "weapon": "Shiny Cane"
+        },
+        {
+            "gacha_id": 712,
+            "id": "3040568000",
+            "name": "Raphael",
+            "weapon": "Galgalim of Gales"
+        },
+        {
+            "gacha_id": 711,
+            "id": "3040569000",
+            "name": "Indala",
+            "weapon": "Serpentius"
+        },
         {
             "gacha_id": 710,
             "id": "3040567000",
@@ -2879,6 +2897,10 @@
         }
     ],
     "summon_list": [
+        {
+            "id": "2040433000",
+            "name": "Orologia"
+        },
         {
             "id": "2040429000",
             "name": "Beelzebub"
