@@ -1,8 +1,20 @@
 {
     "x-version": "1737081149",
-    "gacha_id": "209081",
-    "latest_chara": 713,
+    "gacha_id": "209091",
+    "latest_chara": 715,
     "chara_list": [
+        {
+            "gacha_id": 715,
+            "id": "3040573000",
+            "name": "Feena",
+            "weapon": "Greatbow Rondor"
+        },
+        {
+            "gacha_id": 714,
+            "id": "3040572000",
+            "name": "Maleagant",
+            "weapon": "Uralter Nagel"
+        },
         {
             "gacha_id": 713,
             "id": "3040570000",
