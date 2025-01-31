@@ -1,8 +1,20 @@
 {
     "x-version": "1738204630",
     "gacha_id": "209181",
-    "latest_chara": 715,
+    "latest_chara": 717,
     "chara_list": [
+        {
+            "gacha_id": 717,
+            "id": "3040577000",
+            "name": "Jack Rakan",
+            "weapon": "O Iros Meta Chilion Prosopon"
+        },
+        {
+            "gacha_id": 716,
+            "id": "3040576000",
+            "name": "Setsuna Sakurazaki",
+            "weapon": "Sica Shishikushiro"
+        },
         {
             "gacha_id": 715,
             "id": "3040573000",
