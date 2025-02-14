@@ -1,8 +1,20 @@
 {
     "x-version": "1739446430",
-    "gacha_id": "209221",
-    "latest_chara": 717,
+    "gacha_id": "209231",
+    "latest_chara": 719,
     "chara_list": [
+        {
+            "gacha_id": 719,
+            "id": "3040578000",
+            "name": "Lobelia",
+            "weapon": "Clapotis Douleur"
+        },
+        {
+            "gacha_id": 718,
+            "id": "3040579000",
+            "name": "Makura",
+            "weapon": "Fourth Fork of the Fluffle"
+        },
         {
             "gacha_id": 717,
             "id": "3040577000",
