@@ -1,8 +1,20 @@
 {
     "x-version": "1740553111",
-    "gacha_id": "209301",
-    "latest_chara": 719,
+    "gacha_id": "209311",
+    "latest_chara": 721,
     "chara_list": [
+        {
+            "gacha_id": 721,
+            "id": "3040581000",
+            "name": "Tsukuyomi",
+            "weapon": "Nightgaze Gate"
+        },
+        {
+            "gacha_id": 720,
+            "id": "3040580000",
+            "name": "Yuel",
+            "weapon": "Sennen Goji"
+        },
         {
             "gacha_id": 719,
             "id": "3040578000",
