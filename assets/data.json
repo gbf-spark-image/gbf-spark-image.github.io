@@ -1,8 +1,26 @@
 {
-    "x-version": "1741848962",
-    "gacha_id": "209361",
-    "latest_chara": 721,
+    "x-version": "1742197396",
+    "gacha_id": "209371",
+    "latest_chara": 724,
     "chara_list": [
+        {
+            "gacha_id": 724,
+            "id": "3040583000",
+            "name": "Lu Woh",
+            "weapon": "Lu Woh Float"
+        },
+        {
+            "gacha_id": 723,
+            "id": "3040584000",
+            "name": "Mahira",
+            "weapon": "Tenth Crow of the Clutch"
+        },
+        {
+            "gacha_id": 722,
+            "id": "3040582000",
+            "name": "Basara",
+            "weapon": "Canifortis"
+        },
         {
             "gacha_id": 721,
             "id": "3040581000",
