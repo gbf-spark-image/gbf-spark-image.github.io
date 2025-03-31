@@ -1,8 +1,20 @@
 {
     "x-version": "1743167684",
-    "gacha_id": "209421",
-    "latest_chara": 724,
+    "gacha_id": "209431",
+    "latest_chara": 726,
     "chara_list": [
+        {
+            "gacha_id": 726,
+            "id": "3040586000",
+            "name": "Seofon",
+            "weapon": "Prismatic Trientalis"
+        },
+        {
+            "gacha_id": 725,
+            "id": "3040585000",
+            "name": "Vikala",
+            "weapon": "First Fling of the Mischief"
+        },
         {
             "gacha_id": 724,
             "id": "3040583000",
