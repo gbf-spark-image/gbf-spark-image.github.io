@@ -1,8 +1,20 @@
 {
     "x-version": "1744611669",
-    "gacha_id": "209471",
-    "latest_chara": 726,
+    "gacha_id": "209481",
+    "latest_chara": 728,
     "chara_list": [
+        {
+            "gacha_id": 728,
+            "id": "3040590000",
+            "name": "Cherine",
+            "weapon": "Lourde et Courte"
+        },
+        {
+            "gacha_id": 727,
+            "id": "3040589000",
+            "name": "Shukra",
+            "weapon": "Felinovus"
+        },
         {
             "gacha_id": 726,
             "id": "3040586000",
@@ -2975,6 +2987,10 @@
         }
     ],
     "summon_list": [
+        {
+            "id": "2040435000",
+            "name": "Tetragod"
+        },
         {
             "id": "2040433000",
             "name": "Orologia"
