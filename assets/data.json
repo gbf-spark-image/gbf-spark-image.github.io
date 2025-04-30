@@ -1,8 +1,20 @@
 {
     "x-version": "1745841269",
-    "gacha_id": "209561",
-    "latest_chara": 728,
+    "gacha_id": "209571",
+    "latest_chara": 730,
     "chara_list": [
+        {
+            "gacha_id": 730,
+            "id": "3040592000",
+            "name": "Mars",
+            "weapon": "Blazing Corseque"
+        },
+        {
+            "gacha_id": 729,
+            "id": "3040591000",
+            "name": "Lavirita",
+            "weapon": "Gold Beak"
+        },
         {
             "gacha_id": 728,
             "id": "3040590000",
