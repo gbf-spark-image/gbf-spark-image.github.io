@@ -1,8 +1,20 @@
 {
     "x-version": "1747203433",
-    "gacha_id": "209611",
-    "latest_chara": 730,
+    "gacha_id": "209621",
+    "latest_chara": 732,
     "chara_list": [
+        {
+            "gacha_id": 732,
+            "id": "3040594000",
+            "name": "Kou",
+            "weapon": "Plumshade Parasol"
+        },
+        {
+            "gacha_id": 731,
+            "id": "3040593000",
+            "name": "Cagliostro and Clarisse",
+            "weapon": "Ouroboric Mobius"
+        },
         {
             "gacha_id": 730,
             "id": "3040592000",
