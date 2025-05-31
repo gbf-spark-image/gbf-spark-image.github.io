@@ -1,8 +1,20 @@
 {
     "x-version": "1748584081",
-    "gacha_id": "209701",
-    "latest_chara": 732,
+    "gacha_id": "209711",
+    "latest_chara": 734,
     "chara_list": [
+        {
+            "gacha_id": 734,
+            "id": "3040596000",
+            "name": "Skuld",
+            "weapon": "Bow of Auslese"
+        },
+        {
+            "gacha_id": 733,
+            "id": "3040595000",
+            "name": "Siegfried",
+            "weapon": "Heldenhymne"
+        },
         {
             "gacha_id": 732,
             "id": "3040594000",
