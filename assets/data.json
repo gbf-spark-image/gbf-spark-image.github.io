@@ -1,8 +1,20 @@
 {
-    "x-version": "1749638327",
-    "gacha_id": "209751",
-    "latest_chara": 734,
+    "x-version": "1750065526",
+    "gacha_id": "209761",
+    "latest_chara": 736,
     "chara_list": [
+        {
+            "gacha_id": 736,
+            "id": "3040598000",
+            "name": "Grimnir",
+            "weapon": "Thundergale of the Crimson"
+        },
+        {
+            "gacha_id": 735,
+            "id": "3040597000",
+            "name": "Hauhet",
+            "weapon": "Siwar Al-Laahabi"
+        },
         {
             "gacha_id": 734,
             "id": "3040596000",
@@ -3023,6 +3035,10 @@
         }
     ],
     "summon_list": [
+        {
+            "id": "2040436000",
+            "name": "Soul Invoker"
+        },
         {
             "id": "2040435000",
             "name": "Tetragod"
