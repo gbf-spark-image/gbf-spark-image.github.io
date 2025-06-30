@@ -1,8 +1,20 @@
 {
     "x-version": "1751093447",
-    "gacha_id": "209841",
-    "latest_chara": 736,
+    "gacha_id": "209851",
+    "latest_chara": 738,
     "chara_list": [
+        {
+            "gacha_id": 738,
+            "id": "3040600000",
+            "name": "Fraux",
+            "weapon": "Scheherazade"
+        },
+        {
+            "gacha_id": 737,
+            "id": "3040599000",
+            "name": "Ilsa",
+            "weapon": "Bridekeeper"
+        },
         {
             "gacha_id": 736,
             "id": "3040598000",
