@@ -1,8 +1,20 @@
 {
     "x-version": "1752489240",
-    "gacha_id": "209891",
-    "latest_chara": 738,
+    "gacha_id": "209901",
+    "latest_chara": 740,
     "chara_list": [
+        {
+            "gacha_id": 740,
+            "id": "3040602000",
+            "name": "Korwa",
+            "weapon": "Quill of Happy Endings"
+        },
+        {
+            "gacha_id": 739,
+            "id": "3040601000",
+            "name": "Atum",
+            "weapon": "Shati Hariq"
+        },
         {
             "gacha_id": 738,
             "id": "3040600000",
@@ -3047,6 +3059,10 @@
         }
     ],
     "summon_list": [
+        {
+            "id": "2040437000",
+            "name": "Bastet"
+        },
         {
             "id": "2040436000",
             "name": "Soul Invoker"
