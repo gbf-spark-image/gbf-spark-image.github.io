@@ -1,8 +1,20 @@
 {
-    "x-version": "1753856505",
-    "gacha_id": "209981",
-    "latest_chara": 740,
+    "x-version": "1753930654",
+    "gacha_id": "209991",
+    "latest_chara": 742,
     "chara_list": [
+        {
+            "gacha_id": 742,
+            "id": "3040604000",
+            "name": "Cassius",
+            "weapon": "Beach House Ramen"
+        },
+        {
+            "gacha_id": 741,
+            "id": "3040603000",
+            "name": "Lich",
+            "weapon": "Shade and Suffering"
+        },
         {
             "gacha_id": 740,
             "id": "3040602000",
@@ -3059,6 +3071,10 @@
         }
     ],
     "summon_list": [
+        {
+            "id": "2040438000",
+            "name": "Commander of Destruction"
+        },
         {
             "id": "2040437000",
             "name": "Bastet"
