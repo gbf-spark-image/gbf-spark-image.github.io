@@ -1,8 +1,20 @@
 {
     "x-version": "1754471994",
     "gacha_id": "210011",
-    "latest_chara": 742,
+    "latest_chara": 744,
     "chara_list": [
+        {
+            "gacha_id": 744,
+            "id": "3040608000",
+            "name": "Chrollo",
+            "weapon": "Bandit's Secret"
+        },
+        {
+            "gacha_id": 743,
+            "id": "3040607000",
+            "name": "Kurapika",
+            "weapon": "Five-Finger Chain"
+        },
         {
             "gacha_id": 742,
             "id": "3040604000",
