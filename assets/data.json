@@ -1,8 +1,20 @@
 {
     "x-version": "1755224451",
-    "gacha_id": "210031",
-    "latest_chara": 744,
+    "gacha_id": "210041",
+    "latest_chara": 746,
     "chara_list": [
+        {
+            "gacha_id": 746,
+            "id": "3040609000",
+            "name": "Haaselia",
+            "weapon": "Moon Shotel"
+        },
+        {
+            "gacha_id": 745,
+            "id": "3040610000",
+            "name": "Catura",
+            "weapon": "Second Float of the Herd"
+        },
         {
             "gacha_id": 744,
             "id": "3040608000",
