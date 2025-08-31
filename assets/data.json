@@ -1,8 +1,20 @@
 {
-    "x-version": "1756467275",
-    "gacha_id": "210121",
-    "latest_chara": 746,
+    "x-version": "1756609854",
+    "gacha_id": "210131",
+    "latest_chara": 748,
     "chara_list": [
+        {
+            "gacha_id": 748,
+            "id": "3040612000",
+            "name": "Berceau",
+            "weapon": "Epee Scintillante"
+        },
+        {
+            "gacha_id": 747,
+            "id": "3040611000",
+            "name": "Sariel",
+            "weapon": "Executioner"
+        },
         {
             "gacha_id": 746,
             "id": "3040609000",
@@ -3095,6 +3107,10 @@
         }
     ],
     "summon_list": [
+        {
+            "id": "2040441000",
+            "name": "Vepar"
+        },
         {
             "id": "2040438000",
             "name": "Commander of Destruction"
