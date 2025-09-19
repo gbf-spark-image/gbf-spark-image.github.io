@@ -1,8 +1,20 @@
 {
     "x-version": "1758252201",
-    "gacha_id": "210221",
-    "latest_chara": 748,
+    "gacha_id": "210231",
+    "latest_chara": 750,
     "chara_list": [
+        {
+            "gacha_id": 750,
+            "id": "3040614000",
+            "name": "Joel",
+            "weapon": "Lagoon's Edge"
+        },
+        {
+            "gacha_id": 749,
+            "id": "3040613000",
+            "name": "Sylvia",
+            "weapon": "Ebony Retribution"
+        },
         {
             "gacha_id": 748,
             "id": "3040612000",
