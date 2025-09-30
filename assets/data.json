@@ -1,8 +1,20 @@
 {
     "x-version": "1759134809",
-    "gacha_id": "210261",
-    "latest_chara": 750,
+    "gacha_id": "210271",
+    "latest_chara": 752,
     "chara_list": [
+        {
+            "gacha_id": 752,
+            "id": "3040616000",
+            "name": "Danua",
+            "weapon": "Marionette Machete"
+        },
+        {
+            "gacha_id": 751,
+            "id": "3040615000",
+            "name": "Lamorak",
+            "weapon": "Feder des Zugvogels"
+        },
         {
             "gacha_id": 750,
             "id": "3040614000",
@@ -3119,6 +3131,10 @@
         }
     ],
     "summon_list": [
+        {
+            "id": "2040442000",
+            "name": "Fairy Princess"
+        },
         {
             "id": "2040441000",
             "name": "Vepar"
