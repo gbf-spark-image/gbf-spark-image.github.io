@@ -1,8 +1,26 @@
 {
-    "x-version": "1760421885",
-    "gacha_id": "210311",
-    "latest_chara": 752,
+    "x-version": "1760596037",
+    "gacha_id": "210321",
+    "latest_chara": 755,
     "chara_list": [
+        {
+            "gacha_id": 755,
+            "id": "3040619000",
+            "name": "Tien",
+            "weapon": "Pistolet Fleuri"
+        },
+        {
+            "gacha_id": 754,
+            "id": "3040618000",
+            "name": "Lancelot",
+            "weapon": "Black Cat in a Hat"
+        },
+        {
+            "gacha_id": 753,
+            "id": "3040617000",
+            "name": "Vajra",
+            "weapon": "Eleventh Treat of the Pack"
+        },
         {
             "gacha_id": 752,
             "id": "3040616000",
