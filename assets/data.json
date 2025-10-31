@@ -1,8 +1,20 @@
 {
     "x-version": "1761816415",
-    "gacha_id": "210401",
-    "latest_chara": 755,
+    "gacha_id": "210411",
+    "latest_chara": 757,
     "chara_list": [
+        {
+            "gacha_id": 757,
+            "id": "3040621000",
+            "name": "Chichiri",
+            "weapon": "Sweety-Weety Garnet Broadaxe"
+        },
+        {
+            "gacha_id": 756,
+            "id": "3040620000",
+            "name": "Metera",
+            "weapon": "Aetherial Maverick"
+        },
         {
             "gacha_id": 755,
             "id": "3040619000",
@@ -3149,6 +3161,10 @@
         }
     ],
     "summon_list": [
+        {
+            "id": "2040443000",
+            "name": "Cassiopeia"
+        },
         {
             "id": "2040442000",
             "name": "Fairy Princess"
