@@ -1,8 +1,20 @@
 {
-    "x-version": "1762249244",
-    "gacha_id": "210421",
-    "latest_chara": 757,
+    "x-version": "1762334809",
+    "gacha_id": "210431",
+    "latest_chara": 759,
     "chara_list": [
+        {
+            "gacha_id": 759,
+            "id": "3040625000",
+            "name": "Kaworu & Mark.06",
+            "weapon": "Spear of Cassius (Man-Portable)"
+        },
+        {
+            "gacha_id": 758,
+            "id": "3040624000",
+            "name": "Asuka & Unit 02",
+            "weapon": "Progressive Knife (Man-Portable)"
+        },
         {
             "gacha_id": 757,
             "id": "3040621000",
