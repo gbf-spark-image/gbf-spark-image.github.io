@@ -1,8 +1,20 @@
 {
     "x-version": "1764310520",
-    "gacha_id": "210541",
-    "latest_chara": 759,
+    "gacha_id": "210551",
+    "latest_chara": 761,
     "chara_list": [
+        {
+            "gacha_id": 761,
+            "id": "3040627000",
+            "name": "Bennu",
+            "weapon": "Jinn Al-Shajarah"
+        },
+        {
+            "gacha_id": 760,
+            "id": "3040626000",
+            "name": "Reinhardtzar",
+            "weapon": "Ripening Spirit"
+        },
         {
             "gacha_id": 759,
             "id": "3040625000",
