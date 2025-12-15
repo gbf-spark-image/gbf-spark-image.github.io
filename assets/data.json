@@ -1,8 +1,20 @@
 {
-    "x-version": "1765423499",
-    "gacha_id": "210591",
-    "latest_chara": 761,
+    "x-version": "1765783487",
+    "gacha_id": "210601",
+    "latest_chara": 763,
     "chara_list": [
+        {
+            "gacha_id": 763,
+            "id": "3040629000",
+            "name": "Maria Theresa",
+            "weapon": "Pugnale dei Volant"
+        },
+        {
+            "gacha_id": 762,
+            "id": "3040628000",
+            "name": "Zeta",
+            "weapon": "Frosty Eve Spear"
+        },
         {
             "gacha_id": 761,
             "id": "3040627000",
