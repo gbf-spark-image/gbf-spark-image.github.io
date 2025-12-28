@@ -1,8 +1,20 @@
 {
     "x-version": "1766899116",
-    "gacha_id": "210681",
-    "latest_chara": 763,
+    "gacha_id": "210691",
+    "latest_chara": 765,
     "chara_list": [
+        {
+            "gacha_id": 765,
+            "id": "3040634000",
+            "name": "Amaterasu",
+            "weapon": "Sunwheel Chime"
+        },
+        {
+            "gacha_id": 764,
+            "id": "3040630000",
+            "name": "Bhaisa",
+            "weapon": "Staff of the Medicinal Master"
+        },
         {
             "gacha_id": 763,
             "id": "3040629000",
