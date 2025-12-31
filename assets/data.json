@@ -1,8 +1,20 @@
 {
     "x-version": "1767002231",
-    "gacha_id": "210691",
-    "latest_chara": 765,
+    "gacha_id": "210701",
+    "latest_chara": 767,
     "chara_list": [
+        {
+            "gacha_id": 767,
+            "id": "3040632000",
+            "name": "Caesar",
+            "weapon": "White Sword of Splendor"
+        },
+        {
+            "gacha_id": 766,
+            "id": "3040633000",
+            "name": "Sandira",
+            "weapon": "Equinius"
+        },
         {
             "gacha_id": 765,
             "id": "3040634000",
@@ -3209,6 +3221,10 @@
         }
     ],
     "summon_list": [
+        {
+            "id": "2040448000",
+            "name": "Versusia"
+        },
         {
             "id": "2040443000",
             "name": "Cassiopeia"
