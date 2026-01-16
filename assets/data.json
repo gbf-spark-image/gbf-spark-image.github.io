@@ -1,8 +1,20 @@
 {
     "x-version": "1768374292",
-    "gacha_id": "210741",
-    "latest_chara": 767,
+    "gacha_id": "210751",
+    "latest_chara": 769,
     "chara_list": [
+        {
+            "gacha_id": 769,
+            "id": "3040636000",
+            "name": "Constance",
+            "weapon": "Erlkoenig-Nachweis"
+        },
+        {
+            "gacha_id": 768,
+            "id": "3040635000",
+            "name": "Lulou Holou",
+            "weapon": "Use a Gold Brick"
+        },
         {
             "gacha_id": 767,
             "id": "3040632000",
