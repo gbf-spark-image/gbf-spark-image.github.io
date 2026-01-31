@@ -1,8 +1,20 @@
 {
     "x-version": "1769582637",
-    "gacha_id": "210831",
-    "latest_chara": 769,
+    "gacha_id": "210841",
+    "latest_chara": 771,
     "chara_list": [
+        {
+            "gacha_id": 771,
+            "id": "3040638000",
+            "name": "Arriet",
+            "weapon": "Con Tenerezza"
+        },
+        {
+            "gacha_id": 770,
+            "id": "3040637000",
+            "name": "McCoy",
+            "weapon": "Spy\u2019s Sleeve Dagger"
+        },
         {
             "gacha_id": 769,
             "id": "3040636000",
