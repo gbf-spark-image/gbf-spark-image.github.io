@@ -1,8 +1,20 @@
 {
     "x-version": "1770881129",
-    "gacha_id": "210881",
-    "latest_chara": 771,
+    "gacha_id": "210891",
+    "latest_chara": 773,
     "chara_list": [
+        {
+            "gacha_id": 773,
+            "id": "3040640000",
+            "name": "Gawain",
+            "weapon": "Bipenne Galante"
+        },
+        {
+            "gacha_id": 772,
+            "id": "3040639000",
+            "name": "Wamdus",
+            "weapon": "Dreamy Mendiant"
+        },
         {
             "gacha_id": 771,
             "id": "3040638000",
