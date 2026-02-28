@@ -1,8 +1,20 @@
 {
     "x-version": "1772099528",
-    "gacha_id": "210971",
-    "latest_chara": 773,
+    "gacha_id": "210981",
+    "latest_chara": 775,
     "chara_list": [
+        {
+            "gacha_id": 775,
+            "id": "3040642000",
+            "name": "Ange",
+            "weapon": "Elegant Floralspear"
+        },
+        {
+            "gacha_id": 774,
+            "id": "3040641000",
+            "name": "Walfrid",
+            "weapon": "Orderbringer"
+        },
         {
             "gacha_id": 773,
             "id": "3040640000",
