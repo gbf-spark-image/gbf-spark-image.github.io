@@ -1,8 +1,26 @@
 {
-    "x-version": "1773373083",
-    "gacha_id": "211021",
-    "latest_chara": 775,
+    "x-version": "1773650922",
+    "gacha_id": "211031",
+    "latest_chara": 778,
     "chara_list": [
+        {
+            "gacha_id": 778,
+            "id": "3040646000",
+            "name": "Eustace",
+            "weapon": "Firework Galvanizer"
+        },
+        {
+            "gacha_id": 777,
+            "id": "3040645000",
+            "name": "Apollonia",
+            "weapon": "Mysteries of the Ocean"
+        },
+        {
+            "gacha_id": 776,
+            "id": "3040644000",
+            "name": "Octavia",
+            "weapon": "Clockwork Blade: Kumogakure"
+        },
         {
             "gacha_id": 775,
             "id": "3040642000",
