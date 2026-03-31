@@ -1,8 +1,20 @@
 {
-    "x-version": "1774587590",
-    "gacha_id": "211081",
-    "latest_chara": 778,
+    "x-version": "1774856734",
+    "gacha_id": "211091",
+    "latest_chara": 780,
     "chara_list": [
+        {
+            "gacha_id": 780,
+            "id": "3040647000",
+            "name": "Anthuria",
+            "weapon": "Forbidden Sunset"
+        },
+        {
+            "gacha_id": 779,
+            "id": "3040648000",
+            "name": "Alliah",
+            "weapon": "Morning Glory Fan"
+        },
         {
             "gacha_id": 778,
             "id": "3040646000",
