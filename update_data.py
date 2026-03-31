@@ -14,17 +14,35 @@ os.makedirs(ASSET_PATH, exist_ok=True)
 
 s = FuturesSession()
 
-s.get("https://game.granbluefantasy.jp/tutorial/content/index/2/1").result()
+
+for tutorial_number in [
+    "2/1",
+    *[str(num) for num in range(3, 32) if num not in [13, 21, 22]],
+]:
+    if tutorial_number == "7":
+        r = s.post(
+            "https://game.granbluefantasy.jp/tutorial/save_name",
+            json={
+                "special_token": "null",
+                "name": "グラン",
+                "mobage_flag": "false",
+            },
+        ).result()
+    r = s.get(
+        f"https://game.granbluefantasy.jp/tutorial/content/index/{tutorial_number}"
+    ).result()
+
 
 r = s.post(
     "https://game.granbluefantasy.jp/setting/language_save",
     json={"language_type": "2", "special_token": "null"},
 ).result()
-
-
 game_ver = re.search(r'"version": "[0-9]*",', r.text)
 X_VERSION = game_ver.group(0)[12:-2]
-HEADERS = {"X-VERSION": X_VERSION, "X-Requested-With": "XMLHttpRequest"}
+HEADERS = {
+    "X-VERSION": X_VERSION,
+    "X-Requested-With": "XMLHttpRequest",
+}
 
 r = s.get("https://game.granbluefantasy.jp/gacha/list", headers=HEADERS).result()
 GACHA_ID = r.json()["appearance_gacha_id"]
