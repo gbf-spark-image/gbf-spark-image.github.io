@@ -1,8 +1,20 @@
 {
     "x-version": "1776227376",
-    "gacha_id": "211171",
-    "latest_chara": 780,
+    "gacha_id": "211181",
+    "latest_chara": 782,
     "chara_list": [
+        {
+            "gacha_id": 782,
+            "id": "3040650000",
+            "name": "Parashurama",
+            "weapon": "Vijaya"
+        },
+        {
+            "gacha_id": 781,
+            "id": "3040649000",
+            "name": "Echidna",
+            "weapon": "Affectionate Bell"
+        },
         {
             "gacha_id": 780,
             "id": "3040647000",
