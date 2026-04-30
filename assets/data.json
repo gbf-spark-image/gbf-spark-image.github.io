@@ -1,8 +1,20 @@
 {
     "x-version": "1777436700",
-    "gacha_id": "211221",
-    "latest_chara": 782,
+    "gacha_id": "211231",
+    "latest_chara": 784,
     "chara_list": [
+        {
+            "gacha_id": 784,
+            "id": "3040653000",
+            "name": "Manu Ponumau",
+            "weapon": "Massive Mentor Drill"
+        },
+        {
+            "gacha_id": 783,
+            "id": "3040652000",
+            "name": "Felluca",
+            "weapon": "'Aina Alaka'i"
+        },
         {
             "gacha_id": 782,
             "id": "3040650000",
