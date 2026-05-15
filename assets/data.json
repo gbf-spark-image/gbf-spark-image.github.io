@@ -1,8 +1,20 @@
 {
-    "x-version": "1778755678",
+    "x-version": "1778824372",
     "gacha_id": "211281",
-    "latest_chara": 784,
+    "latest_chara": 786,
     "chara_list": [
+        {
+            "gacha_id": 786,
+            "id": "3040657000",
+            "name": "Olivier Mira Armstrong",
+            "weapon": "Armstrong Family Sword"
+        },
+        {
+            "gacha_id": 785,
+            "id": "3040656000",
+            "name": "Roy Mustang",
+            "weapon": "Flame Alchemy Gloves"
+        },
         {
             "gacha_id": 784,
             "id": "3040653000",
