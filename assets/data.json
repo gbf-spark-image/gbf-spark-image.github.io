@@ -1,8 +1,20 @@
 {
-    "x-version": "1781577081",
-    "gacha_id": "211411",
-    "latest_chara": 788,
+    "x-version": "1781594286",
+    "gacha_id": "211421",
+    "latest_chara": 790,
     "chara_list": [
+        {
+            "gacha_id": 790,
+            "id": "3040660000",
+            "name": "Shao",
+            "weapon": "Mixing Spoon"
+        },
+        {
+            "gacha_id": 789,
+            "id": "3040661000",
+            "name": "Notus",
+            "weapon": "Ever a Wanderer"
+        },
         {
             "gacha_id": 788,
             "id": "3040659000",
