@@ -1,8 +1,20 @@
 {
     "x-version": "1782717781",
-    "gacha_id": "211501",
-    "latest_chara": 790,
+    "gacha_id": "211511",
+    "latest_chara": 792,
     "chara_list": [
+        {
+            "gacha_id": 792,
+            "id": "3040663000",
+            "name": "Europa",
+            "weapon": "Engagement Snowflake"
+        },
+        {
+            "gacha_id": 791,
+            "id": "3040662000",
+            "name": "Meg and Mari",
+            "weapon": "Marriage Sharkbell"
+        },
         {
             "gacha_id": 790,
             "id": "3040660000",
