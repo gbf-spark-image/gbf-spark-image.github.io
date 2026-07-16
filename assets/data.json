@@ -1,8 +1,20 @@
 {
     "x-version": "1784098960",
-    "gacha_id": "211551",
-    "latest_chara": 792,
+    "gacha_id": "211561",
+    "latest_chara": 794,
     "chara_list": [
+        {
+            "gacha_id": 794,
+            "id": "3040665000",
+            "name": "Atman",
+            "weapon": "Exhilarating Banana"
+        },
+        {
+            "gacha_id": 793,
+            "id": "3040664000",
+            "name": "Osiris",
+            "weapon": "Netherbloom Parasol"
+        },
         {
             "gacha_id": 792,
             "id": "3040663000",
