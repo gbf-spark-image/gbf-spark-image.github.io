@@ -1,8 +1,20 @@
 {
-    "x-version": "1784657030",
+    "x-version": "1784702842",
     "gacha_id": "211571",
-    "latest_chara": 794,
+    "latest_chara": 796,
     "chara_list": [
+        {
+            "gacha_id": 796,
+            "id": "3040668000",
+            "name": "Nelliel Tu Odelschwanck",
+            "weapon": "Gamuza"
+        },
+        {
+            "gacha_id": 795,
+            "id": "3040669000",
+            "name": "Toshiro Hitsugaya and Rangiku Matsumoto",
+            "weapon": "Hyorinmaru"
+        },
         {
             "gacha_id": 794,
             "id": "3040665000",
