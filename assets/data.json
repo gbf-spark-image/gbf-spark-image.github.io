@@ -1,8 +1,20 @@
 {
-    "x-version": "1785398970",
-    "gacha_id": "211641",
-    "latest_chara": 796,
+    "x-version": "1785471042",
+    "gacha_id": "211651",
+    "latest_chara": 798,
     "chara_list": [
+        {
+            "gacha_id": 798,
+            "id": "3040670000",
+            "name": "Gwynne",
+            "weapon": "Sagemon"
+        },
+        {
+            "gacha_id": 797,
+            "id": "3040671000",
+            "name": "You",
+            "weapon": "Float of Loving Bonds"
+        },
         {
             "gacha_id": 796,
             "id": "3040668000",
