@@ -1,8 +1,20 @@
 {
     "x-version": "1786827899",
-    "gacha_id": "211691",
-    "latest_chara": 798,
+    "gacha_id": "211701",
+    "latest_chara": 800,
     "chara_list": [
+        {
+            "gacha_id": 800,
+            "id": "3040673000",
+            "name": "Seox",
+            "weapon": "Hidden Fang of the Heavenly Howl"
+        },
+        {
+            "gacha_id": 799,
+            "id": "3040672000",
+            "name": "Payila",
+            "weapon": "Fifth Bottle of the Flight"
+        },
         {
             "gacha_id": 798,
             "id": "3040670000",
@@ -3407,6 +3419,10 @@
         }
     ],
     "summon_list": [
+        {
+            "id": "2040461000",
+            "name": "Ms. Tart Man"
+        },
         {
             "id": "2040457000",
             "name": "Lodern"
