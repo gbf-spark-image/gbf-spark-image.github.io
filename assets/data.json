@@ -1,8 +1,20 @@
 {
-    "x-version": "1788092272",
-    "gacha_id": "211781",
-    "latest_chara": 800,
+    "x-version": "1788161851",
+    "gacha_id": "211791",
+    "latest_chara": 802,
     "chara_list": [
+        {
+            "gacha_id": 802,
+            "id": "3040675000",
+            "name": "Mordred",
+            "weapon": "Clarent"
+        },
+        {
+            "gacha_id": 801,
+            "id": "3040674000",
+            "name": "Bhadra",
+            "weapon": "Bodhicitta Hammer"
+        },
         {
             "gacha_id": 800,
             "id": "3040673000",
@@ -3419,6 +3431,10 @@
         }
     ],
     "summon_list": [
+        {
+            "id": "2040462000",
+            "name": "Bastet"
+        },
         {
             "id": "2040461000",
             "name": "Ms. Tart Man"
