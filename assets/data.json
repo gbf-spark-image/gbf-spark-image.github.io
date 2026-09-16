@@ -1,8 +1,20 @@
 {
-    "x-version": "1789489521",
-    "gacha_id": "211871",
-    "latest_chara": 802,
+    "x-version": "1789531866",
+    "gacha_id": "211881",
+    "latest_chara": 804,
     "chara_list": [
+        {
+            "gacha_id": 804,
+            "id": "3040676000",
+            "name": "Uruki",
+            "weapon": "Penguin Pals"
+        },
+        {
+            "gacha_id": 803,
+            "id": "3040677000",
+            "name": "Cocopio",
+            "weapon": "Crimson Lordkeeper"
+        },
         {
             "gacha_id": 802,
             "id": "3040675000",
