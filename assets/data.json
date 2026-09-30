@@ -1,8 +1,20 @@
 {
     "x-version": "1790670663",
-    "gacha_id": "211921",
-    "latest_chara": 804,
+    "gacha_id": "211931",
+    "latest_chara": 806,
     "chara_list": [
+        {
+            "gacha_id": 806,
+            "id": "3040679000",
+            "name": "Alba",
+            "weapon": "Silver Vine"
+        },
+        {
+            "gacha_id": 805,
+            "id": "3040678000",
+            "name": "Vaseraga",
+            "weapon": "Painkiller"
+        },
         {
             "gacha_id": 804,
             "id": "3040676000",
