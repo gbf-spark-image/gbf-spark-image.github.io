@@ -1,8 +1,26 @@
 {
-    "x-version": "1792223206",
-    "gacha_id": "211981",
-    "latest_chara": 806,
+    "x-version": "1792390282",
+    "gacha_id": "211991",
+    "latest_chara": 809,
     "chara_list": [
+        {
+            "gacha_id": 809,
+            "id": "3040682000",
+            "name": "Randall",
+            "weapon": "Fugitive's Claw"
+        },
+        {
+            "gacha_id": 808,
+            "id": "3040681000",
+            "name": "Azusa",
+            "weapon": "Kumogirimaru"
+        },
+        {
+            "gacha_id": 807,
+            "id": "3040680000",
+            "name": "Ewiyar",
+            "weapon": "Ewiyar-Pocus"
+        },
         {
             "gacha_id": 806,
             "id": "3040679000",
