@@ -1,8 +1,20 @@
 {
     "x-version": "1793359240",
-    "gacha_id": "212061",
-    "latest_chara": 809,
+    "gacha_id": "212071",
+    "latest_chara": 811,
     "chara_list": [
+        {
+            "gacha_id": 811,
+            "id": "3040684000",
+            "name": "Eugen",
+            "weapon": "Escorting Arms"
+        },
+        {
+            "gacha_id": 810,
+            "id": "3040683000",
+            "name": "Id",
+            "weapon": "Ragnarok"
+        },
         {
             "gacha_id": 809,
             "id": "3040682000",
@@ -3473,6 +3485,10 @@
         }
     ],
     "summon_list": [
+        {
+            "id": "2040463000",
+            "name": "Poppet Hareloom"
+        },
         {
             "id": "2040462000",
             "name": "Bastet"
