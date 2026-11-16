@@ -1,8 +1,20 @@
 {
     "x-version": "1794568018",
-    "gacha_id": "212111",
-    "latest_chara": 811,
+    "gacha_id": "212121",
+    "latest_chara": 813,
     "chara_list": [
+        {
+            "gacha_id": 813,
+            "id": "3040685000",
+            "name": "Ayer",
+            "weapon": "Ignition Bandages"
+        },
+        {
+            "gacha_id": 812,
+            "id": "3040686000",
+            "name": "Farrah",
+            "weapon": "Sword of Resolve"
+        },
         {
             "gacha_id": 811,
             "id": "3040684000",
